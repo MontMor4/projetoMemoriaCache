@@ -1,0 +1,60 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do memoriaCache_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaCache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoriaCache
+# 
+# Top level modules:
+# 	memoriaCache
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaPrincipal.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoriaPrincipal
+# 
+# Top level modules:
+# 	memoriaPrincipal
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/teste_memoriaCache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module teste_memoriaCache
+# 
+# Top level modules:
+# 	teste_memoriaCache
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  teste_memoriaCache
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps teste_memoriaCache 
+# Loading work.teste_memoriaCache
+# Loading work.memoriaCache
+# Loading work.memoriaPrincipal
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaCache.v(35): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaPrincipal.v(44).
+# 
+#         Region: /teste_memoriaCache/cache/ram
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=100 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 0 LRU = 1 dirty = 1 writeBack= 0 tag = 4 dadoParaCPU = 3
+# Time=200 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 0 LRU = 1 dirty = 1 writeBack= 0 tag = 4 dadoParaCPU = 3
+# Time=300 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 0 tag = 5 dadoParaCPU = 4
+# Time=400 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 0 tag = 5 dadoParaCPU = 4
+# Time=500 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 0
+# Time=600 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 0
+# Time=700 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
+# Time=800 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
+# Time=900 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
+# Time=1000 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
