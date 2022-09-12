@@ -1,5 +1,5 @@
 Fitter report for memoriaCache
-Mon Sep 12 11:47:18 2022
+Mon Sep 12 17:57:37 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,17 +62,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Sep 12 11:47:18 2022           ;
+; Fitter Status                      ; Successful - Mon Sep 12 17:57:37 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; memoriaCache                                    ;
 ; Top-level Entity Name              ; memoriaCache                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 151 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 138 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 81 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 81                                              ;
+; Total logic elements               ; 215 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 198 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 104 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 104                                             ;
 ; Total pins                         ; 21 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -137,7 +137,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -148,8 +148,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 245 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 245 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 328 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 328 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -172,7 +172,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 242     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 325     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -180,7 +180,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/output_files/memoriaCache.pin.
+The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memoriaCache.pin.
 
 
 +----------------------------------------------------------------------+
@@ -188,26 +188,26 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 151 / 33,216 ( < 1 % ) ;
-;     -- Combinational with no register       ; 70                     ;
-;     -- Register only                        ; 13                     ;
-;     -- Combinational with a register        ; 68                     ;
+; Total logic elements                        ; 215 / 33,216 ( < 1 % ) ;
+;     -- Combinational with no register       ; 111                    ;
+;     -- Register only                        ; 17                     ;
+;     -- Combinational with a register        ; 87                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 97                     ;
-;     -- 3 input functions                    ; 28                     ;
-;     -- <=2 input functions                  ; 13                     ;
-;     -- Register only                        ; 13                     ;
+;     -- 4 input functions                    ; 156                    ;
+;     -- 3 input functions                    ; 18                     ;
+;     -- <=2 input functions                  ; 24                     ;
+;     -- Register only                        ; 17                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 138                    ;
+;     -- normal mode                          ; 198                    ;
 ;     -- arithmetic mode                      ; 0                      ;
 ;                                             ;                        ;
-; Total registers*                            ; 81 / 34,593 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 81 / 33,216 ( < 1 % )  ;
+; Total registers*                            ; 104 / 34,593 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 104 / 33,216 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 14 / 2,076 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 19 / 2,076 ( < 1 % )   ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 21 / 475 ( 4 % )       ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )         ;
@@ -223,11 +223,11 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%           ;
-; Maximum fan-out                             ; 81                     ;
-; Highest non-global fan-out                  ; 50                     ;
-; Total fan-out                               ; 726                    ;
-; Average fan-out                             ; 2.88                   ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%           ;
+; Maximum fan-out                             ; 104                    ;
+; Highest non-global fan-out                  ; 45                     ;
+; Total fan-out                               ; 1019                   ;
+; Average fan-out                             ; 3.01                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -240,25 +240,25 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 151 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 70                    ; 0                              ;
-;     -- Register only                        ; 13                    ; 0                              ;
-;     -- Combinational with a register        ; 68                    ; 0                              ;
+; Total logic elements                        ; 215 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 111                   ; 0                              ;
+;     -- Register only                        ; 17                    ; 0                              ;
+;     -- Combinational with a register        ; 87                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 97                    ; 0                              ;
-;     -- 3 input functions                    ; 28                    ; 0                              ;
-;     -- <=2 input functions                  ; 13                    ; 0                              ;
-;     -- Register only                        ; 13                    ; 0                              ;
+;     -- 4 input functions                    ; 156                   ; 0                              ;
+;     -- 3 input functions                    ; 18                    ; 0                              ;
+;     -- <=2 input functions                  ; 24                    ; 0                              ;
+;     -- Register only                        ; 17                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 138                   ; 0                              ;
+;     -- normal mode                          ; 198                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 81                    ; 0                              ;
-;     -- Dedicated logic registers            ; 81 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 104                   ; 0                              ;
+;     -- Dedicated logic registers            ; 104 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 14 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 19 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 21                    ; 0                              ;
@@ -274,8 +274,8 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 726                   ; 0                              ;
-;     -- Registered Connections               ; 103                   ; 0                              ;
+;     -- Total Connections                    ; 1019                  ; 0                              ;
+;     -- Registered Connections               ; 127                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -307,16 +307,16 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; address[0] ; H17   ; 4        ; 48           ; 36           ; 1           ; 50                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[1] ; F17   ; 4        ; 48           ; 36           ; 2           ; 47                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[2] ; G17   ; 4        ; 48           ; 36           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[3] ; C13   ; 3        ; 31           ; 36           ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[4] ; D13   ; 3        ; 31           ; 36           ; 3           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[0] ; C13   ; 3        ; 31           ; 36           ; 2           ; 44                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[1] ; D13   ; 3        ; 31           ; 36           ; 3           ; 45                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[2] ; E12   ; 3        ; 24           ; 36           ; 3           ; 20                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[3] ; D12   ; 3        ; 24           ; 36           ; 2           ; 19                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[4] ; G12   ; 3        ; 27           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; clock      ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[0]    ; J17   ; 4        ; 48           ; 36           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[1]    ; B17   ; 4        ; 42           ; 36           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[2]    ; C17   ; 4        ; 46           ; 36           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; wren       ; F15   ; 4        ; 44           ; 36           ; 2           ; 48                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[0]    ; F13   ; 4        ; 35           ; 36           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[1]    ; D14   ; 4        ; 33           ; 36           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[2]    ; A14   ; 4        ; 33           ; 36           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; wren       ; F12   ; 3        ; 27           ; 36           ; 3           ; 34                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -325,17 +325,17 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; LRU            ; H15   ; 4        ; 42           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[0] ; B18   ; 4        ; 46           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[1] ; G16   ; 4        ; 44           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[2] ; A18   ; 4        ; 46           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dirty          ; D17   ; 4        ; 46           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; hit            ; F16   ; 4        ; 44           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[0]         ; A17   ; 4        ; 42           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[1]         ; AE9   ; 8        ; 20           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[2]         ; G15   ; 4        ; 44           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; valid          ; H16   ; 4        ; 42           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; writeBack      ; D16   ; 4        ; 40           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; LRU            ; F7    ; 2        ; 0            ; 32           ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[0] ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[1] ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[2] ; C11   ; 3        ; 29           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dirty          ; J14   ; 3        ; 24           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; hit            ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[0]         ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[1]         ; AC16  ; 7        ; 42           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[2]         ; B14   ; 4        ; 33           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; valid          ; K17   ; 4        ; 59           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; writeBack      ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -345,13 +345,13 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 1 / 64 ( 2 % )   ; 3.3V          ; --           ;
-; 2        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 3        ; 2 / 56 ( 4 % )   ; 3.3V          ; --           ;
-; 4        ; 17 / 58 ( 29 % ) ; 3.3V          ; --           ;
+; 2        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
+; 3        ; 13 / 56 ( 23 % ) ; 3.3V          ; --           ;
+; 4        ; 5 / 58 ( 9 % )   ; 3.3V          ; --           ;
 ; 5        ; 0 / 65 ( 0 % )   ; 3.3V          ; --           ;
 ; 6        ; 1 / 59 ( 2 % )   ; 3.3V          ; --           ;
-; 7        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 8        ; 1 / 56 ( 2 % )   ; 3.3V          ; --           ;
+; 7        ; 1 / 58 ( 2 % )   ; 3.3V          ; --           ;
+; 8        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -372,11 +372,11 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; A11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A12      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A13      ; 430        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; A14      ; 427        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A14      ; 427        ; 4        ; data[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; A17      ; 412        ; 4        ; tag[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; A18      ; 406        ; 4        ; dadoParaCPU[2]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A17      ; 412        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A18      ; 406        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A19      ; 394        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A20      ; 390        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A21      ; 382        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -451,7 +451,7 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; AC13     ; 185        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AC14     ; 191        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC15     ; 199        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC16     ; 202        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AC16     ; 202        ; 7        ; tag[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AC17     ; 207        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC18     ; 216        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC19     ; 222        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -496,7 +496,7 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; AE6      ; 150        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE7      ; 157        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE8      ; 159        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE9      ; 165        ; 8        ; tag[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE9      ; 165        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE10     ; 169        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE11     ; 174        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE12     ; 182        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -548,14 +548,14 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; B8       ; 458        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B9       ; 452        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 448        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B11      ; 435        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 433        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B11      ; 435        ; 3        ; dadoParaCPU[1]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 433        ; 3        ; tag[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 429        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; B14      ; 428        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B14      ; 428        ; 4        ; tag[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B15      ; 420        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B16      ; 419        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B17      ; 411        ; 4        ; data[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B18      ; 405        ; 4        ; dadoParaCPU[0]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B17      ; 411        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B18      ; 405        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B19      ; 393        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B20      ; 389        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B21      ; 381        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -574,13 +574,13 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; C8       ; 463        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 459        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C11      ; 436        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C13      ; 431        ; 3        ; address[3]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 436        ; 3        ; dadoParaCPU[2]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ; 434        ; 3        ; dadoParaCPU[0]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C13      ; 431        ; 3        ; address[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 418        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C17      ; 404        ; 4        ; data[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C17      ; 404        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C18      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C19      ; 391        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C20      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -601,12 +601,12 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; D9       ; 460        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; D12      ; 443        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D13      ; 432        ; 3        ; address[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D12      ; 443        ; 3        ; address[3]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D13      ; 432        ; 3        ; address[1]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D14      ; 426        ; 4        ; data[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D16      ; 415        ; 4        ; writeBack                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D17      ; 403        ; 4        ; dirty                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D16      ; 415        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; D17      ; 403        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 396        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D19      ; 392        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D20      ; 387        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -627,7 +627,7 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; E9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E10      ; 453        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E12      ; 444        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E12      ; 444        ; 3        ; address[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E13      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E15      ; 416        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -648,17 +648,17 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; F4       ; 11         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F5       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; F6       ; 5          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; F7       ; 14         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; F7       ; 14         ; 2        ; LRU                                      ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F8       ;            ;          ; GNDA_PLL3                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F9       ; 470        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F10      ; 462        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F11      ; 454        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F12      ; 440        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F13      ; 423        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F12      ; 440        ; 3        ; wren                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F13      ; 423        ; 4        ; data[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F14      ; 425        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F15      ; 409        ; 4        ; wren                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; F16      ; 408        ; 4        ; hit                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; F17      ; 401        ; 4        ; address[1]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F15      ; 409        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F16      ; 408        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F17      ; 401        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F18      ; 398        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F19      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F20      ; 372        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -679,12 +679,12 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; G9       ; 471        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G10      ; 461        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G11      ; 446        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G12      ; 439        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G12      ; 439        ; 3        ; address[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G13      ; 422        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 424        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G15      ; 410        ; 4        ; tag[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G16      ; 407        ; 4        ; dadoParaCPU[1]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G17      ; 402        ; 4        ; address[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G15      ; 410        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G16      ; 407        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G17      ; 402        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G18      ; 397        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G19      ;            ;          ; VCCA_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G20      ;            ;          ; GND_PLL2                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -708,9 +708,9 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; H12      ; 455        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H15      ; 414        ; 4        ; LRU                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; H16      ; 413        ; 4        ; valid                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; H17      ; 400        ; 4        ; address[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H15      ; 414        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H16      ; 413        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H17      ; 400        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; H19      ; 335        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H20      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -729,14 +729,14 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; J7       ; 17         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J8       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ; 475        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J10      ; 438        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J11      ; 437        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J10      ; 438        ; 3        ; hit                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J11      ; 437        ; 3        ; writeBack                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J13      ; 442        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J14      ; 441        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J14      ; 441        ; 3        ; dirty                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J15      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ; 385        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J17      ; 399        ; 4        ; data[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J17      ; 399        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J18      ; 383        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J19      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J20      ; 351        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -762,7 +762,7 @@ The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache
 ; K14      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K15      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K16      ; 386        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; K17      ; 384        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; K17      ; 384        ; 4        ; valid                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; K18      ; 334        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K19      ; 333        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1078,7 +1078,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |memoriaCache              ; 151 (151)   ; 81 (81)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 21   ; 0            ; 70 (70)      ; 13 (13)           ; 68 (68)          ; |memoriaCache       ; work         ;
+; |memoriaCache              ; 215 (215)   ; 104 (104)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 21   ; 0            ; 111 (111)    ; 17 (17)           ; 87 (87)          ; |memoriaCache       ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1099,12 +1099,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dadoParaCPU[0] ; Output   ; --            ; --            ; --                    ; --  ;
 ; dadoParaCPU[1] ; Output   ; --            ; --            ; --                    ; --  ;
 ; dadoParaCPU[2] ; Output   ; --            ; --            ; --                    ; --  ;
-; clock          ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; address[3]     ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; address[4]     ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; address[1]     ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; address[0]     ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; address[1]     ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; address[4]     ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; address[3]     ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; address[2]     ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; address[0]     ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; clock          ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; wren           ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; data[0]        ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; data[1]        ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
@@ -1117,197 +1117,131 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-------------------+---------+
 ; Source Pin / Fanout        ; Pad To Core Index ; Setting ;
 +----------------------------+-------------------+---------+
-; clock                      ;                   ;         ;
-; address[3]                 ;                   ;         ;
-; address[4]                 ;                   ;         ;
-; address[1]                 ;                   ;         ;
-;      - always0~2           ; 1                 ; 6       ;
-;      - Mux4~0              ; 1                 ; 6       ;
-;      - Mux5~0              ; 1                 ; 6       ;
-;      - Mux4~1              ; 1                 ; 6       ;
-;      - Mux7~0              ; 1                 ; 6       ;
-;      - Mux7~2              ; 1                 ; 6       ;
-;      - Mux8~0              ; 1                 ; 6       ;
-;      - tag~2               ; 1                 ; 6       ;
-;      - Mux15~0             ; 1                 ; 6       ;
-;      - Mux15~2             ; 1                 ; 6       ;
-;      - Mux14~0             ; 1                 ; 6       ;
-;      - Mux14~2             ; 1                 ; 6       ;
-;      - Mux14~3             ; 1                 ; 6       ;
-;      - Mux13~0             ; 1                 ; 6       ;
-;      - Mux13~2             ; 1                 ; 6       ;
-;      - Mux13~3             ; 1                 ; 6       ;
-;      - via2~0              ; 1                 ; 6       ;
-;      - via2~1              ; 1                 ; 6       ;
-;      - via2~2              ; 1                 ; 6       ;
-;      - mem~50              ; 1                 ; 6       ;
-;      - mem~52              ; 1                 ; 6       ;
-;      - mem~53              ; 1                 ; 6       ;
-;      - mem~54              ; 1                 ; 6       ;
-;      - mem~56              ; 1                 ; 6       ;
-;      - mem~57              ; 1                 ; 6       ;
-;      - mem~58              ; 1                 ; 6       ;
-;      - mem~60              ; 1                 ; 6       ;
-;      - mem~61              ; 1                 ; 6       ;
-;      - mem~66              ; 1                 ; 6       ;
-;      - mem~67              ; 1                 ; 6       ;
-;      - varEndMem[2]~8      ; 1                 ; 6       ;
-;      - always0~5           ; 1                 ; 6       ;
-;      - tag~3               ; 1                 ; 6       ;
-;      - cache[7][8]~60      ; 1                 ; 6       ;
-;      - cache[5][8]~61      ; 1                 ; 6       ;
-;      - cache[6][8]~63      ; 1                 ; 6       ;
-;      - cache[4][8]~64      ; 1                 ; 6       ;
-;      - cache[0][8]~65      ; 1                 ; 6       ;
-;      - cache[2][1]~66      ; 1                 ; 6       ;
-;      - cache[4][0]~67      ; 1                 ; 6       ;
-;      - cache[0][1]~68      ; 1                 ; 6       ;
-;      - cache[6][1]~69      ; 1                 ; 6       ;
-;      - cache[3][1]~70      ; 1                 ; 6       ;
-;      - cache[5][2]~71      ; 1                 ; 6       ;
-;      - cache[1][1]~72      ; 1                 ; 6       ;
-;      - cache[7][2]~73      ; 1                 ; 6       ;
-;      - varEndMem~12        ; 1                 ; 6       ;
-; address[2]                 ;                   ;         ;
-;      - always0~2           ; 0                 ; 6       ;
-;      - mem~48              ; 0                 ; 6       ;
-;      - cache~46            ; 0                 ; 6       ;
-;      - mem~62              ; 0                 ; 6       ;
 ; address[0]                 ;                   ;         ;
+; address[1]                 ;                   ;         ;
+; address[4]                 ;                   ;         ;
+;      - always0~0           ; 0                 ; 6       ;
+; address[3]                 ;                   ;         ;
+;      - always0~0           ; 0                 ; 6       ;
+;      - Mux22~0             ; 0                 ; 6       ;
+;      - Mux22~1             ; 0                 ; 6       ;
+;      - Mux22~2             ; 0                 ; 6       ;
+;      - Mux22~4             ; 0                 ; 6       ;
+;      - Mux22~5             ; 0                 ; 6       ;
+;      - Mux22~7             ; 0                 ; 6       ;
+;      - Mux21~0             ; 0                 ; 6       ;
+;      - Mux21~2             ; 0                 ; 6       ;
+;      - Mux21~3             ; 0                 ; 6       ;
+;      - Mux21~4             ; 0                 ; 6       ;
+;      - Mux21~5             ; 0                 ; 6       ;
+;      - Mux21~7             ; 0                 ; 6       ;
+;      - Mux20~0             ; 0                 ; 6       ;
+;      - Mux20~1             ; 0                 ; 6       ;
+;      - Mux20~2             ; 0                 ; 6       ;
+;      - Mux20~4             ; 0                 ; 6       ;
+;      - Mux20~5             ; 0                 ; 6       ;
+;      - Mux20~7             ; 0                 ; 6       ;
+; address[2]                 ;                   ;         ;
 ;      - always0~2           ; 1                 ; 6       ;
-;      - Mux4~0              ; 1                 ; 6       ;
-;      - Mux5~0              ; 1                 ; 6       ;
-;      - Mux4~1              ; 1                 ; 6       ;
-;      - always0~4           ; 1                 ; 6       ;
-;      - Mux7~0              ; 1                 ; 6       ;
-;      - Mux7~1              ; 1                 ; 6       ;
-;      - Mux7~2              ; 1                 ; 6       ;
-;      - Mux7~3              ; 1                 ; 6       ;
-;      - Mux8~0              ; 1                 ; 6       ;
-;      - Mux8~1              ; 1                 ; 6       ;
-;      - Mux15~0             ; 1                 ; 6       ;
-;      - Mux15~1             ; 1                 ; 6       ;
-;      - Mux15~2             ; 1                 ; 6       ;
-;      - Mux15~3             ; 1                 ; 6       ;
-;      - Mux14~0             ; 1                 ; 6       ;
-;      - Mux14~1             ; 1                 ; 6       ;
-;      - Mux14~2             ; 1                 ; 6       ;
-;      - Mux13~0             ; 1                 ; 6       ;
-;      - Mux13~1             ; 1                 ; 6       ;
-;      - Mux13~2             ; 1                 ; 6       ;
-;      - via2~0              ; 1                 ; 6       ;
-;      - via2~1              ; 1                 ; 6       ;
-;      - via2~2              ; 1                 ; 6       ;
-;      - mem~50              ; 1                 ; 6       ;
-;      - mem~51              ; 1                 ; 6       ;
-;      - mem~52              ; 1                 ; 6       ;
-;      - mem~54              ; 1                 ; 6       ;
-;      - mem~55              ; 1                 ; 6       ;
-;      - mem~56              ; 1                 ; 6       ;
-;      - mem~58              ; 1                 ; 6       ;
-;      - mem~59              ; 1                 ; 6       ;
-;      - mem~60              ; 1                 ; 6       ;
-;      - mem~65              ; 1                 ; 6       ;
-;      - always0~5           ; 1                 ; 6       ;
-;      - tag~3               ; 1                 ; 6       ;
-;      - cache[7][8]~60      ; 1                 ; 6       ;
-;      - cache[5][8]~61      ; 1                 ; 6       ;
-;      - cache[6][8]~63      ; 1                 ; 6       ;
-;      - cache[4][8]~64      ; 1                 ; 6       ;
-;      - cache[0][8]~65      ; 1                 ; 6       ;
-;      - cache[2][1]~66      ; 1                 ; 6       ;
-;      - cache[4][0]~67      ; 1                 ; 6       ;
-;      - cache[0][1]~68      ; 1                 ; 6       ;
-;      - cache[6][1]~69      ; 1                 ; 6       ;
-;      - cache[3][1]~70      ; 1                 ; 6       ;
-;      - cache[5][2]~71      ; 1                 ; 6       ;
-;      - cache[1][1]~72      ; 1                 ; 6       ;
-;      - cache[7][2]~73      ; 1                 ; 6       ;
-;      - varEndMem~12        ; 1                 ; 6       ;
+;      - always0~3           ; 1                 ; 6       ;
+;      - Mux22~0             ; 1                 ; 6       ;
+;      - Mux22~2             ; 1                 ; 6       ;
+;      - Mux22~3             ; 1                 ; 6       ;
+;      - Mux22~4             ; 1                 ; 6       ;
+;      - Mux22~7             ; 1                 ; 6       ;
+;      - Mux22~8             ; 1                 ; 6       ;
+;      - Mux21~0             ; 1                 ; 6       ;
+;      - Mux21~1             ; 1                 ; 6       ;
+;      - Mux21~2             ; 1                 ; 6       ;
+;      - Mux21~4             ; 1                 ; 6       ;
+;      - Mux21~7             ; 1                 ; 6       ;
+;      - Mux21~8             ; 1                 ; 6       ;
+;      - Mux20~0             ; 1                 ; 6       ;
+;      - Mux20~2             ; 1                 ; 6       ;
+;      - Mux20~3             ; 1                 ; 6       ;
+;      - Mux20~4             ; 1                 ; 6       ;
+;      - Mux20~7             ; 1                 ; 6       ;
+;      - Mux20~8             ; 1                 ; 6       ;
+; clock                      ;                   ;         ;
 ; wren                       ;                   ;         ;
-;      - dadoParaCPU[0]~reg0 ; 1                 ; 6       ;
-;      - dadoParaCPU[1]~reg0 ; 1                 ; 6       ;
-;      - dadoParaCPU[2]~reg0 ; 1                 ; 6       ;
-;      - hit~reg0            ; 1                 ; 6       ;
-;      - valid~0             ; 1                 ; 6       ;
-;      - dirty~0             ; 1                 ; 6       ;
-;      - writeBack~1         ; 1                 ; 6       ;
-;      - writeBack~3         ; 1                 ; 6       ;
-;      - cache[6][8]~30      ; 1                 ; 6       ;
-;      - mem~49              ; 1                 ; 6       ;
-;      - cache[7][8]~31      ; 1                 ; 6       ;
-;      - cache[2][6]~32      ; 1                 ; 6       ;
-;      - cache[2][6]~33      ; 1                 ; 6       ;
-;      - cache[4][6]~34      ; 1                 ; 6       ;
-;      - cache[0][6]~35      ; 1                 ; 6       ;
-;      - cache[6][6]~36      ; 1                 ; 6       ;
-;      - cache[3][6]~37      ; 1                 ; 6       ;
-;      - cache[5][6]~38      ; 1                 ; 6       ;
-;      - cache[1][6]~39      ; 1                 ; 6       ;
-;      - cache[7][6]~40      ; 1                 ; 6       ;
-;      - cache[4][7]~41      ; 1                 ; 6       ;
-;      - cache~46            ; 1                 ; 6       ;
-;      - cache~47            ; 1                 ; 6       ;
-;      - cache~48            ; 1                 ; 6       ;
-;      - cache[7][2]~49      ; 1                 ; 6       ;
-;      - cache~50            ; 1                 ; 6       ;
-;      - cache~51            ; 1                 ; 6       ;
-;      - cache~52            ; 1                 ; 6       ;
-;      - cache[1][2]~56      ; 1                 ; 6       ;
-;      - cache[1][2]~58      ; 1                 ; 6       ;
-;      - mem~63              ; 1                 ; 6       ;
-;      - varDadoWriteBack[0] ; 1                 ; 6       ;
-;      - mem~64              ; 1                 ; 6       ;
-;      - mem~65              ; 1                 ; 6       ;
-;      - varEndMem~5         ; 1                 ; 6       ;
-;      - varEndMem~6         ; 1                 ; 6       ;
-;      - mem~67              ; 1                 ; 6       ;
-;      - mem~76              ; 1                 ; 6       ;
-;      - varDadoWriteBack[1] ; 1                 ; 6       ;
-;      - mem~77              ; 1                 ; 6       ;
-;      - mem~78              ; 1                 ; 6       ;
-;      - varDadoWriteBack[2] ; 1                 ; 6       ;
-;      - mem~79              ; 1                 ; 6       ;
-;      - varEndMem[1]~7      ; 1                 ; 6       ;
-;      - varEndMem[2]~8      ; 1                 ; 6       ;
-;      - varEndMem[2]~9      ; 1                 ; 6       ;
-;      - varEndMem[2]~10     ; 1                 ; 6       ;
-;      - cache[6][8]~62      ; 1                 ; 6       ;
-; data[0]                    ;                   ;         ;
+;      - dadoParaCPU[0]~reg0 ; 0                 ; 6       ;
+;      - dadoParaCPU[1]~reg0 ; 0                 ; 6       ;
+;      - dadoParaCPU[2]~reg0 ; 0                 ; 6       ;
+;      - dirty~1             ; 1                 ; 6       ;
+;      - writeBack~1         ; 0                 ; 6       ;
+;      - writeBack~3         ; 0                 ; 6       ;
+;      - cache[6][8]~25      ; 1                 ; 6       ;
+;      - cache[3][6]~26      ; 0                 ; 6       ;
+;      - cache[5][6]~27      ; 0                 ; 6       ;
+;      - cache[1][6]~28      ; 0                 ; 6       ;
+;      - cache[7][6]~29      ; 0                 ; 6       ;
+;      - cache[2][6]~30      ; 0                 ; 6       ;
+;      - cache[2][6]~31      ; 0                 ; 6       ;
+;      - cache[4][6]~32      ; 0                 ; 6       ;
+;      - cache[0][6]~33      ; 0                 ; 6       ;
+;      - cache[6][6]~34      ; 0                 ; 6       ;
+;      - cache~39            ; 0                 ; 6       ;
+;      - cache[0][0]~40      ; 0                 ; 6       ;
+;      - cache~43            ; 0                 ; 6       ;
 ;      - cache~47            ; 0                 ; 6       ;
+;      - cache~48            ; 0                 ; 6       ;
+;      - cache~49            ; 0                 ; 6       ;
+;      - cache[1][2]~54      ; 1                 ; 6       ;
+;      - cache[1][2]~55      ; 0                 ; 6       ;
+;      - varEndMem~2         ; 0                 ; 6       ;
+;      - varEndMem~3         ; 0                 ; 6       ;
+;      - cache[6][8]~57      ; 0                 ; 6       ;
+;      - varEndMem~8         ; 0                 ; 6       ;
+;      - varEndMem~11        ; 0                 ; 6       ;
+;      - mem[2][0]~5         ; 0                 ; 6       ;
+;      - mem[5][2]~9         ; 0                 ; 6       ;
+;      - writeBack~4         ; 0                 ; 6       ;
+;      - cache[1][6]~58      ; 1                 ; 6       ;
+;      - varEndMem~13        ; 1                 ; 6       ;
+; data[0]                    ;                   ;         ;
+;      - cache~39            ; 0                 ; 6       ;
 ; data[1]                    ;                   ;         ;
-;      - cache~50            ; 0                 ; 6       ;
+;      - cache~43            ; 0                 ; 6       ;
 ; data[2]                    ;                   ;         ;
-;      - cache~52            ; 0                 ; 6       ;
-;      - cache[1][2]~57      ; 0                 ; 6       ;
+;      - cache~47            ; 0                 ; 6       ;
+;      - cache~48            ; 0                 ; 6       ;
+;      - cache~51            ; 0                 ; 6       ;
+;      - cache[1][2]~54      ; 0                 ; 6       ;
 +----------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                          ;
-+----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name           ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; cache[0][1]~68 ; LCCOMB_X48_Y32_N0  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[1][1]~72 ; LCCOMB_X47_Y33_N10 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[2][1]~66 ; LCCOMB_X48_Y33_N2  ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[3][1]~70 ; LCCOMB_X47_Y33_N26 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[4][0]~67 ; LCCOMB_X48_Y32_N6  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[5][2]~71 ; LCCOMB_X47_Y33_N8  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[6][1]~69 ; LCCOMB_X46_Y32_N18 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; cache[7][2]~73 ; LCCOMB_X46_Y33_N12 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; clock          ; PIN_P2             ; 81      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; mem~68         ; LCCOMB_X44_Y32_N22 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~69         ; LCCOMB_X44_Y31_N0  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~70         ; LCCOMB_X45_Y31_N0  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~71         ; LCCOMB_X45_Y31_N14 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~72         ; LCCOMB_X44_Y33_N16 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~73         ; LCCOMB_X45_Y33_N0  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~74         ; LCCOMB_X44_Y33_N6  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; mem~75         ; LCCOMB_X45_Y33_N22 ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; varEndMem[1]~7 ; LCCOMB_X45_Y32_N16 ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; wren           ; PIN_F15            ; 48      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-+----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                             ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name           ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; cache[0][0]~66 ; LCCOMB_X32_Y34_N24 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[1][0]~69 ; LCCOMB_X31_Y35_N14 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[2][0]~64 ; LCCOMB_X31_Y35_N2  ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[3][0]~68 ; LCCOMB_X32_Y35_N20 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[4][0]~65 ; LCCOMB_X32_Y34_N2  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[5][0]~41 ; LCCOMB_X32_Y33_N0  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[6][0]~67 ; LCCOMB_X31_Y35_N12 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; cache[7][0]~42 ; LCCOMB_X31_Y33_N12 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clock          ; PIN_P2             ; 104     ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; mem[0][1]~19   ; LCCOMB_X29_Y35_N24 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[10][0]~0   ; LCCOMB_X24_Y34_N18 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[11][0]~22  ; LCCOMB_X28_Y33_N26 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[12][0]~20  ; LCCOMB_X28_Y35_N20 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[13][0]~14  ; LCCOMB_X28_Y33_N2  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[14][0]~7   ; LCCOMB_X24_Y34_N2  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[15][0]~25  ; LCCOMB_X28_Y35_N10 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[1][1]~13   ; LCCOMB_X27_Y34_N20 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[2][0]~6    ; LCCOMB_X25_Y34_N22 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[3][2]~24   ; LCCOMB_X29_Y33_N10 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[4][0]~17   ; LCCOMB_X29_Y35_N8  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[5][2]~10   ; LCCOMB_X28_Y34_N16 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[6][2]~1    ; LCCOMB_X25_Y34_N2  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[7][0]~21   ; LCCOMB_X27_Y35_N16 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[8][0]~15   ; LCCOMB_X27_Y35_N2  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mem[9][0]~11   ; LCCOMB_X27_Y34_N16 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; wren           ; PIN_F12            ; 34      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1315,7 +1249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
-; clock ; PIN_P2   ; 81      ; Global Clock         ; GCLK3            ; --                        ;
+; clock ; PIN_P2   ; 104     ; Global Clock         ; GCLK3            ; --                        ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1324,224 +1258,309 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-----------+
 ; Name                ; Fan-Out   ;
 +---------------------+-----------+
-; address[0]          ; 50        ;
-; wren                ; 48        ;
-; address[1]          ; 47        ;
-; always0~5           ; 16        ;
-; always0~3           ; 15        ;
-; Mux8~1              ; 14        ;
-; mem~67              ; 9         ;
-; mem~65              ; 9         ;
-; writeBack~3         ; 9         ;
-; Mux5~0              ; 9         ;
-; mem~79              ; 8         ;
-; mem~77              ; 8         ;
-; mem~66              ; 8         ;
-; mem~64              ; 8         ;
-; cache~51            ; 8         ;
-; cache~48            ; 8         ;
-; cache[6][8]~62      ; 7         ;
-; cache~52            ; 7         ;
-; writeBack~0         ; 7         ;
-; cache[2][6]~32      ; 6         ;
-; cache[7][8]~31      ; 6         ;
-; valid~0             ; 6         ;
-; address[4]          ; 5         ;
-; address[3]          ; 5         ;
-; address[2]          ; 4         ;
-; cache[7][2]~49      ; 4         ;
-; cache[4][7]~41      ; 4         ;
-; via2~2              ; 4         ;
-; writeBack~2         ; 4         ;
-; Mux7~1              ; 4         ;
-; always0~4           ; 4         ;
-; cache[7][2]~73      ; 3         ;
-; cache[5][2]~71      ; 3         ;
-; cache[3][1]~70      ; 3         ;
-; cache[6][1]~69      ; 3         ;
-; cache[4][0]~67      ; 3         ;
-; varEndMem~11        ; 3         ;
-; mem~75              ; 3         ;
-; mem~74              ; 3         ;
-; mem~73              ; 3         ;
-; mem~72              ; 3         ;
-; mem~71              ; 3         ;
-; mem~70              ; 3         ;
-; mem~69              ; 3         ;
-; mem~68              ; 3         ;
-; via2~1              ; 3         ;
-; via2~0              ; 3         ;
-; Mux13~3             ; 3         ;
+; address[1]          ; 45        ;
+; address[0]          ; 44        ;
+; writeBack~3         ; 35        ;
+; wren                ; 34        ;
+; always0~4           ; 24        ;
+; address[2]          ; 20        ;
+; address[3]          ; 19        ;
+; varDadoWriteBack~6  ; 17        ;
+; varDadoWriteBack~4  ; 17        ;
+; varEndMem~12        ; 17        ;
+; varEndMem~10        ; 17        ;
+; varEndMem~6         ; 17        ;
+; varEndMem~5         ; 17        ;
+; varDadoWriteBack~2  ; 17        ;
+; Mux16~1             ; 17        ;
+; always0~2           ; 15        ;
+; always0~0           ; 12        ;
+; cache~24            ; 11        ;
+; always0~3           ; 11        ;
+; cache[1][6]~58      ; 10        ;
+; Mux1~3              ; 10        ;
+; cache~43            ; 8         ;
+; cache~39            ; 8         ;
+; Mux1~1              ; 8         ;
+; Mux14~0             ; 7         ;
+; via2~2              ; 6         ;
+; cache~48            ; 5         ;
+; Mux6~3              ; 5         ;
+; Mux7~3              ; 5         ;
+; Mux8~3              ; 5         ;
+; hit~0               ; 5         ;
+; data[2]             ; 4         ;
+; mem~33              ; 4         ;
+; mem~27              ; 4         ;
+; Decoder4~14         ; 4         ;
+; Decoder4~10         ; 4         ;
+; Decoder4~9          ; 4         ;
+; Decoder4~6          ; 4         ;
+; Decoder4~4          ; 4         ;
+; Decoder4~2          ; 4         ;
+; mem~2               ; 4         ;
+; varDadoWriteBack~1  ; 4         ;
+; Mux20~9             ; 4         ;
+; cache[0][0]~40      ; 4         ;
+; cache[2][6]~30      ; 4         ;
+; via2~1              ; 4         ;
+; via2~0              ; 4         ;
+; cache[3][0]~68      ; 3         ;
+; cache[6][0]~67      ; 3         ;
+; cache[4][0]~65      ; 3         ;
+; mem[15][0]~25       ; 3         ;
+; mem[3][2]~24        ; 3         ;
+; mem[11][0]~22       ; 3         ;
+; mem[7][0]~21        ; 3         ;
+; mem[12][0]~20       ; 3         ;
+; mem[0][1]~19        ; 3         ;
+; mem[4][0]~17        ; 3         ;
+; mem[8][0]~15        ; 3         ;
+; mem[13][0]~14       ; 3         ;
+; mem[1][1]~13        ; 3         ;
+; mem[9][0]~11        ; 3         ;
+; mem[5][2]~10        ; 3         ;
+; mem[14][0]~7        ; 3         ;
+; mem[2][0]~6         ; 3         ;
+; mem[6][2]~1         ; 3         ;
+; mem[10][0]~0        ; 3         ;
+; varEndMem[2]        ; 3         ;
+; cache~49            ; 3         ;
+; cache[7][0]~42      ; 3         ;
+; cache[5][0]~41      ; 3         ;
+; cache[6][8]~25      ; 3         ;
 ; cache[1][2]         ; 3         ;
-; Mux13~1             ; 3         ;
-; Mux14~3             ; 3         ;
-; Mux14~1             ; 3         ;
-; dadoParaCPU[0]~0    ; 3         ;
-; Mux15~3             ; 3         ;
-; Mux15~1             ; 3         ;
-; mem~49              ; 3         ;
-; mem~48              ; 3         ;
-; data[2]             ; 2         ;
-; cache[1][1]~72      ; 2         ;
-; cache[0][1]~68      ; 2         ;
-; cache[2][1]~66      ; 2         ;
-; varEndMem[1]~7      ; 2         ;
-; varDadoWriteBack~5  ; 2         ;
-; varDadoWriteBack~3  ; 2         ;
-; varEndMem~5         ; 2         ;
-; varEndMem[2]        ; 2         ;
-; varDadoWriteBack~1  ; 2         ;
-; mem~62              ; 2         ;
-; cache~46            ; 2         ;
+; Mux6~1              ; 3         ;
+; Mux7~1              ; 3         ;
+; Mux8~1              ; 3         ;
+; varEndMem~13        ; 2         ;
+; cache[1][0]~69      ; 2         ;
+; cache[0][0]~66      ; 2         ;
+; cache[2][0]~64      ; 2         ;
+; writeBack~4         ; 2         ;
+; mem[5][2]~9         ; 2         ;
+; mem[2][0]~5         ; 2         ;
+; cache[6][8]~57      ; 2         ;
+; varEndMem~4         ; 2         ;
+; cache~45            ; 2         ;
 ; cache[0][2]         ; 2         ;
 ; cache[2][2]         ; 2         ;
-; cache[6][8]~30      ; 2         ;
+; writeBack~2         ; 2         ;
+; writeBack~0         ; 2         ;
 ; cache[6][7]         ; 2         ;
 ; cache[0][7]         ; 2         ;
 ; cache[4][7]         ; 2         ;
 ; cache[2][7]         ; 2         ;
-; varEndMem~4         ; 2         ;
-; Mux7~3              ; 2         ;
-; cache[7][6]         ; 2         ;
-; cache[1][6]         ; 2         ;
-; cache[5][6]         ; 2         ;
-; cache[3][6]         ; 2         ;
 ; cache[6][6]         ; 2         ;
 ; cache[0][6]         ; 2         ;
 ; cache[4][6]         ; 2         ;
 ; cache[2][6]         ; 2         ;
+; cache[7][6]         ; 2         ;
+; cache[1][6]         ; 2         ;
+; cache[5][6]         ; 2         ;
+; cache[3][6]         ; 2         ;
+; cache[6][8]         ; 2         ;
 ; cache[0][8]         ; 2         ;
 ; cache[4][8]         ; 2         ;
-; cache[6][8]         ; 2         ;
-; Mux4~0              ; 2         ;
 ; cache[5][8]         ; 2         ;
 ; cache[7][8]         ; 2         ;
-; always0~2           ; 2         ;
 ; data[1]             ; 1         ;
 ; data[0]             ; 1         ;
-; cache[3][2]~80      ; 1         ;
-; cache[3][1]~79      ; 1         ;
-; cache[0][1]~78      ; 1         ;
-; cache[2][1]~77      ; 1         ;
-; cache[3][0]~76      ; 1         ;
-; cache[0][0]~75      ; 1         ;
-; cache[2][0]~74      ; 1         ;
-; varEndMem~12        ; 1         ;
-; cache[0][8]~65      ; 1         ;
-; cache[4][8]~64      ; 1         ;
+; address[4]          ; 1         ;
+; cache[3][2]~76      ; 1         ;
+; cache[3][1]~75      ; 1         ;
+; cache[0][1]~74      ; 1         ;
+; cache[2][1]~73      ; 1         ;
+; cache[3][0]~72      ; 1         ;
+; cache[0][0]~71      ; 1         ;
+; cache[2][0]~70      ; 1         ;
 ; cache[6][8]~63      ; 1         ;
-; cache[5][8]~61      ; 1         ;
-; cache[7][8]~60      ; 1         ;
-; tag~3               ; 1         ;
-; varEndMem[2]~10     ; 1         ;
-; varEndMem[2]~9      ; 1         ;
-; varEndMem[2]~8      ; 1         ;
+; cache[0][8]~62      ; 1         ;
+; cache[4][8]~61      ; 1         ;
+; cache[5][8]~60      ; 1         ;
+; cache[7][8]~59      ; 1         ;
+; tag~4               ; 1         ;
+; mem~39              ; 1         ;
+; mem~38              ; 1         ;
+; mem~37              ; 1         ;
+; mem~36              ; 1         ;
+; mem~35              ; 1         ;
+; mem~34              ; 1         ;
+; varDadoWriteBack~5  ; 1         ;
 ; varDadoWriteBack[2] ; 1         ;
-; varDadoWriteBack~4  ; 1         ;
-; mem~78              ; 1         ;
+; mem~32              ; 1         ;
+; mem~31              ; 1         ;
+; mem~30              ; 1         ;
+; mem~29              ; 1         ;
+; mem~28              ; 1         ;
+; mem~26              ; 1         ;
+; varDadoWriteBack~3  ; 1         ;
 ; varDadoWriteBack[1] ; 1         ;
-; varDadoWriteBack~2  ; 1         ;
-; mem~76              ; 1         ;
+; Decoder4~15         ; 1         ;
+; mem~23              ; 1         ;
+; Decoder4~13         ; 1         ;
+; Decoder4~12         ; 1         ;
+; Decoder4~11         ; 1         ;
+; mem~18              ; 1         ;
+; mem~16              ; 1         ;
+; Decoder4~8          ; 1         ;
+; Decoder4~7          ; 1         ;
+; mem~12              ; 1         ;
+; Decoder4~5          ; 1         ;
+; mem~8               ; 1         ;
+; Decoder4~3          ; 1         ;
+; mem[2][0]~4         ; 1         ;
+; mem~3               ; 1         ;
+; Decoder4~1          ; 1         ;
+; Decoder4~0          ; 1         ;
+; varEndMem~11        ; 1         ;
+; varEndMem[3]        ; 1         ;
+; varEndMem~9         ; 1         ;
+; varEndMem~8         ; 1         ;
+; varEndMem~7         ; 1         ;
 ; varEndMem[1]        ; 1         ;
-; varEndMem~6         ; 1         ;
+; varEndMem~3         ; 1         ;
+; varEndMem~2         ; 1         ;
 ; varEndMem[0]        ; 1         ;
-; varDadoWriteBack[0] ; 1         ;
 ; varDadoWriteBack~0  ; 1         ;
-; mem~63              ; 1         ;
-; cache[1][2]~59      ; 1         ;
-; cache[1][2]~58      ; 1         ;
-; cache[1][2]~57      ; 1         ;
+; varDadoWriteBack[0] ; 1         ;
 ; cache[1][2]~56      ; 1         ;
 ; cache[1][2]~55      ; 1         ;
-; cache[0][2]~54      ; 1         ;
-; cache[2][2]~53      ; 1         ;
-; mem~61              ; 1         ;
-; mem~11              ; 1         ;
-; mem~60              ; 1         ;
-; mem~2               ; 1         ;
-; mem~5               ; 1         ;
-; mem~8               ; 1         ;
-; mem~59              ; 1         ;
-; mem~23              ; 1         ;
-; mem~58              ; 1         ;
-; mem~14              ; 1         ;
-; mem~20              ; 1         ;
-; mem~17              ; 1         ;
-; mem~57              ; 1         ;
-; mem~10              ; 1         ;
-; mem~56              ; 1         ;
-; mem~1               ; 1         ;
-; mem~4               ; 1         ;
-; mem~7               ; 1         ;
+; cache[1][2]~54      ; 1         ;
+; cache[1][2]~53      ; 1         ;
+; cache~52            ; 1         ;
+; cache~51            ; 1         ;
 ; cache~50            ; 1         ;
-; mem~55              ; 1         ;
-; mem~22              ; 1         ;
-; mem~54              ; 1         ;
-; mem~13              ; 1         ;
-; mem~19              ; 1         ;
-; mem~16              ; 1         ;
-; mem~53              ; 1         ;
-; mem~9               ; 1         ;
-; mem~52              ; 1         ;
-; mem~0               ; 1         ;
-; mem~3               ; 1         ;
-; mem~6               ; 1         ;
 ; cache~47            ; 1         ;
-; mem~51              ; 1         ;
-; mem~21              ; 1         ;
-; mem~50              ; 1         ;
-; mem~12              ; 1         ;
-; mem~18              ; 1         ;
-; mem~15              ; 1         ;
-; cache[6][7]~45      ; 1         ;
-; cache[0][7]~44      ; 1         ;
-; cache[4][7]~43      ; 1         ;
-; cache[2][7]~42      ; 1         ;
-; cache[7][6]~40      ; 1         ;
-; cache[1][6]~39      ; 1         ;
-; cache[5][6]~38      ; 1         ;
-; cache[3][6]~37      ; 1         ;
-; cache[6][6]~36      ; 1         ;
-; cache[0][6]~35      ; 1         ;
-; cache[4][6]~34      ; 1         ;
-; cache[2][6]~33      ; 1         ;
-; dadoParaCPU~3       ; 1         ;
+; cache~46            ; 1         ;
+; Mux20~8             ; 1         ;
+; mem[15][2]          ; 1         ;
+; Mux20~7             ; 1         ;
+; mem[3][2]           ; 1         ;
+; mem[11][2]          ; 1         ;
+; mem[7][2]           ; 1         ;
+; Mux20~6             ; 1         ;
+; Mux20~5             ; 1         ;
+; mem[12][2]          ; 1         ;
+; Mux20~4             ; 1         ;
+; mem[0][2]           ; 1         ;
+; mem[4][2]           ; 1         ;
+; mem[8][2]           ; 1         ;
+; Mux20~3             ; 1         ;
+; mem[13][2]          ; 1         ;
+; Mux20~2             ; 1         ;
+; mem[1][2]           ; 1         ;
+; mem[9][2]           ; 1         ;
+; mem[5][2]           ; 1         ;
+; Mux20~1             ; 1         ;
+; mem[14][2]          ; 1         ;
+; Mux20~0             ; 1         ;
+; mem[2][2]           ; 1         ;
+; mem[6][2]           ; 1         ;
+; mem[10][2]          ; 1         ;
+; cache~44            ; 1         ;
+; Mux21~9             ; 1         ;
+; Mux21~8             ; 1         ;
+; mem[15][1]          ; 1         ;
+; Mux21~7             ; 1         ;
+; mem[3][1]           ; 1         ;
+; mem[11][1]          ; 1         ;
+; mem[7][1]           ; 1         ;
+; Mux21~6             ; 1         ;
+; Mux21~5             ; 1         ;
+; mem[12][1]          ; 1         ;
+; Mux21~4             ; 1         ;
+; mem[0][1]           ; 1         ;
+; mem[4][1]           ; 1         ;
+; mem[8][1]           ; 1         ;
+; Mux21~3             ; 1         ;
+; mem[14][1]          ; 1         ;
+; Mux21~2             ; 1         ;
+; mem[2][1]           ; 1         ;
+; mem[6][1]           ; 1         ;
+; mem[10][1]          ; 1         ;
+; Mux21~1             ; 1         ;
+; mem[13][1]          ; 1         ;
+; Mux21~0             ; 1         ;
+; mem[1][1]           ; 1         ;
+; mem[9][1]           ; 1         ;
+; mem[5][1]           ; 1         ;
+; Mux22~9             ; 1         ;
+; Mux22~8             ; 1         ;
+; mem[15][0]          ; 1         ;
+; Mux22~7             ; 1         ;
+; mem[3][0]           ; 1         ;
+; mem[11][0]          ; 1         ;
+; mem[7][0]           ; 1         ;
+; Mux22~6             ; 1         ;
+; Mux22~5             ; 1         ;
+; mem[12][0]          ; 1         ;
+; Mux22~4             ; 1         ;
+; mem[0][0]           ; 1         ;
+; mem[4][0]           ; 1         ;
+; mem[8][0]           ; 1         ;
+; Mux22~3             ; 1         ;
+; mem[13][0]          ; 1         ;
+; Mux22~2             ; 1         ;
+; mem[1][0]           ; 1         ;
+; mem[9][0]           ; 1         ;
+; mem[5][0]           ; 1         ;
+; Mux22~1             ; 1         ;
+; mem[14][0]          ; 1         ;
+; Mux22~0             ; 1         ;
+; mem[2][0]           ; 1         ;
+; mem[6][0]           ; 1         ;
+; mem[10][0]          ; 1         ;
+; cache[6][7]~38      ; 1         ;
+; cache[0][7]~37      ; 1         ;
+; cache[4][7]~36      ; 1         ;
+; cache[2][7]~35      ; 1         ;
+; cache[6][6]~34      ; 1         ;
+; cache[0][6]~33      ; 1         ;
+; cache[4][6]~32      ; 1         ;
+; cache[2][6]~31      ; 1         ;
+; cache[7][6]~29      ; 1         ;
+; cache[1][6]~28      ; 1         ;
+; cache[5][6]~27      ; 1         ;
+; cache[3][6]~26      ; 1         ;
+; dadoParaCPU~2       ; 1         ;
 ; cache[7][2]         ; 1         ;
-; Mux13~2             ; 1         ;
+; Mux6~2              ; 1         ;
 ; cache[3][2]         ; 1         ;
 ; cache[5][2]         ; 1         ;
 ; cache[6][2]         ; 1         ;
-; Mux13~0             ; 1         ;
+; Mux6~0              ; 1         ;
 ; cache[4][2]         ; 1         ;
-; dadoParaCPU~2       ; 1         ;
+; dadoParaCPU~1       ; 1         ;
 ; cache[7][1]         ; 1         ;
-; Mux14~2             ; 1         ;
+; Mux7~2              ; 1         ;
 ; cache[1][1]         ; 1         ;
 ; cache[3][1]         ; 1         ;
 ; cache[5][1]         ; 1         ;
 ; cache[6][1]         ; 1         ;
-; Mux14~0             ; 1         ;
+; Mux7~0              ; 1         ;
 ; cache[0][1]         ; 1         ;
 ; cache[4][1]         ; 1         ;
 ; cache[2][1]         ; 1         ;
-; dadoParaCPU~1       ; 1         ;
+; dadoParaCPU~0       ; 1         ;
 ; cache[7][0]         ; 1         ;
-; Mux15~2             ; 1         ;
+; Mux8~2              ; 1         ;
 ; cache[1][0]         ; 1         ;
-; cache[5][0]         ; 1         ;
 ; cache[3][0]         ; 1         ;
+; cache[5][0]         ; 1         ;
 ; cache[6][0]         ; 1         ;
-; Mux15~0             ; 1         ;
+; Mux8~0              ; 1         ;
 ; cache[0][0]         ; 1         ;
 ; cache[4][0]         ; 1         ;
 ; cache[2][0]         ; 1         ;
-; tag~2               ; 1         ;
-; Mux8~0              ; 1         ;
 ; writeBack~1         ; 1         ;
+; Mux16~0             ; 1         ;
+; dirty~1             ; 1         ;
+; Mux1~2              ; 1         ;
 ; dirty~0             ; 1         ;
-; Mux7~2              ; 1         ;
-; Mux7~0              ; 1         ;
-; Mux4~1              ; 1         ;
+; Mux1~0              ; 1         ;
+; Mux13~0             ; 1         ;
+; always0~1           ; 1         ;
 ; dadoParaCPU[2]~reg0 ; 1         ;
 ; dadoParaCPU[1]~reg0 ; 1         ;
 ; dadoParaCPU[0]~reg0 ; 1         ;
@@ -1549,8 +1568,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; tag[0]~reg0         ; 1         ;
 ; writeBack~reg0      ; 1         ;
 ; dirty~reg0          ; 1         ;
-; LRU~reg0            ; 1         ;
-; valid~reg0          ; 1         ;
 ; hit~reg0            ; 1         ;
 +---------------------+-----------+
 
@@ -1560,57 +1577,111 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 235 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 3 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 87 / 60,840 ( < 1 % )  ;
-; Direct links                ; 62 / 94,460 ( < 1 % )  ;
+; Block interconnects         ; 349 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 0 / 3,315 ( 0 % )      ;
+; C4 interconnects            ; 119 / 60,840 ( < 1 % ) ;
+; Direct links                ; 77 / 94,460 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 88 / 33,216 ( < 1 % )  ;
-; R24 interconnects           ; 2 / 3,091 ( < 1 % )    ;
-; R4 interconnects            ; 62 / 81,294 ( < 1 % )  ;
+; Local interconnects         ; 124 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 1 / 3,091 ( < 1 % )    ;
+; R4 interconnects            ; 127 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 10.79) ; Number of LABs  (Total = 14) ;
+; Number of Logic Elements  (Average = 11.32) ; Number of LABs  (Total = 19) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
+; 4                                           ; 0                            ;
 ; 5                                           ; 1                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 2                            ;
 ; 8                                           ; 1                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 1                            ;
+; 10                                          ; 2                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 2                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 4                            ;
+; 16                                          ; 5                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.43) ; Number of LABs  (Total = 14) ;
+; LAB-wide Signals  (Average = 1.21) ; Number of LABs  (Total = 19) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 14                           ;
+; 1 Clock                            ; 19                           ;
 ; 1 Clock enable                     ; 4                            ;
-; 1 Sync. clear                      ; 1                            ;
-; 2 Clock enables                    ; 1                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 16.21) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced  (Average = 16.47) ; Number of LABs  (Total = 19) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 3                            ;
+; 20                                           ; 3                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 1                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 6.42) ; Number of LABs  (Total = 19) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 0                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 4                            ;
+; 4                                               ; 3                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 4                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 1                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 1                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 16.53) ; Number of LABs  (Total = 19) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
@@ -1620,84 +1691,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 2                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 2                            ;
-+----------------------------------------------+------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                        ;
-+-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.00) ; Number of LABs  (Total = 14) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 1                            ;
-; 2                                               ; 0                            ;
-; 3                                               ; 4                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 1                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 0                            ;
-; 11                                              ; 0                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 1                            ;
-; 14                                              ; 1                            ;
-+-------------------------------------------------+------------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 15.29) ; Number of LABs  (Total = 14) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 1                            ;
 ; 8                                            ; 2                            ;
-; 9                                            ; 0                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
 ; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 1                            ;
 ; 16                                           ; 1                            ;
 ; 17                                           ; 2                            ;
 ; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 2                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
+; 25                                           ; 2                            ;
 ; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 27                                           ; 1                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1758,12 +1773,12 @@ Critical Warning (169085): No exact pin location assignment(s) for 21 pins of 21
     Info (169086): Pin dadoParaCPU[0] not assigned to an exact location on the device
     Info (169086): Pin dadoParaCPU[1] not assigned to an exact location on the device
     Info (169086): Pin dadoParaCPU[2] not assigned to an exact location on the device
-    Info (169086): Pin clock not assigned to an exact location on the device
-    Info (169086): Pin address[3] not assigned to an exact location on the device
-    Info (169086): Pin address[4] not assigned to an exact location on the device
-    Info (169086): Pin address[1] not assigned to an exact location on the device
-    Info (169086): Pin address[2] not assigned to an exact location on the device
     Info (169086): Pin address[0] not assigned to an exact location on the device
+    Info (169086): Pin address[1] not assigned to an exact location on the device
+    Info (169086): Pin address[4] not assigned to an exact location on the device
+    Info (169086): Pin address[3] not assigned to an exact location on the device
+    Info (169086): Pin address[2] not assigned to an exact location on the device
+    Info (169086): Pin clock not assigned to an exact location on the device
     Info (169086): Pin wren not assigned to an exact location on the device
     Info (169086): Pin data[0] not assigned to an exact location on the device
     Info (169086): Pin data[1] not assigned to an exact location on the device
@@ -1789,7 +1804,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1797,11 +1812,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X44_Y24 to location X54_Y36
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 11 output pins without output pin load capacitance assignment
     Info (306007): Pin "hit" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1818,19 +1833,19 @@ Warning (306006): Found 11 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/output_files/memoriaCache.fit.smsg
+Info (144001): Generated suppressed messages file C:/altera/projetoMemoriaCache/output_files/memoriaCache.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Mon Sep 12 11:47:19 2022
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Mon Sep 12 17:57:37 2022
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/output_files/memoriaCache.fit.smsg.
+The suppressed messages can be found in C:/altera/projetoMemoriaCache/output_files/memoriaCache.fit.smsg.
 
 
