@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for memoriaCache
-Sat Sep 10 20:07:56 2022
+Mon Sep 12 11:47:23 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -106,7 +106,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 226.81 MHz ; 226.81 MHz      ; clock      ;      ;
+; 176.24 MHz ; 176.24 MHz      ; clock      ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clock ; -3.409 ; -169.927      ;
+; clock ; -4.674 ; -264.133      ;
 +-------+--------+---------------+
 
 
@@ -146,7 +146,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.380 ; -75.380               ;
+; clock ; -1.380 ; -82.380               ;
 +-------+--------+-----------------------+
 
 
@@ -155,106 +155,106 @@ No paths to report.
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node   ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
-; -3.409 ; cache[4][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.444      ;
-; -3.409 ; cache[4][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.444      ;
-; -3.409 ; cache[4][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.444      ;
-; -3.406 ; cache[4][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.441      ;
-; -3.406 ; cache[4][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.441      ;
-; -3.406 ; cache[4][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.441      ;
-; -3.368 ; cache[4][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.404      ;
-; -3.368 ; cache[4][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.404      ;
-; -3.368 ; cache[4][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.404      ;
-; -3.358 ; cache[0][7] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.390      ;
-; -3.358 ; cache[0][7] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.390      ;
-; -3.358 ; cache[0][7] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.390      ;
-; -3.355 ; cache[0][7] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.387      ;
-; -3.355 ; cache[0][7] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.387      ;
-; -3.355 ; cache[0][7] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.387      ;
-; -3.319 ; cache[4][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.355      ;
-; -3.319 ; cache[4][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.355      ;
-; -3.319 ; cache[4][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.355      ;
-; -3.317 ; cache[0][7] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.350      ;
-; -3.317 ; cache[0][7] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.350      ;
-; -3.317 ; cache[0][7] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.350      ;
-; -3.275 ; cache[0][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.310      ;
-; -3.275 ; cache[0][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.310      ;
-; -3.275 ; cache[0][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.310      ;
-; -3.272 ; cache[0][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.307      ;
-; -3.272 ; cache[0][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.307      ;
-; -3.272 ; cache[0][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.307      ;
-; -3.268 ; cache[0][7] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.301      ;
-; -3.268 ; cache[0][7] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.301      ;
-; -3.268 ; cache[0][7] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.301      ;
-; -3.234 ; cache[0][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.270      ;
-; -3.234 ; cache[0][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.270      ;
-; -3.234 ; cache[0][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.270      ;
-; -3.229 ; cache[4][5] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.261      ;
-; -3.229 ; cache[4][5] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.261      ;
-; -3.229 ; cache[4][5] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.261      ;
-; -3.226 ; cache[4][5] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.258      ;
-; -3.226 ; cache[4][5] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.258      ;
-; -3.226 ; cache[4][5] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.258      ;
-; -3.188 ; cache[4][5] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.221      ;
-; -3.188 ; cache[4][5] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.221      ;
-; -3.188 ; cache[4][5] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.221      ;
-; -3.185 ; cache[0][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.221      ;
-; -3.185 ; cache[0][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.221      ;
-; -3.185 ; cache[0][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.221      ;
-; -3.183 ; cache[4][6] ; mem~12  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.183 ; cache[4][6] ; mem~15  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.183 ; cache[4][6] ; mem~16  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.183 ; cache[4][6] ; mem~13  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.183 ; cache[4][6] ; mem~17  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.183 ; cache[4][6] ; mem~14  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.219      ;
-; -3.161 ; cache[2][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.196      ;
-; -3.161 ; cache[2][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.196      ;
-; -3.161 ; cache[2][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.196      ;
-; -3.158 ; cache[2][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.193      ;
-; -3.158 ; cache[2][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.193      ;
-; -3.158 ; cache[2][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.193      ;
-; -3.154 ; cache[6][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.189      ;
-; -3.154 ; cache[6][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.189      ;
-; -3.154 ; cache[6][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.189      ;
-; -3.151 ; cache[6][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.186      ;
-; -3.151 ; cache[6][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.186      ;
-; -3.151 ; cache[6][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.186      ;
-; -3.139 ; cache[4][5] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.172      ;
-; -3.139 ; cache[4][5] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.172      ;
-; -3.139 ; cache[4][5] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.003     ; 4.172      ;
-; -3.132 ; cache[0][7] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.132 ; cache[0][7] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.132 ; cache[0][7] ; mem~16  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.132 ; cache[0][7] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.132 ; cache[0][7] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.132 ; cache[0][7] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.003     ; 4.165      ;
-; -3.131 ; cache[3][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.166      ;
-; -3.131 ; cache[3][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.166      ;
-; -3.131 ; cache[3][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.166      ;
-; -3.128 ; cache[3][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.163      ;
-; -3.128 ; cache[3][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.163      ;
-; -3.128 ; cache[3][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 4.163      ;
-; -3.120 ; cache[2][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.156      ;
-; -3.120 ; cache[2][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.156      ;
-; -3.120 ; cache[2][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.156      ;
-; -3.113 ; cache[6][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.149      ;
-; -3.113 ; cache[6][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.149      ;
-; -3.113 ; cache[6][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.149      ;
-; -3.100 ; cache[2][7] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.132      ;
-; -3.100 ; cache[2][7] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.132      ;
-; -3.100 ; cache[2][7] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.132      ;
-; -3.097 ; cache[2][7] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.129      ;
-; -3.097 ; cache[2][7] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.129      ;
-; -3.097 ; cache[2][7] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.004     ; 4.129      ;
-; -3.090 ; cache[3][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.126      ;
-; -3.090 ; cache[3][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.126      ;
-; -3.090 ; cache[3][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 4.126      ;
-; -3.071 ; cache[2][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.107      ;
-; -3.071 ; cache[2][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.107      ;
-; -3.071 ; cache[2][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.107      ;
-; -3.067 ; cache[1][2] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.006     ; 4.097      ;
-; -3.066 ; cache[1][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.006     ; 4.096      ;
-; -3.064 ; cache[6][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.100      ;
-; -3.064 ; cache[6][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 4.100      ;
+; -4.674 ; cache[4][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.702      ;
+; -4.545 ; cache[0][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.573      ;
+; -4.466 ; cache[7][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.498      ;
+; -4.456 ; cache[3][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.487      ;
+; -4.444 ; cache[4][8] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.479      ;
+; -4.444 ; cache[4][8] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.479      ;
+; -4.428 ; cache[4][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.460      ;
+; -4.422 ; cache[4][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.449      ;
+; -4.408 ; cache[4][8] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.443      ;
+; -4.366 ; cache[4][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.394      ;
+; -4.363 ; cache[4][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.391      ;
+; -4.339 ; cache[5][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.371      ;
+; -4.335 ; cache[1][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.366      ;
+; -4.325 ; cache[4][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.352      ;
+; -4.315 ; cache[0][8] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.350      ;
+; -4.315 ; cache[0][8] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.350      ;
+; -4.299 ; cache[4][8] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.334      ;
+; -4.299 ; cache[0][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.331      ;
+; -4.296 ; cache[4][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.324      ;
+; -4.293 ; cache[0][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.320      ;
+; -4.287 ; cache[4][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.315      ;
+; -4.287 ; cache[4][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.315      ;
+; -4.280 ; cache[6][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.308      ;
+; -4.279 ; cache[0][8] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.314      ;
+; -4.270 ; cache[4][8] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.305      ;
+; -4.270 ; cache[4][8] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.305      ;
+; -4.268 ; cache[4][8] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.303      ;
+; -4.268 ; cache[4][8] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.303      ;
+; -4.262 ; cache[4][8] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.297      ;
+; -4.262 ; cache[4][8] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.297      ;
+; -4.262 ; cache[4][8] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.297      ;
+; -4.262 ; cache[4][8] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.297      ;
+; -4.237 ; cache[0][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.265      ;
+; -4.236 ; cache[7][8] ; mem~0   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.275      ;
+; -4.236 ; cache[7][8] ; mem~6   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.275      ;
+; -4.234 ; cache[0][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.265      ;
+; -4.234 ; cache[0][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.262      ;
+; -4.223 ; cache[4][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.250      ;
+; -4.220 ; cache[7][8] ; mem~17  ; clock        ; clock       ; 1.000        ; 0.000      ; 5.256      ;
+; -4.214 ; cache[7][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.245      ;
+; -4.210 ; cache[3][2] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.245      ;
+; -4.204 ; cache[3][2] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.006     ; 5.234      ;
+; -4.200 ; cache[7][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.239      ;
+; -4.199 ; cache[4][8] ; mem~16  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.231      ;
+; -4.196 ; cache[0][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.223      ;
+; -4.174 ; cache[4][6] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.205      ;
+; -4.170 ; cache[0][8] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.205      ;
+; -4.167 ; cache[0][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.195      ;
+; -4.158 ; cache[4][8] ; mem~18  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.185      ;
+; -4.158 ; cache[7][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.190      ;
+; -4.158 ; cache[0][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.186      ;
+; -4.158 ; cache[0][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.008     ; 5.186      ;
+; -4.155 ; cache[7][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.187      ;
+; -4.153 ; cache[0][7] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.185      ;
+; -4.141 ; cache[0][8] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.176      ;
+; -4.141 ; cache[0][8] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.176      ;
+; -4.139 ; cache[0][8] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.174      ;
+; -4.139 ; cache[0][8] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.174      ;
+; -4.133 ; cache[0][8] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.168      ;
+; -4.133 ; cache[0][8] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.168      ;
+; -4.133 ; cache[0][8] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.168      ;
+; -4.133 ; cache[0][8] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.168      ;
+; -4.117 ; cache[7][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.148      ;
+; -4.109 ; cache[5][8] ; mem~0   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.148      ;
+; -4.109 ; cache[5][8] ; mem~6   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.148      ;
+; -4.104 ; cache[5][0] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.139      ;
+; -4.104 ; cache[5][0] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.139      ;
+; -4.094 ; cache[0][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.121      ;
+; -4.093 ; cache[5][8] ; mem~17  ; clock        ; clock       ; 1.000        ; 0.000      ; 5.129      ;
+; -4.091 ; cache[7][8] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.130      ;
+; -4.089 ; cache[1][2] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 5.124      ;
+; -4.088 ; cache[7][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.120      ;
+; -4.087 ; cache[5][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.118      ;
+; -4.083 ; cache[1][2] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.006     ; 5.113      ;
+; -4.079 ; cache[7][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.111      ;
+; -4.079 ; cache[7][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.111      ;
+; -4.073 ; cache[5][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.112      ;
+; -4.070 ; cache[0][8] ; mem~16  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.102      ;
+; -4.068 ; cache[5][0] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.103      ;
+; -4.062 ; cache[7][8] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.003      ; 5.101      ;
+; -4.062 ; cache[7][8] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.003      ; 5.101      ;
+; -4.060 ; cache[7][8] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.099      ;
+; -4.060 ; cache[7][8] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.099      ;
+; -4.058 ; cache[3][2] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.089      ;
+; -4.054 ; cache[7][8] ; mem~7   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.093      ;
+; -4.054 ; cache[7][8] ; mem~1   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.093      ;
+; -4.054 ; cache[7][8] ; mem~2   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.093      ;
+; -4.054 ; cache[7][8] ; mem~8   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.093      ;
+; -4.050 ; cache[6][8] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.085      ;
+; -4.050 ; cache[6][8] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.085      ;
+; -4.038 ; cache[4][7] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.070      ;
+; -4.034 ; cache[6][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.066      ;
+; -4.033 ; cache[0][6] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.064      ;
+; -4.031 ; cache[5][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.063      ;
+; -4.029 ; cache[0][8] ; mem~18  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.056      ;
+; -4.028 ; cache[6][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.009     ; 5.055      ;
+; -4.028 ; cache[5][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.004     ; 5.060      ;
+; -4.015 ; cache[7][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.005     ; 5.046      ;
+; -4.014 ; cache[6][8] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.001     ; 5.049      ;
+; -3.999 ; cache[0][7] ; mem~0   ; clock        ; clock       ; 1.000        ; 0.003      ; 5.038      ;
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -263,106 +263,106 @@ No paths to report.
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; 0.391 ; cache[4][5]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[2][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[5][8]         ; cache[5][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[7][8]         ; cache[7][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[4][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[0][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[6][5]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[6][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[2][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[3][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[0][8]         ; cache[0][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[4][8]         ; cache[4][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[6][8]         ; cache[6][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[0][6]         ; cache[0][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[4][6]         ; cache[4][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[6][6]         ; cache[6][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[2][6]         ; cache[2][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[5][6]         ; cache[5][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[1][6]         ; cache[1][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[3][6]         ; cache[3][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; cache[7][6]         ; cache[7][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[5][6]         ; cache[5][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[5][5]         ; cache[5][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; cache[7][5]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; varEndMem[2]        ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; varEndMem[1]        ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; varEndMem[0]        ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 1.221 ; cache[2][7]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.487      ;
-; 1.293 ; cache[2][5]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.559      ;
-; 1.350 ; cache[4][5]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.616      ;
-; 1.371 ; cache[7][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.637      ;
-; 1.417 ; cache[7][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.008     ; 1.675      ;
-; 1.466 ; cache[2][5]         ; hit~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 1.732      ;
-; 1.476 ; cache[6][5]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.742      ;
-; 1.476 ; cache[6][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.742      ;
-; 1.479 ; cache[0][7]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.745      ;
-; 1.482 ; cache[5][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.748      ;
-; 1.483 ; cache[2][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.749      ;
-; 1.503 ; cache[2][5]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 1.769      ;
-; 1.505 ; cache[4][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 1.766      ;
-; 1.506 ; cache[3][5]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.772      ;
-; 1.509 ; cache[3][5]         ; hit~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 1.775      ;
-; 1.516 ; cache[3][5]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.782      ;
-; 1.530 ; varDadoWriteBack[0] ; mem~6               ; clock        ; clock       ; 0.000        ; 0.001      ; 1.797      ;
-; 1.530 ; varDadoWriteBack[0] ; mem~0               ; clock        ; clock       ; 0.000        ; 0.001      ; 1.797      ;
-; 1.543 ; cache[4][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 1.804      ;
-; 1.562 ; cache[7][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.008     ; 1.820      ;
-; 1.595 ; cache[7][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.008     ; 1.853      ;
-; 1.597 ; cache[0][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.863      ;
-; 1.620 ; cache[2][7]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.886      ;
-; 1.631 ; cache[1][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.897      ;
-; 1.639 ; cache[2][5]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.905      ;
-; 1.671 ; cache[2][5]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.937      ;
-; 1.678 ; cache[2][5]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.944      ;
-; 1.682 ; varDadoWriteBack[0] ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 1.948      ;
-; 1.704 ; cache[6][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 1.965      ;
-; 1.731 ; cache[4][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.997      ;
-; 1.739 ; cache[3][5]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 2.005      ;
-; 1.764 ; cache[3][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 2.030      ;
-; 1.767 ; varDadoWriteBack[1] ; varDadoWriteBack[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 2.033      ;
-; 1.778 ; varDadoWriteBack[1] ; mem~1               ; clock        ; clock       ; 0.000        ; 0.001      ; 2.045      ;
-; 1.780 ; varDadoWriteBack[1] ; mem~7               ; clock        ; clock       ; 0.000        ; 0.001      ; 2.047      ;
-; 1.786 ; cache[3][5]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.052      ;
-; 1.798 ; cache[4][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 2.059      ;
-; 1.805 ; cache[6][5]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.067      ;
-; 1.808 ; cache[6][5]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.074      ;
-; 1.812 ; cache[6][5]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.078      ;
-; 1.844 ; varDadoWriteBack[0] ; mem~12              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.112      ;
-; 1.852 ; varDadoWriteBack[1] ; mem~16              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.120      ;
-; 1.855 ; varDadoWriteBack[0] ; mem~9               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.123      ;
-; 1.855 ; varDadoWriteBack[0] ; mem~3               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.123      ;
-; 1.859 ; cache[6][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; -0.004     ; 2.121      ;
-; 1.860 ; cache[6][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.122      ;
-; 1.860 ; cache[6][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.122      ;
-; 1.860 ; cache[6][5]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.122      ;
-; 1.866 ; varDadoWriteBack[1] ; mem~4               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.134      ;
-; 1.867 ; varDadoWriteBack[1] ; mem~10              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.135      ;
-; 1.867 ; cache[7][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.001     ; 2.132      ;
-; 1.874 ; cache[2][5]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.001      ; 2.141      ;
-; 1.875 ; cache[2][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.141      ;
-; 1.876 ; cache[2][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 2.142      ;
-; 1.878 ; cache[0][7]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.144      ;
-; 1.887 ; cache[6][5]         ; cache[4][0]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.153      ;
-; 1.887 ; cache[6][5]         ; cache[4][1]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.153      ;
-; 1.887 ; cache[6][5]         ; cache[4][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.153      ;
-; 1.910 ; varEndMem[2]        ; mem~12              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.177      ;
-; 1.910 ; varEndMem[2]        ; mem~13              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.177      ;
-; 1.910 ; varEndMem[2]        ; mem~14              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.177      ;
-; 1.912 ; varEndMem[2]        ; mem~15              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.179      ;
-; 1.912 ; varEndMem[2]        ; mem~16              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.179      ;
-; 1.912 ; varEndMem[2]        ; mem~17              ; clock        ; clock       ; 0.000        ; 0.001      ; 2.179      ;
-; 1.919 ; cache[3][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 2.185      ;
-; 1.920 ; cache[3][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.186      ;
-; 1.935 ; cache[3][5]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.001      ; 2.202      ;
-; 1.940 ; cache[3][5]         ; cache[1][6]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.207      ;
-; 1.953 ; cache[5][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 2.212      ;
-; 1.954 ; cache[1][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.008     ; 2.212      ;
-; 1.956 ; cache[2][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.222      ;
-; 1.978 ; cache[5][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.001     ; 2.243      ;
-; 1.993 ; varDadoWriteBack[0] ; mem~15              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.261      ;
-; 2.003 ; cache[2][7]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; -0.004     ; 2.265      ;
-; 2.004 ; cache[2][7]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.266      ;
-; 2.004 ; cache[2][7]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.266      ;
-; 2.004 ; cache[2][7]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; -0.004     ; 2.266      ;
-; 2.008 ; varEndMem[2]        ; mem~6               ; clock        ; clock       ; 0.000        ; 0.000      ; 2.274      ;
-; 2.008 ; varEndMem[2]        ; mem~7               ; clock        ; clock       ; 0.000        ; 0.000      ; 2.274      ;
-; 2.008 ; varEndMem[2]        ; mem~8               ; clock        ; clock       ; 0.000        ; 0.000      ; 2.274      ;
-; 2.012 ; varEndMem[2]        ; mem~0               ; clock        ; clock       ; 0.000        ; 0.000      ; 2.278      ;
+; 0.391 ; varDadoWriteBack[0] ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; varDadoWriteBack[2] ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[0][2]         ; cache[0][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; cache[2][2]         ; cache[2][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 1.072 ; cache[6][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.338      ;
+; 1.074 ; cache[6][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.340      ;
+; 1.275 ; cache[7][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.005      ; 1.546      ;
+; 1.291 ; cache[5][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 1.554      ;
+; 1.301 ; cache[1][2]         ; cache[1][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.567      ;
+; 1.439 ; cache[2][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.705      ;
+; 1.447 ; cache[6][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.713      ;
+; 1.475 ; cache[6][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.741      ;
+; 1.475 ; cache[6][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.741      ;
+; 1.476 ; cache[6][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.742      ;
+; 1.585 ; cache[5][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 1.848      ;
+; 1.601 ; cache[4][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 1.866      ;
+; 1.620 ; cache[2][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 1.882      ;
+; 1.624 ; cache[6][0]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 1.890      ;
+; 1.648 ; cache[3][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.005      ; 1.919      ;
+; 1.672 ; varDadoWriteBack[0] ; mem~12              ; clock        ; clock       ; 0.000        ; -0.005     ; 1.933      ;
+; 1.672 ; cache[2][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.938      ;
+; 1.673 ; varDadoWriteBack[0] ; mem~21              ; clock        ; clock       ; 0.000        ; -0.005     ; 1.934      ;
+; 1.673 ; cache[2][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.939      ;
+; 1.683 ; cache[1][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 1.946      ;
+; 1.684 ; cache[5][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; -0.001     ; 1.949      ;
+; 1.716 ; cache[5][8]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.982      ;
+; 1.734 ; varDadoWriteBack[2] ; mem~11              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.002      ;
+; 1.735 ; varDadoWriteBack[2] ; mem~5               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.003      ;
+; 1.758 ; cache[4][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.024      ;
+; 1.758 ; cache[4][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.024      ;
+; 1.763 ; cache[5][8]         ; LRU~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 2.029      ;
+; 1.779 ; cache[3][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 2.045      ;
+; 1.843 ; cache[7][8]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.109      ;
+; 1.851 ; cache[3][6]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.001      ; 2.118      ;
+; 1.854 ; cache[3][6]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.001      ; 2.121      ;
+; 1.871 ; cache[7][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 2.134      ;
+; 1.873 ; cache[0][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.139      ;
+; 1.874 ; cache[0][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.140      ;
+; 1.889 ; cache[5][8]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.155      ;
+; 1.890 ; cache[7][8]         ; LRU~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 2.156      ;
+; 1.896 ; cache[7][0]         ; mem~12              ; clock        ; clock       ; 0.000        ; 0.000      ; 2.162      ;
+; 1.897 ; cache[7][0]         ; mem~21              ; clock        ; clock       ; 0.000        ; 0.000      ; 2.163      ;
+; 1.899 ; cache[4][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 2.164      ;
+; 1.902 ; varDadoWriteBack[2] ; mem~8               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.170      ;
+; 1.903 ; varDadoWriteBack[2] ; mem~2               ; clock        ; clock       ; 0.000        ; 0.002      ; 2.171      ;
+; 1.911 ; cache[7][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 2.177      ;
+; 1.918 ; mem~7               ; cache[1][1]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.185      ;
+; 1.918 ; mem~7               ; cache[5][1]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.185      ;
+; 1.918 ; cache[0][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 2.184      ;
+; 1.922 ; mem~7               ; cache[3][1]         ; clock        ; clock       ; 0.000        ; 0.002      ; 2.190      ;
+; 1.923 ; mem~7               ; cache[2][1]         ; clock        ; clock       ; 0.000        ; 0.002      ; 2.191      ;
+; 1.927 ; mem~6               ; cache[1][0]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.194      ;
+; 1.929 ; mem~6               ; cache[5][0]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.196      ;
+; 1.945 ; cache[2][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.211      ;
+; 1.949 ; cache[5][2]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; -0.003     ; 2.212      ;
+; 1.952 ; cache[6][8]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; -0.004     ; 2.214      ;
+; 1.954 ; cache[6][8]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; -0.004     ; 2.216      ;
+; 1.976 ; cache[7][0]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.005      ; 2.247      ;
+; 1.983 ; cache[7][6]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.001      ; 2.250      ;
+; 1.986 ; cache[7][6]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.001      ; 2.253      ;
+; 2.005 ; cache[6][7]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.271      ;
+; 2.007 ; cache[3][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 2.269      ;
+; 2.011 ; cache[5][8]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 2.277      ;
+; 2.013 ; cache[5][8]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 2.279      ;
+; 2.016 ; cache[7][8]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.282      ;
+; 2.017 ; varDadoWriteBack[0] ; mem~18              ; clock        ; clock       ; 0.000        ; -0.006     ; 2.277      ;
+; 2.017 ; varDadoWriteBack[0] ; mem~15              ; clock        ; clock       ; 0.000        ; -0.006     ; 2.277      ;
+; 2.027 ; cache[0][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 2.292      ;
+; 2.031 ; cache[4][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 2.297      ;
+; 2.049 ; varEndMem[1]        ; mem~3               ; clock        ; clock       ; 0.000        ; 0.003      ; 2.318      ;
+; 2.049 ; varEndMem[1]        ; mem~16              ; clock        ; clock       ; 0.000        ; 0.000      ; 2.315      ;
+; 2.049 ; varEndMem[1]        ; mem~4               ; clock        ; clock       ; 0.000        ; 0.003      ; 2.318      ;
+; 2.049 ; varEndMem[1]        ; mem~17              ; clock        ; clock       ; 0.000        ; 0.000      ; 2.315      ;
+; 2.049 ; varEndMem[1]        ; mem~5               ; clock        ; clock       ; 0.000        ; 0.003      ; 2.318      ;
+; 2.065 ; cache[6][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; 0.002      ; 2.333      ;
+; 2.069 ; cache[5][8]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.001      ; 2.336      ;
+; 2.076 ; cache[1][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; -0.001     ; 2.341      ;
+; 2.080 ; cache[5][1]         ; mem~4               ; clock        ; clock       ; 0.000        ; -0.001     ; 2.345      ;
+; 2.082 ; mem~7               ; cache[7][1]         ; clock        ; clock       ; 0.000        ; 0.001      ; 2.349      ;
+; 2.085 ; varEndMem[1]        ; mem~9               ; clock        ; clock       ; 0.000        ; 0.003      ; 2.354      ;
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -384,6 +384,8 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[0][7]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[0][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[1][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[1][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[1][1]         ;
@@ -398,8 +400,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][7]         ;
@@ -410,8 +410,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][0]         ;
@@ -420,40 +418,44 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; dadoParaCPU[0]~reg0 ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; dadoParaCPU[0]~reg0 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; dadoParaCPU[1]~reg0 ;
@@ -469,8 +471,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~1               ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; mem~1               ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~10              ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; mem~10              ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~11              ;
 +--------+--------------+----------------+------------------+-------+------------+---------------------+
 
 
@@ -479,13 +479,17 @@ No paths to report.
 +-------------+------------+-------+-------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
-; address[*]  ; clock      ; 7.562 ; 7.562 ; Rise       ; clock           ;
-;  address[0] ; clock      ; 7.562 ; 7.562 ; Rise       ; clock           ;
-;  address[1] ; clock      ; 7.277 ; 7.277 ; Rise       ; clock           ;
-;  address[2] ; clock      ; 6.308 ; 6.308 ; Rise       ; clock           ;
-;  address[3] ; clock      ; 6.579 ; 6.579 ; Rise       ; clock           ;
-;  address[4] ; clock      ; 6.706 ; 6.706 ; Rise       ; clock           ;
-; wren        ; clock      ; 6.357 ; 6.357 ; Rise       ; clock           ;
+; address[*]  ; clock      ; 9.847 ; 9.847 ; Rise       ; clock           ;
+;  address[0] ; clock      ; 9.847 ; 9.847 ; Rise       ; clock           ;
+;  address[1] ; clock      ; 9.122 ; 9.122 ; Rise       ; clock           ;
+;  address[2] ; clock      ; 9.287 ; 9.287 ; Rise       ; clock           ;
+;  address[3] ; clock      ; 5.289 ; 5.289 ; Rise       ; clock           ;
+;  address[4] ; clock      ; 5.842 ; 5.842 ; Rise       ; clock           ;
+; data[*]     ; clock      ; 5.496 ; 5.496 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; 4.614 ; 4.614 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; 5.496 ; 5.496 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; 4.391 ; 4.391 ; Rise       ; clock           ;
+; wren        ; clock      ; 6.532 ; 6.532 ; Rise       ; clock           ;
 +-------------+------------+-------+-------+------------+-----------------+
 
 
@@ -494,13 +498,17 @@ No paths to report.
 +-------------+------------+--------+--------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-------------+------------+--------+--------+------------+-----------------+
-; address[*]  ; clock      ; -3.056 ; -3.056 ; Rise       ; clock           ;
-;  address[0] ; clock      ; -3.056 ; -3.056 ; Rise       ; clock           ;
-;  address[1] ; clock      ; -3.468 ; -3.468 ; Rise       ; clock           ;
-;  address[2] ; clock      ; -3.583 ; -3.583 ; Rise       ; clock           ;
-;  address[3] ; clock      ; -3.866 ; -3.866 ; Rise       ; clock           ;
-;  address[4] ; clock      ; -4.311 ; -4.311 ; Rise       ; clock           ;
-; wren        ; clock      ; -2.774 ; -2.774 ; Rise       ; clock           ;
+; address[*]  ; clock      ; -0.596 ; -0.596 ; Rise       ; clock           ;
+;  address[0] ; clock      ; -3.675 ; -3.675 ; Rise       ; clock           ;
+;  address[1] ; clock      ; -3.305 ; -3.305 ; Rise       ; clock           ;
+;  address[2] ; clock      ; -4.616 ; -4.616 ; Rise       ; clock           ;
+;  address[3] ; clock      ; -0.596 ; -0.596 ; Rise       ; clock           ;
+;  address[4] ; clock      ; -0.644 ; -0.644 ; Rise       ; clock           ;
+; data[*]     ; clock      ; -3.667 ; -3.667 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; -3.890 ; -3.890 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; -4.582 ; -4.582 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; -3.667 ; -3.667 ; Rise       ; clock           ;
+; wren        ; clock      ; -3.059 ; -3.059 ; Rise       ; clock           ;
 +-------------+------------+--------+--------+------------+-----------------+
 
 
@@ -509,18 +517,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 6.055 ; 6.055 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 6.759 ; 6.759 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 6.759 ; 6.759 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 6.464 ; 6.464 ; Rise       ; clock           ;
-; dirty           ; clock      ; 6.071 ; 6.071 ; Rise       ; clock           ;
-; hit             ; clock      ; 6.546 ; 6.546 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 6.549 ; 6.549 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 6.549 ; 6.549 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 6.512 ; 6.512 ; Rise       ; clock           ;
-; valid           ; clock      ; 6.010 ; 6.010 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 6.724 ; 6.724 ; Rise       ; clock           ;
+; LRU             ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 6.446 ; 6.446 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 6.398 ; 6.398 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 6.446 ; 6.446 ; Rise       ; clock           ;
+; dirty           ; clock      ; 6.426 ; 6.426 ; Rise       ; clock           ;
+; hit             ; clock      ; 6.417 ; 6.417 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 6.442 ; 6.442 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 6.442 ; 6.442 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 6.432 ; 6.432 ; Rise       ; clock           ;
+; valid           ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 6.653 ; 6.653 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -529,18 +537,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 6.055 ; 6.055 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 6.759 ; 6.759 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 6.464 ; 6.464 ; Rise       ; clock           ;
-; dirty           ; clock      ; 6.071 ; 6.071 ; Rise       ; clock           ;
-; hit             ; clock      ; 6.546 ; 6.546 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 6.512 ; 6.512 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 6.549 ; 6.549 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 6.512 ; 6.512 ; Rise       ; clock           ;
-; valid           ; clock      ; 6.010 ; 6.010 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 6.724 ; 6.724 ; Rise       ; clock           ;
+; LRU             ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 6.398 ; 6.398 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 6.398 ; 6.398 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 6.446 ; 6.446 ; Rise       ; clock           ;
+; dirty           ; clock      ; 6.426 ; 6.426 ; Rise       ; clock           ;
+; hit             ; clock      ; 6.417 ; 6.417 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 6.432 ; 6.432 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 6.442 ; 6.442 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 6.432 ; 6.432 ; Rise       ; clock           ;
+; valid           ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 6.653 ; 6.653 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -549,7 +557,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clock ; -1.005 ; -37.623       ;
+; clock ; -1.505 ; -73.124       ;
 +-------+--------+---------------+
 
 
@@ -579,7 +587,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.380 ; -75.380               ;
+; clock ; -1.380 ; -82.380               ;
 +-------+--------+-----------------------+
 
 
@@ -588,106 +596,106 @@ No paths to report.
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node   ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
-; -1.005 ; cache[4][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.036      ;
-; -1.005 ; cache[4][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.036      ;
-; -1.005 ; cache[4][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.036      ;
-; -1.002 ; cache[4][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.033      ;
-; -1.002 ; cache[4][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.033      ;
-; -1.002 ; cache[4][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.033      ;
-; -0.991 ; cache[0][7] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.020      ;
-; -0.991 ; cache[0][7] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.020      ;
-; -0.991 ; cache[0][7] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.020      ;
-; -0.988 ; cache[0][7] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.017      ;
-; -0.988 ; cache[0][7] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.017      ;
-; -0.988 ; cache[0][7] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.003     ; 2.017      ;
-; -0.985 ; cache[4][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.017      ;
-; -0.985 ; cache[4][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.017      ;
-; -0.985 ; cache[4][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.017      ;
-; -0.971 ; cache[4][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.003      ;
-; -0.971 ; cache[4][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.003      ;
-; -0.971 ; cache[4][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.003      ;
-; -0.971 ; cache[0][7] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.002     ; 2.001      ;
-; -0.971 ; cache[0][7] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.002     ; 2.001      ;
-; -0.971 ; cache[0][7] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.002     ; 2.001      ;
-; -0.957 ; cache[0][7] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.987      ;
-; -0.957 ; cache[0][7] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.987      ;
-; -0.957 ; cache[0][7] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.987      ;
-; -0.955 ; cache[0][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.986      ;
-; -0.955 ; cache[0][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.986      ;
-; -0.955 ; cache[0][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.986      ;
-; -0.952 ; cache[0][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.983      ;
-; -0.952 ; cache[0][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.983      ;
-; -0.952 ; cache[0][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.983      ;
-; -0.942 ; cache[4][5] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.971      ;
-; -0.942 ; cache[4][5] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.971      ;
-; -0.942 ; cache[4][5] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.971      ;
-; -0.939 ; cache[4][5] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.968      ;
-; -0.939 ; cache[4][5] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.968      ;
-; -0.939 ; cache[4][5] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.968      ;
-; -0.935 ; cache[0][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.967      ;
-; -0.935 ; cache[0][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.967      ;
-; -0.935 ; cache[0][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.967      ;
-; -0.922 ; cache[4][5] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.952      ;
-; -0.922 ; cache[4][5] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.002     ; 1.952      ;
-; -0.922 ; cache[4][5] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.002     ; 1.952      ;
-; -0.921 ; cache[0][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.953      ;
-; -0.921 ; cache[0][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.953      ;
-; -0.921 ; cache[0][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.953      ;
-; -0.915 ; cache[2][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.946      ;
-; -0.915 ; cache[2][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.946      ;
-; -0.915 ; cache[2][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.946      ;
-; -0.912 ; cache[2][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.943      ;
-; -0.912 ; cache[2][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.943      ;
-; -0.912 ; cache[2][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.943      ;
-; -0.909 ; cache[6][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.940      ;
-; -0.909 ; cache[6][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.940      ;
-; -0.909 ; cache[6][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.940      ;
-; -0.908 ; cache[4][5] ; mem~3   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.938      ;
-; -0.908 ; cache[4][5] ; mem~4   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.938      ;
-; -0.908 ; cache[4][5] ; mem~5   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.938      ;
-; -0.906 ; cache[6][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.937      ;
-; -0.906 ; cache[6][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.937      ;
-; -0.906 ; cache[6][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.937      ;
-; -0.904 ; cache[4][6] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.935      ;
-; -0.904 ; cache[4][6] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.935      ;
-; -0.904 ; cache[4][6] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.935      ;
-; -0.903 ; cache[4][6] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.934      ;
-; -0.903 ; cache[4][6] ; mem~16  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.934      ;
-; -0.903 ; cache[4][6] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 1.934      ;
-; -0.895 ; cache[2][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.927      ;
-; -0.895 ; cache[2][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.927      ;
-; -0.895 ; cache[2][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.927      ;
-; -0.892 ; cache[2][7] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.921      ;
-; -0.892 ; cache[2][7] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.921      ;
-; -0.892 ; cache[2][7] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.921      ;
-; -0.890 ; cache[0][7] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.919      ;
-; -0.890 ; cache[0][7] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.919      ;
-; -0.890 ; cache[0][7] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.919      ;
-; -0.889 ; cache[2][7] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.889 ; cache[2][7] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.889 ; cache[2][7] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.889 ; cache[6][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.921      ;
-; -0.889 ; cache[6][6] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.921      ;
-; -0.889 ; cache[6][6] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 1.921      ;
-; -0.889 ; cache[0][7] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.889 ; cache[0][7] ; mem~16  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.889 ; cache[0][7] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.003     ; 1.918      ;
-; -0.883 ; cache[3][6] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.914      ;
-; -0.883 ; cache[3][6] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.914      ;
-; -0.883 ; cache[3][6] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.914      ;
-; -0.881 ; cache[2][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.913      ;
-; -0.881 ; cache[2][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.913      ;
-; -0.881 ; cache[2][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.913      ;
-; -0.880 ; cache[3][6] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.911      ;
-; -0.880 ; cache[3][6] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.911      ;
-; -0.880 ; cache[3][6] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 1.911      ;
-; -0.875 ; cache[6][6] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.907      ;
-; -0.875 ; cache[6][6] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.907      ;
-; -0.875 ; cache[6][6] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.907      ;
-; -0.872 ; cache[2][7] ; mem~9   ; clock        ; clock       ; 1.000        ; -0.002     ; 1.902      ;
-; -0.872 ; cache[2][7] ; mem~10  ; clock        ; clock       ; 1.000        ; -0.002     ; 1.902      ;
-; -0.872 ; cache[2][7] ; mem~11  ; clock        ; clock       ; 1.000        ; -0.002     ; 1.902      ;
-; -0.863 ; cache[3][6] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 1.895      ;
+; -1.505 ; cache[4][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.530      ;
+; -1.458 ; cache[0][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.483      ;
+; -1.446 ; cache[7][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.474      ;
+; -1.430 ; cache[3][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.458      ;
+; -1.401 ; cache[4][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.426      ;
+; -1.401 ; cache[4][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.426      ;
+; -1.397 ; cache[5][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.425      ;
+; -1.396 ; cache[4][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.421      ;
+; -1.396 ; cache[4][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.421      ;
+; -1.396 ; cache[4][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.421      ;
+; -1.394 ; cache[4][8] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.425      ;
+; -1.394 ; cache[4][8] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.425      ;
+; -1.392 ; cache[4][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.416      ;
+; -1.388 ; cache[4][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.412      ;
+; -1.388 ; cache[4][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.416      ;
+; -1.386 ; cache[1][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.414      ;
+; -1.385 ; cache[4][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.417      ;
+; -1.385 ; cache[4][8] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.417      ;
+; -1.385 ; cache[4][8] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.417      ;
+; -1.382 ; cache[4][8] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.414      ;
+; -1.382 ; cache[4][8] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.414      ;
+; -1.382 ; cache[4][8] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.414      ;
+; -1.354 ; cache[0][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.379      ;
+; -1.354 ; cache[0][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.379      ;
+; -1.350 ; cache[4][8] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.381      ;
+; -1.350 ; cache[4][8] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.381      ;
+; -1.349 ; cache[4][8] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.380      ;
+; -1.349 ; cache[4][8] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.380      ;
+; -1.349 ; cache[0][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.374      ;
+; -1.349 ; cache[0][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.374      ;
+; -1.349 ; cache[0][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.374      ;
+; -1.347 ; cache[0][8] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.378      ;
+; -1.347 ; cache[0][8] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.378      ;
+; -1.345 ; cache[0][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.369      ;
+; -1.342 ; cache[6][8] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.007     ; 2.367      ;
+; -1.342 ; cache[7][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.370      ;
+; -1.342 ; cache[7][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.370      ;
+; -1.341 ; cache[0][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.365      ;
+; -1.341 ; cache[0][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.369      ;
+; -1.338 ; cache[0][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.370      ;
+; -1.338 ; cache[0][8] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.370      ;
+; -1.338 ; cache[0][8] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.000      ; 2.370      ;
+; -1.337 ; cache[0][2] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.365      ;
+; -1.337 ; cache[7][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.365      ;
+; -1.337 ; cache[7][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.365      ;
+; -1.337 ; cache[7][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.365      ;
+; -1.335 ; cache[7][8] ; mem~0   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.369      ;
+; -1.335 ; cache[7][8] ; mem~6   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.369      ;
+; -1.335 ; cache[0][8] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.367      ;
+; -1.335 ; cache[0][8] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.367      ;
+; -1.335 ; cache[0][8] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.367      ;
+; -1.333 ; cache[7][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.360      ;
+; -1.329 ; cache[7][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.356      ;
+; -1.329 ; cache[7][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 2.360      ;
+; -1.326 ; cache[7][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.361      ;
+; -1.326 ; cache[7][8] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.003      ; 2.361      ;
+; -1.326 ; cache[7][8] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.003      ; 2.361      ;
+; -1.323 ; cache[7][8] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.358      ;
+; -1.323 ; cache[7][8] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.358      ;
+; -1.323 ; cache[7][8] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.358      ;
+; -1.321 ; cache[4][8] ; mem~18  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.345      ;
+; -1.321 ; cache[4][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.345      ;
+; -1.317 ; cache[3][2] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.344      ;
+; -1.313 ; cache[3][2] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 2.344      ;
+; -1.303 ; cache[0][8] ; mem~7   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.334      ;
+; -1.303 ; cache[0][8] ; mem~8   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.334      ;
+; -1.302 ; cache[0][8] ; mem~1   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.333      ;
+; -1.302 ; cache[0][8] ; mem~2   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.333      ;
+; -1.301 ; cache[4][6] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.329      ;
+; -1.293 ; cache[5][8] ; mem~12  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.321      ;
+; -1.293 ; cache[5][8] ; mem~13  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.321      ;
+; -1.291 ; cache[7][8] ; mem~7   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.325      ;
+; -1.291 ; cache[7][8] ; mem~8   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.325      ;
+; -1.290 ; cache[7][8] ; mem~1   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.324      ;
+; -1.290 ; cache[7][8] ; mem~2   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.324      ;
+; -1.288 ; cache[5][8] ; mem~21  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.316      ;
+; -1.288 ; cache[5][8] ; mem~22  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.316      ;
+; -1.288 ; cache[5][8] ; mem~23  ; clock        ; clock       ; 1.000        ; -0.004     ; 2.316      ;
+; -1.286 ; cache[0][7] ; mem~14  ; clock        ; clock       ; 1.000        ; -0.003     ; 2.315      ;
+; -1.286 ; cache[5][8] ; mem~0   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.320      ;
+; -1.286 ; cache[5][8] ; mem~6   ; clock        ; clock       ; 1.000        ; 0.002      ; 2.320      ;
+; -1.284 ; cache[5][8] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.311      ;
+; -1.281 ; cache[5][0] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.312      ;
+; -1.281 ; cache[5][0] ; mem~6   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.312      ;
+; -1.280 ; cache[5][8] ; mem~15  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.307      ;
+; -1.280 ; cache[5][8] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 2.311      ;
+; -1.277 ; cache[5][8] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.312      ;
+; -1.277 ; cache[5][8] ; mem~10  ; clock        ; clock       ; 1.000        ; 0.003      ; 2.312      ;
+; -1.277 ; cache[5][8] ; mem~11  ; clock        ; clock       ; 1.000        ; 0.003      ; 2.312      ;
+; -1.274 ; cache[5][8] ; mem~3   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.309      ;
+; -1.274 ; cache[5][8] ; mem~4   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.309      ;
+; -1.274 ; cache[5][8] ; mem~5   ; clock        ; clock       ; 1.000        ; 0.003      ; 2.309      ;
+; -1.274 ; cache[0][8] ; mem~18  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.298      ;
+; -1.274 ; cache[0][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.008     ; 2.298      ;
+; -1.273 ; cache[1][2] ; mem~20  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.300      ;
+; -1.269 ; cache[1][2] ; mem~17  ; clock        ; clock       ; 1.000        ; -0.001     ; 2.300      ;
+; -1.262 ; cache[7][8] ; mem~18  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.289      ;
+; -1.262 ; cache[7][8] ; mem~19  ; clock        ; clock       ; 1.000        ; -0.005     ; 2.289      ;
+; -1.258 ; cache[5][0] ; mem~9   ; clock        ; clock       ; 1.000        ; 0.000      ; 2.290      ;
+; -1.257 ; cache[1][0] ; mem~0   ; clock        ; clock       ; 1.000        ; -0.001     ; 2.288      ;
 +--------+-------------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -696,106 +704,106 @@ No paths to report.
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; 0.215 ; cache[4][5]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[2][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[5][8]         ; cache[5][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[7][8]         ; cache[7][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[4][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[0][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[6][5]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[6][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[2][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[3][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[0][8]         ; cache[0][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[4][8]         ; cache[4][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[6][8]         ; cache[6][8]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[0][6]         ; cache[0][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[4][6]         ; cache[4][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[6][6]         ; cache[6][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[2][6]         ; cache[2][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[5][6]         ; cache[5][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[1][6]         ; cache[1][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[3][6]         ; cache[3][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; cache[7][6]         ; cache[7][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[5][6]         ; cache[5][6]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[5][5]         ; cache[5][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cache[7][5]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; varEndMem[2]        ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; varEndMem[1]        ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; varEndMem[0]        ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.537 ; cache[2][7]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.689      ;
-; 0.571 ; cache[2][5]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.723      ;
-; 0.587 ; cache[4][5]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.739      ;
-; 0.589 ; cache[7][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.741      ;
-; 0.636 ; cache[6][5]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
-; 0.636 ; cache[0][7]         ; cache[6][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
-; 0.648 ; cache[6][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.800      ;
-; 0.650 ; cache[2][5]         ; hit~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 0.802      ;
-; 0.653 ; cache[2][5]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 0.805      ;
-; 0.654 ; cache[2][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.806      ;
-; 0.656 ; cache[5][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.808      ;
-; 0.661 ; cache[7][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 0.806      ;
-; 0.678 ; cache[3][5]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.830      ;
-; 0.682 ; cache[3][5]         ; hit~reg0            ; clock        ; clock       ; 0.000        ; 0.000      ; 0.834      ;
-; 0.687 ; cache[3][5]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.839      ;
-; 0.694 ; cache[0][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.846      ;
-; 0.697 ; cache[4][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 0.845      ;
-; 0.703 ; varDadoWriteBack[0] ; mem~6               ; clock        ; clock       ; 0.000        ; 0.001      ; 0.856      ;
-; 0.703 ; varDadoWriteBack[0] ; mem~0               ; clock        ; clock       ; 0.000        ; 0.001      ; 0.856      ;
-; 0.703 ; cache[1][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.855      ;
-; 0.704 ; cache[2][7]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.856      ;
-; 0.718 ; cache[4][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 0.866      ;
-; 0.724 ; cache[2][5]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.876      ;
-; 0.729 ; cache[7][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 0.874      ;
-; 0.734 ; cache[2][5]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.886      ;
-; 0.734 ; cache[2][5]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.886      ;
-; 0.740 ; cache[7][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 0.885      ;
-; 0.744 ; cache[4][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.896      ;
-; 0.752 ; cache[3][6]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 0.904      ;
-; 0.752 ; cache[6][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 0.899      ;
-; 0.776 ; varDadoWriteBack[0] ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.928      ;
-; 0.777 ; cache[6][5]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.929      ;
-; 0.779 ; cache[6][5]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.931      ;
-; 0.789 ; cache[4][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 0.937      ;
-; 0.794 ; cache[6][5]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; -0.003     ; 0.943      ;
-; 0.803 ; varDadoWriteBack[1] ; varDadoWriteBack[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.955      ;
-; 0.803 ; cache[7][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.001     ; 0.954      ;
-; 0.803 ; cache[0][7]         ; cache[4][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.955      ;
-; 0.804 ; cache[3][5]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 0.956      ;
-; 0.805 ; cache[3][5]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.957      ;
-; 0.807 ; cache[2][5]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.001      ; 0.960      ;
-; 0.811 ; varDadoWriteBack[1] ; mem~1               ; clock        ; clock       ; 0.000        ; 0.001      ; 0.964      ;
-; 0.813 ; varDadoWriteBack[1] ; mem~7               ; clock        ; clock       ; 0.000        ; 0.001      ; 0.966      ;
-; 0.816 ; varDadoWriteBack[1] ; mem~16              ; clock        ; clock       ; 0.000        ; 0.001      ; 0.969      ;
-; 0.821 ; cache[2][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.973      ;
-; 0.821 ; cache[6][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; -0.003     ; 0.970      ;
-; 0.821 ; cache[2][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 0.973      ;
-; 0.822 ; cache[6][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 0.971      ;
-; 0.822 ; cache[6][5]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 0.971      ;
-; 0.822 ; cache[6][5]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 0.971      ;
-; 0.824 ; varDadoWriteBack[0] ; mem~12              ; clock        ; clock       ; 0.000        ; 0.001      ; 0.977      ;
-; 0.824 ; varDadoWriteBack[1] ; mem~4               ; clock        ; clock       ; 0.000        ; 0.002      ; 0.978      ;
-; 0.824 ; varDadoWriteBack[1] ; mem~10              ; clock        ; clock       ; 0.000        ; 0.002      ; 0.978      ;
-; 0.829 ; varDadoWriteBack[0] ; mem~9               ; clock        ; clock       ; 0.000        ; 0.002      ; 0.983      ;
-; 0.829 ; varDadoWriteBack[0] ; mem~3               ; clock        ; clock       ; 0.000        ; 0.002      ; 0.983      ;
-; 0.847 ; cache[2][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.999      ;
-; 0.853 ; cache[3][5]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.005      ;
-; 0.854 ; cache[3][5]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.006      ;
-; 0.870 ; cache[3][5]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.001      ; 1.023      ;
-; 0.870 ; cache[5][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.001     ; 1.021      ;
-; 0.874 ; cache[3][5]         ; cache[1][6]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.027      ;
-; 0.882 ; cache[3][5]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.034      ;
-; 0.889 ; cache[2][7]         ; varEndMem[2]        ; clock        ; clock       ; 0.000        ; -0.003     ; 1.038      ;
-; 0.890 ; cache[2][7]         ; cache[2][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 1.039      ;
-; 0.890 ; cache[2][7]         ; cache[3][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 1.039      ;
-; 0.890 ; cache[2][7]         ; cache[7][5]         ; clock        ; clock       ; 0.000        ; -0.003     ; 1.039      ;
-; 0.892 ; cache[1][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 1.037      ;
-; 0.895 ; cache[5][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.007     ; 1.040      ;
-; 0.895 ; cache[4][5]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.047      ;
-; 0.896 ; cache[3][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.008     ; 1.040      ;
-; 0.897 ; cache[4][5]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.049      ;
-; 0.899 ; cache[2][5]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.003      ; 1.054      ;
-; 0.901 ; cache[2][5]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.003      ; 1.056      ;
-; 0.904 ; cache[6][5]         ; cache[4][0]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.056      ;
-; 0.904 ; cache[6][5]         ; cache[4][1]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.056      ;
-; 0.904 ; cache[6][5]         ; cache[4][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.056      ;
-; 0.907 ; cache[6][5]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.003     ; 1.056      ;
-; 0.914 ; cache[6][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.005     ; 1.061      ;
-; 0.917 ; varDadoWriteBack[0] ; mem~15              ; clock        ; clock       ; 0.000        ; 0.001      ; 1.070      ;
-; 0.917 ; varDadoWriteBack[1] ; mem~13              ; clock        ; clock       ; 0.000        ; 0.001      ; 1.070      ;
-; 0.917 ; cache[1][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; -0.001     ; 1.068      ;
+; 0.215 ; varDadoWriteBack[0] ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; varDadoWriteBack[2] ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[0][2]         ; cache[0][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; cache[2][2]         ; cache[2][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.501 ; cache[6][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.653      ;
+; 0.504 ; cache[6][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.589 ; cache[1][2]         ; cache[1][2]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.741      ;
+; 0.594 ; cache[7][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.004      ; 0.750      ;
+; 0.610 ; cache[5][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 0.759      ;
+; 0.632 ; cache[2][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.784      ;
+; 0.635 ; cache[6][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.636 ; cache[6][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.637 ; cache[6][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.637 ; cache[6][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.717 ; cache[2][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 0.865      ;
+; 0.726 ; cache[2][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.878      ;
+; 0.728 ; cache[2][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.880      ;
+; 0.730 ; cache[6][0]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.882      ;
+; 0.730 ; cache[5][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 0.879      ;
+; 0.734 ; cache[3][0]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.004      ; 0.890      ;
+; 0.735 ; cache[4][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 0.886      ;
+; 0.759 ; cache[3][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.001      ; 0.912      ;
+; 0.762 ; cache[4][7]         ; cache[0][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.914      ;
+; 0.763 ; cache[4][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.915      ;
+; 0.764 ; varDadoWriteBack[0] ; mem~12              ; clock        ; clock       ; 0.000        ; -0.004     ; 0.912      ;
+; 0.765 ; varDadoWriteBack[0] ; mem~21              ; clock        ; clock       ; 0.000        ; -0.004     ; 0.913      ;
+; 0.771 ; cache[5][8]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; -0.001     ; 0.922      ;
+; 0.772 ; cache[1][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 0.921      ;
+; 0.773 ; cache[5][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; 0.000      ; 0.925      ;
+; 0.800 ; cache[0][7]         ; cache[2][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.952      ;
+; 0.801 ; cache[3][6]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.001      ; 0.954      ;
+; 0.801 ; cache[0][7]         ; cache[4][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.953      ;
+; 0.803 ; cache[3][6]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.001      ; 0.956      ;
+; 0.807 ; varDadoWriteBack[2] ; mem~11              ; clock        ; clock       ; 0.000        ; 0.003      ; 0.962      ;
+; 0.808 ; varDadoWriteBack[2] ; mem~5               ; clock        ; clock       ; 0.000        ; 0.003      ; 0.963      ;
+; 0.810 ; cache[5][8]         ; LRU~reg0            ; clock        ; clock       ; 0.000        ; -0.001     ; 0.961      ;
+; 0.820 ; cache[7][6]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.001      ; 0.973      ;
+; 0.820 ; cache[7][8]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; -0.001     ; 0.971      ;
+; 0.830 ; cache[7][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.003     ; 0.979      ;
+; 0.843 ; cache[0][2]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.995      ;
+; 0.844 ; cache[6][8]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; -0.003     ; 0.993      ;
+; 0.844 ; cache[2][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 0.996      ;
+; 0.846 ; cache[6][8]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; -0.003     ; 0.995      ;
+; 0.852 ; cache[7][0]         ; mem~12              ; clock        ; clock       ; 0.000        ; 0.000      ; 1.004      ;
+; 0.853 ; cache[7][0]         ; mem~21              ; clock        ; clock       ; 0.000        ; 0.000      ; 1.005      ;
+; 0.856 ; cache[5][8]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; -0.001     ; 1.007      ;
+; 0.859 ; cache[4][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 1.010      ;
+; 0.859 ; cache[7][8]         ; LRU~reg0            ; clock        ; clock       ; 0.000        ; -0.001     ; 1.010      ;
+; 0.862 ; cache[7][6]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.001      ; 1.015      ;
+; 0.864 ; cache[7][6]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; 0.001      ; 1.017      ;
+; 0.872 ; cache[6][7]         ; tag[0]~reg0         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.024      ;
+; 0.880 ; cache[4][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.032      ;
+; 0.882 ; cache[0][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.001     ; 1.033      ;
+; 0.886 ; cache[3][1]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; -0.004     ; 1.034      ;
+; 0.891 ; cache[5][2]         ; varDadoWriteBack[2] ; clock        ; clock       ; 0.000        ; -0.003     ; 1.040      ;
+; 0.892 ; varDadoWriteBack[2] ; mem~8               ; clock        ; clock       ; 0.000        ; 0.002      ; 1.046      ;
+; 0.893 ; mem~7               ; cache[1][1]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.046      ;
+; 0.893 ; mem~7               ; cache[5][1]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.046      ;
+; 0.893 ; varDadoWriteBack[2] ; mem~2               ; clock        ; clock       ; 0.000        ; 0.002      ; 1.047      ;
+; 0.894 ; mem~7               ; cache[2][1]         ; clock        ; clock       ; 0.000        ; 0.002      ; 1.048      ;
+; 0.894 ; mem~7               ; cache[3][1]         ; clock        ; clock       ; 0.000        ; 0.002      ; 1.048      ;
+; 0.894 ; cache[7][0]         ; varDadoWriteBack[0] ; clock        ; clock       ; 0.000        ; 0.004      ; 1.050      ;
+; 0.895 ; mem~6               ; cache[1][0]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.048      ;
+; 0.898 ; mem~6               ; cache[5][0]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.051      ;
+; 0.899 ; cache[6][8]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; -0.003     ; 1.048      ;
+; 0.899 ; cache[5][8]         ; varEndMem[1]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.051      ;
+; 0.901 ; cache[5][8]         ; varEndMem[0]        ; clock        ; clock       ; 0.000        ; 0.000      ; 1.053      ;
+; 0.905 ; cache[7][8]         ; tag[2]~reg0         ; clock        ; clock       ; 0.000        ; -0.001     ; 1.056      ;
+; 0.913 ; varDadoWriteBack[1] ; mem~10              ; clock        ; clock       ; 0.000        ; 0.003      ; 1.068      ;
+; 0.917 ; cache[0][7]         ; cache[6][7]         ; clock        ; clock       ; 0.000        ; 0.000      ; 1.069      ;
+; 0.919 ; cache[5][8]         ; dadoParaCPU[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.071      ;
+; 0.924 ; cache[5][8]         ; dadoParaCPU[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.076      ;
+; 0.924 ; cache[5][8]         ; dadoParaCPU[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.076      ;
+; 0.925 ; cache[6][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; 0.003      ; 1.080      ;
+; 0.929 ; cache[5][8]         ; writeBack~reg0      ; clock        ; clock       ; 0.000        ; 0.000      ; 1.081      ;
+; 0.930 ; cache[5][8]         ; dirty~reg0          ; clock        ; clock       ; 0.000        ; 0.000      ; 1.082      ;
+; 0.935 ; mem~6               ; cache[2][0]         ; clock        ; clock       ; 0.000        ; 0.002      ; 1.089      ;
+; 0.935 ; cache[6][7]         ; cache[5][8]         ; clock        ; clock       ; 0.000        ; 0.001      ; 1.088      ;
+; 0.935 ; cache[1][1]         ; mem~10              ; clock        ; clock       ; 0.000        ; 0.000      ; 1.087      ;
+; 0.936 ; cache[5][1]         ; mem~4               ; clock        ; clock       ; 0.000        ; 0.000      ; 1.088      ;
 +-------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -817,6 +825,8 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[0][7]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[0][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[0][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[1][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[1][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[1][1]         ;
@@ -831,8 +841,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[2][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[2][7]         ;
@@ -843,8 +851,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[3][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[3][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][0]         ;
@@ -853,40 +859,44 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[4][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[4][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[5][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[5][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][7]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[6][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[6][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][0]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][1]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][2]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][2]         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][5]         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][5]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][6]         ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][6]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; cache[7][8]         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; cache[7][8]         ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; dadoParaCPU[0]~reg0 ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; dadoParaCPU[0]~reg0 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; dadoParaCPU[1]~reg0 ;
@@ -902,8 +912,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~1               ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; mem~1               ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~10              ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; mem~10              ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; mem~11              ;
 +--------+--------------+----------------+------------------+-------+------------+---------------------+
 
 
@@ -912,13 +920,17 @@ No paths to report.
 +-------------+------------+-------+-------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
-; address[*]  ; clock      ; 3.735 ; 3.735 ; Rise       ; clock           ;
-;  address[0] ; clock      ; 3.735 ; 3.735 ; Rise       ; clock           ;
-;  address[1] ; clock      ; 3.619 ; 3.619 ; Rise       ; clock           ;
-;  address[2] ; clock      ; 3.209 ; 3.209 ; Rise       ; clock           ;
-;  address[3] ; clock      ; 3.303 ; 3.303 ; Rise       ; clock           ;
-;  address[4] ; clock      ; 3.385 ; 3.385 ; Rise       ; clock           ;
-; wren        ; clock      ; 3.270 ; 3.270 ; Rise       ; clock           ;
+; address[*]  ; clock      ; 4.704 ; 4.704 ; Rise       ; clock           ;
+;  address[0] ; clock      ; 4.704 ; 4.704 ; Rise       ; clock           ;
+;  address[1] ; clock      ; 4.353 ; 4.353 ; Rise       ; clock           ;
+;  address[2] ; clock      ; 4.403 ; 4.403 ; Rise       ; clock           ;
+;  address[3] ; clock      ; 2.011 ; 2.011 ; Rise       ; clock           ;
+;  address[4] ; clock      ; 2.247 ; 2.247 ; Rise       ; clock           ;
+; data[*]     ; clock      ; 2.763 ; 2.763 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; 2.366 ; 2.366 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; 2.763 ; 2.763 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; 2.281 ; 2.281 ; Rise       ; clock           ;
+; wren        ; clock      ; 3.246 ; 3.246 ; Rise       ; clock           ;
 +-------------+------------+-------+-------+------------+-----------------+
 
 
@@ -927,13 +939,17 @@ No paths to report.
 +-------------+------------+--------+--------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-------------+------------+--------+--------+------------+-----------------+
-; address[*]  ; clock      ; -1.658 ; -1.658 ; Rise       ; clock           ;
-;  address[0] ; clock      ; -1.658 ; -1.658 ; Rise       ; clock           ;
-;  address[1] ; clock      ; -1.883 ; -1.883 ; Rise       ; clock           ;
-;  address[2] ; clock      ; -1.903 ; -1.903 ; Rise       ; clock           ;
-;  address[3] ; clock      ; -2.044 ; -2.044 ; Rise       ; clock           ;
-;  address[4] ; clock      ; -2.253 ; -2.253 ; Rise       ; clock           ;
-; wren        ; clock      ; -1.547 ; -1.547 ; Rise       ; clock           ;
+; address[*]  ; clock      ; 0.059  ; 0.059  ; Rise       ; clock           ;
+;  address[0] ; clock      ; -1.967 ; -1.967 ; Rise       ; clock           ;
+;  address[1] ; clock      ; -1.777 ; -1.777 ; Rise       ; clock           ;
+;  address[2] ; clock      ; -2.351 ; -2.351 ; Rise       ; clock           ;
+;  address[3] ; clock      ; 0.059  ; 0.059  ; Rise       ; clock           ;
+;  address[4] ; clock      ; 0.043  ; 0.043  ; Rise       ; clock           ;
+; data[*]     ; clock      ; -1.939 ; -1.939 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; -2.017 ; -2.017 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; -2.332 ; -2.332 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; -1.939 ; -1.939 ; Rise       ; clock           ;
+; wren        ; clock      ; -1.671 ; -1.671 ; Rise       ; clock           ;
 +-------------+------------+--------+--------+------------+-----------------+
 
 
@@ -942,18 +958,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 3.449 ; 3.449 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 3.765 ; 3.765 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 3.765 ; 3.765 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 3.616 ; 3.616 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 3.631 ; 3.631 ; Rise       ; clock           ;
-; dirty           ; clock      ; 3.464 ; 3.464 ; Rise       ; clock           ;
-; hit             ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 3.650 ; 3.650 ; Rise       ; clock           ;
-; valid           ; clock      ; 3.421 ; 3.421 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 3.754 ; 3.754 ; Rise       ; clock           ;
+; LRU             ; clock      ; 3.674 ; 3.674 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 3.696 ; 3.696 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 3.695 ; 3.695 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 3.654 ; 3.654 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 3.696 ; 3.696 ; Rise       ; clock           ;
+; dirty           ; clock      ; 3.683 ; 3.683 ; Rise       ; clock           ;
+; hit             ; clock      ; 3.667 ; 3.667 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 3.694 ; 3.694 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 3.694 ; 3.694 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
+; valid           ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 3.787 ; 3.787 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -962,18 +978,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 3.449 ; 3.449 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 3.616 ; 3.616 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 3.765 ; 3.765 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 3.616 ; 3.616 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 3.631 ; 3.631 ; Rise       ; clock           ;
-; dirty           ; clock      ; 3.464 ; 3.464 ; Rise       ; clock           ;
-; hit             ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 3.650 ; 3.650 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 3.650 ; 3.650 ; Rise       ; clock           ;
-; valid           ; clock      ; 3.421 ; 3.421 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 3.754 ; 3.754 ; Rise       ; clock           ;
+; LRU             ; clock      ; 3.674 ; 3.674 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 3.654 ; 3.654 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 3.695 ; 3.695 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 3.654 ; 3.654 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 3.696 ; 3.696 ; Rise       ; clock           ;
+; dirty           ; clock      ; 3.683 ; 3.683 ; Rise       ; clock           ;
+; hit             ; clock      ; 3.667 ; 3.667 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 3.694 ; 3.694 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
+; valid           ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 3.787 ; 3.787 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -982,10 +998,10 @@ No paths to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.409   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-;  clock           ; -3.409   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; -169.927 ; 0.0   ; 0.0      ; 0.0     ; -75.38              ;
-;  clock           ; -169.927 ; 0.000 ; N/A      ; N/A     ; -75.380             ;
+; Worst-case Slack ; -4.674   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  clock           ; -4.674   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -264.133 ; 0.0   ; 0.0      ; 0.0     ; -82.38              ;
+;  clock           ; -264.133 ; 0.000 ; N/A      ; N/A     ; -82.380             ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -994,13 +1010,17 @@ No paths to report.
 +-------------+------------+-------+-------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
-; address[*]  ; clock      ; 7.562 ; 7.562 ; Rise       ; clock           ;
-;  address[0] ; clock      ; 7.562 ; 7.562 ; Rise       ; clock           ;
-;  address[1] ; clock      ; 7.277 ; 7.277 ; Rise       ; clock           ;
-;  address[2] ; clock      ; 6.308 ; 6.308 ; Rise       ; clock           ;
-;  address[3] ; clock      ; 6.579 ; 6.579 ; Rise       ; clock           ;
-;  address[4] ; clock      ; 6.706 ; 6.706 ; Rise       ; clock           ;
-; wren        ; clock      ; 6.357 ; 6.357 ; Rise       ; clock           ;
+; address[*]  ; clock      ; 9.847 ; 9.847 ; Rise       ; clock           ;
+;  address[0] ; clock      ; 9.847 ; 9.847 ; Rise       ; clock           ;
+;  address[1] ; clock      ; 9.122 ; 9.122 ; Rise       ; clock           ;
+;  address[2] ; clock      ; 9.287 ; 9.287 ; Rise       ; clock           ;
+;  address[3] ; clock      ; 5.289 ; 5.289 ; Rise       ; clock           ;
+;  address[4] ; clock      ; 5.842 ; 5.842 ; Rise       ; clock           ;
+; data[*]     ; clock      ; 5.496 ; 5.496 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; 4.614 ; 4.614 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; 5.496 ; 5.496 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; 4.391 ; 4.391 ; Rise       ; clock           ;
+; wren        ; clock      ; 6.532 ; 6.532 ; Rise       ; clock           ;
 +-------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1009,13 +1029,17 @@ No paths to report.
 +-------------+------------+--------+--------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-------------+------------+--------+--------+------------+-----------------+
-; address[*]  ; clock      ; -1.658 ; -1.658 ; Rise       ; clock           ;
-;  address[0] ; clock      ; -1.658 ; -1.658 ; Rise       ; clock           ;
-;  address[1] ; clock      ; -1.883 ; -1.883 ; Rise       ; clock           ;
-;  address[2] ; clock      ; -1.903 ; -1.903 ; Rise       ; clock           ;
-;  address[3] ; clock      ; -2.044 ; -2.044 ; Rise       ; clock           ;
-;  address[4] ; clock      ; -2.253 ; -2.253 ; Rise       ; clock           ;
-; wren        ; clock      ; -1.547 ; -1.547 ; Rise       ; clock           ;
+; address[*]  ; clock      ; 0.059  ; 0.059  ; Rise       ; clock           ;
+;  address[0] ; clock      ; -1.967 ; -1.967 ; Rise       ; clock           ;
+;  address[1] ; clock      ; -1.777 ; -1.777 ; Rise       ; clock           ;
+;  address[2] ; clock      ; -2.351 ; -2.351 ; Rise       ; clock           ;
+;  address[3] ; clock      ; 0.059  ; 0.059  ; Rise       ; clock           ;
+;  address[4] ; clock      ; 0.043  ; 0.043  ; Rise       ; clock           ;
+; data[*]     ; clock      ; -1.939 ; -1.939 ; Rise       ; clock           ;
+;  data[0]    ; clock      ; -2.017 ; -2.017 ; Rise       ; clock           ;
+;  data[1]    ; clock      ; -2.332 ; -2.332 ; Rise       ; clock           ;
+;  data[2]    ; clock      ; -1.939 ; -1.939 ; Rise       ; clock           ;
+; wren        ; clock      ; -1.671 ; -1.671 ; Rise       ; clock           ;
 +-------------+------------+--------+--------+------------+-----------------+
 
 
@@ -1024,18 +1048,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 6.055 ; 6.055 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 6.759 ; 6.759 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 6.759 ; 6.759 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 6.464 ; 6.464 ; Rise       ; clock           ;
-; dirty           ; clock      ; 6.071 ; 6.071 ; Rise       ; clock           ;
-; hit             ; clock      ; 6.546 ; 6.546 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 6.549 ; 6.549 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 6.549 ; 6.549 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 6.512 ; 6.512 ; Rise       ; clock           ;
-; valid           ; clock      ; 6.010 ; 6.010 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 6.724 ; 6.724 ; Rise       ; clock           ;
+; LRU             ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 6.446 ; 6.446 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 6.436 ; 6.436 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 6.398 ; 6.398 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 6.446 ; 6.446 ; Rise       ; clock           ;
+; dirty           ; clock      ; 6.426 ; 6.426 ; Rise       ; clock           ;
+; hit             ; clock      ; 6.417 ; 6.417 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 6.442 ; 6.442 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 6.442 ; 6.442 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 6.432 ; 6.432 ; Rise       ; clock           ;
+; valid           ; clock      ; 6.419 ; 6.419 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 6.653 ; 6.653 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1044,18 +1068,18 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; LRU             ; clock      ; 3.449 ; 3.449 ; Rise       ; clock           ;
-; dadoParaCPU[*]  ; clock      ; 3.616 ; 3.616 ; Rise       ; clock           ;
-;  dadoParaCPU[0] ; clock      ; 3.765 ; 3.765 ; Rise       ; clock           ;
-;  dadoParaCPU[1] ; clock      ; 3.616 ; 3.616 ; Rise       ; clock           ;
-;  dadoParaCPU[2] ; clock      ; 3.631 ; 3.631 ; Rise       ; clock           ;
-; dirty           ; clock      ; 3.464 ; 3.464 ; Rise       ; clock           ;
-; hit             ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
-; tag[*]          ; clock      ; 3.650 ; 3.650 ; Rise       ; clock           ;
-;  tag[0]         ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
-;  tag[2]         ; clock      ; 3.650 ; 3.650 ; Rise       ; clock           ;
-; valid           ; clock      ; 3.421 ; 3.421 ; Rise       ; clock           ;
-; writeBack       ; clock      ; 3.754 ; 3.754 ; Rise       ; clock           ;
+; LRU             ; clock      ; 3.674 ; 3.674 ; Rise       ; clock           ;
+; dadoParaCPU[*]  ; clock      ; 3.654 ; 3.654 ; Rise       ; clock           ;
+;  dadoParaCPU[0] ; clock      ; 3.695 ; 3.695 ; Rise       ; clock           ;
+;  dadoParaCPU[1] ; clock      ; 3.654 ; 3.654 ; Rise       ; clock           ;
+;  dadoParaCPU[2] ; clock      ; 3.696 ; 3.696 ; Rise       ; clock           ;
+; dirty           ; clock      ; 3.683 ; 3.683 ; Rise       ; clock           ;
+; hit             ; clock      ; 3.667 ; 3.667 ; Rise       ; clock           ;
+; tag[*]          ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
+;  tag[0]         ; clock      ; 3.694 ; 3.694 ; Rise       ; clock           ;
+;  tag[2]         ; clock      ; 3.679 ; 3.679 ; Rise       ; clock           ;
+; valid           ; clock      ; 3.673 ; 3.673 ; Rise       ; clock           ;
+; writeBack       ; clock      ; 3.787 ; 3.787 ; Rise       ; clock           ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1064,7 +1088,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 1510     ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 3327     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1074,7 +1098,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 1510     ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 3327     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1098,8 +1122,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 403   ; 403  ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 510   ; 510  ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
 ; Unconstrained Output Port Paths ; 10    ; 10   ;
 +---------------------------------+-------+------+
@@ -1111,7 +1135,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Sep 10 20:07:55 2022
+    Info: Processing started: Mon Sep 12 11:47:22 2022
 Info: Command: quartus_sta memoriaCache -c memoriaCache
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1124,10 +1148,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.409
+Info (332146): Worst-case setup slack is -4.674
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.409      -169.927 clock 
+    Info (332119):    -4.674      -264.133 clock 
 Info (332146): Worst-case hold slack is 0.391
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1137,14 +1161,14 @@ Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -75.380 clock 
+    Info (332119):    -1.380       -82.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.005
+Info (332146): Worst-case setup slack is -1.505
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.005       -37.623 clock 
+    Info (332119):    -1.505       -73.124 clock 
 Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1154,13 +1178,13 @@ Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -75.380 clock 
+    Info (332119):    -1.380       -82.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4552 megabytes
-    Info: Processing ended: Sat Sep 10 20:07:56 2022
+    Info: Processing ended: Mon Sep 12 11:47:23 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -36,17 +36,14 @@ module memoriaCache(
 	
 	initial begin
 	//inicializando os blocos da cache
-	cache[0] = 9'b000100011;
-	cache[1] = 9'b110101100;
-	cache[2] = 9'b100000011;
-	cache[3] = 9'b110001111;
-	cache[4] = 9'b000000000;
-	cache[5] = 9'b000000000;
-	cache[6] = 9'b000000000;
-	cache[7] = 9'b000000000;
+   //via1	  						via2
+	cache[0] = 9'b000100011;	cache[1] = 9'b110101100;	//index 00
+	cache[2] = 9'b100000011;	cache[3] = 9'b110001111;	//index 01
+	cache[4] = 9'b000000000;	cache[5] = 9'b000000000;	//index 10
+	cache[6] = 9'b000000000; 	cache[7] = 9'b000000000;	//index 11
 	
 	/*
-		Legenda para facilitar desenvolvimento:
+		Legenda para facilitar o desenvolvimento:
 			* Address
 				index: 	[0:1]
 				tag: 		[4:2]
@@ -89,11 +86,29 @@ module memoriaCache(
 		writeBack = 0;
 		//out = 0;
 		tag = 0;
+		
+		/*
 		via1 = address[1:0] << 1;
 		via2 = via1 + 1;
+		*/
 		
+		//definindo quais posicoes da cache serao acessadas
+		if(address[1:0] == 2'b00)begin
+			via1 = 0;
+			via2 = 1;
+		end else if(address[1:0] == 2'b01)begin
+			via1 = 2;
+			via2 = 3;
+		end else if(address[1:0] == 2'b10)begin
+			via1 = 4;
+			via2 = 5;
+		end else if(address[1:0] == 2'b11)begin
+			via1 = 6;
+			via2 = 7;
+		end
 		
 		if(wren == 0)begin //para leitura (wren == 0)
+		
 			if(cache[via1][8] == 1 && cache[via1][5:3] == address[4:2])begin //verifica valid e hit na primeira via
 				
 				dadoParaCPU <= cache[via1][2:0]; //CPU recebe o dado que estava na cache
@@ -121,24 +136,28 @@ module memoriaCache(
 				writeBack = 0;
 				
 				end else begin
+				
 					hit = 0; //dado nao esta na cache (read miss)
 					if(cache[via1][7] == 0)begin //verifica LRU (0 = dado mais antigo)
-						if(cache[via1][6] == 1)begin 
-							writeBack = 1;	//se dirty = 1, deve ocorrer um writeBack
+					
+						if(cache[via1][6] == 1)begin //se dirty = 1
+						
+							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via1][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
+							
 						end
 						
 						varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = via1[2:1];
+						varEndMem[1:0] = address[1:0];
 						
 						cache[via1][2:0] <= mem[address[3:0]];	//atualiza o dado da cache
 						
 						dadoParaCPU <= cache[via1][2:0];	//dado atualizado enviado para a CPU
 						
-						cache[via1][7] = 1;		//valid = 1
-						cache[via1][6] = 1'b1; 	//LRU (dado mais recente recebe 1)
-						cache[via2][6] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
-						cache[via1][5] = 1; 		//dirty = 0 pois é um novo bloco
+						cache[via1][8] = 1;		//valid = 1
+						cache[via1][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+						cache[via2][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+						cache[via1][6] = 0; 		//dirty = 0 pois é um novo bloco		VERIFICAR
 						
 						hit = 0;
 						valid <= cache[via1][8];
@@ -147,35 +166,86 @@ module memoriaCache(
 						tag <= cache[via1][5:3];
 						
 					end else begin
-						if(cache[via2][6] == 1)begin 
-							writeBack = 1;	//se dirty = 1, deve ocorrer um writeBack
+					
+						if(cache[via2][6] == 1)begin //se dirty = 1
+						
+							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via2][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
+							
 						end
 						
 						varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = via1[2:1];
+						varEndMem[1:0] = address[1:0];
 						
 						cache[via2][2:0] <= mem[address[3:0]];	//atualiza o dado da cache
 						
 						dadoParaCPU <= cache[via2][2:0];	//dado atualizado enviado para a CPU
 						
-						cache[via2][7] = 1;		//valid = 1
-						cache[via2][6] = 1'b1; 	//LRU (dado mais recente recebe 1)
-						cache[via1][6] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
-						cache[via2][5] = 1; 		//dirty = 0 pois é um novo bloco
+						cache[via2][8] = 1;		//valid = 1
+						cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+						cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+						cache[via2][6] = 0; 		//dirty = 0 pois é um novo bloco		VERIFICAR
 						
 						hit = 0;
 						valid <= cache[via2][8];
 						LRU <= cache[via2][7];
 						dirty <= cache[via2][6];
 						tag <= cache[via2][5:3];
+						
 					end
 				end
-				if(writeBack)begin
-					mem[varEndMem] = varDadoWriteBack;
-				end
+				
+				if(writeBack == 1) mem[varEndMem] = varDadoWriteBack;	//memoria recebe dado que estava na cache
+					
 			end else begin	//para escrita (wren == 1)
 				
+				if(cache[via1][8] == 1 && cache[via1][5:3] == address[4:2])begin //verifica valid e hit na primeira via
+					
+					if(cache[via1][6] == 1)begin	//verifica dirty do dado que esta na cache
+						
+						writeBack = 1;
+						varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+						varEndMem[1:0] = address[1:0];
+						mem[varEndMem] = cache[via1][2:0];	//memoria recebe dado que estava na cache
+						
+					end
+					
+					cache[via1][2:0] = data;	//cache na via recebe o dado
+					cache[via1][8] = 1;		//valid = 1
+					cache[via1][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+					cache[via2][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+					cache[via1][6] = 1; 		//dirty = 1 pois esta atualizando o dado
+					
+					hit = 0;
+					valid <= cache[via1][8];
+					LRU <= cache[via1][7];
+					dirty <= cache[via1][6];
+					tag <= cache[via1][5:3];
+					
+				end else if(cache[via2][8] == 1 && cache[via2][5:3] == address[4:2])begin //verifica valid e hit na segunda via
+					
+					if(cache[via2][6] == 1)begin	//verifica dirty do dado que esta na cache
+						
+						writeBack = 1;
+						varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+						varEndMem[1:0] = address[1:0];
+						mem[varEndMem] = cache[via2][2:0];	//memoria recebe dado que estava na cache
+						
+					end
+					
+					cache[via2][2:0] = data;	//cache na via recebe o dado
+					cache[via2][8] = 1;		//valid = 1
+					cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+					cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+					cache[via2][6] = 1; 		//dirty = 0 pois é um novo bloco		VERIFICAR
+					
+					hit = 0;
+					valid <= cache[via2][8];
+					LRU <= cache[via2][7];
+					dirty <= cache[via2][6];
+					tag <= cache[via2][5:3];
+					
+				end
 			end	//fim da escrita
 			
 		end	// fim do always

@@ -1,5 +1,5 @@
 Flow report for memoriaCache
-Sat Sep 10 20:07:57 2022
+Mon Sep 12 11:47:25 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Sep 10 20:07:57 2022           ;
+; Flow Status                        ; Successful - Mon Sep 12 11:47:25 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; memoriaCache                                    ;
 ; Top-level Entity Name              ; memoriaCache                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 124 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 106 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 74 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 74                                              ;
+; Total logic elements               ; 151 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 138 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 81 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 81                                              ;
 ; Total pins                         ; 21 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/10/2022 20:07:44 ;
+; Start date & time ; 09/12/2022 11:47:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; memoriaCache        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+--------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id         ;
 +--------------------------------------+---------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 13870908251063.166285126417796        ; --            ; --          ; --                 ;
+; COMPILER_SIGNATURE_ID                ; 13870908251063.166299403019612        ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; teste_memoriaCache ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; teste_memoriaCache                    ; --            ; --          ; eda_simulation     ;
@@ -105,12 +105,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4601 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4871 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4593 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 4872 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4565 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4552 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4509 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:12                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4508 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
