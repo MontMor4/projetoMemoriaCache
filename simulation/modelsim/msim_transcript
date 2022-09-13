@@ -10,20 +10,20 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaCache.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memoriaCache
 # 
 # Top level modules:
 # 	memoriaCache
-# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaPrincipal.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memoriaPrincipal
 # 
 # Top level modules:
 # 	memoriaPrincipal
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/teste_memoriaCache.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module teste_memoriaCache
 # 
@@ -38,9 +38,6 @@
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaCache.v(35): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/Vitão/Desktop/Codes/LAOC2/projetoCache/projetoCache/memoriaPrincipal.v(44).
-# 
-#         Region: /teste_memoriaCache/cache/ram
 # 
 # add wave *
 # view structure
@@ -48,13 +45,33 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Time=100 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 0 LRU = 1 dirty = 1 writeBack= 0 tag = 4 dadoParaCPU = 3
-# Time=200 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 0 LRU = 1 dirty = 1 writeBack= 0 tag = 4 dadoParaCPU = 3
-# Time=300 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 0 tag = 5 dadoParaCPU = 4
-# Time=400 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 0 tag = 5 dadoParaCPU = 4
-# Time=500 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 0
-# Time=600 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 0
-# Time=700 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
-# Time=800 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
-# Time=900 clock=0 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
-# Time=1000 clock=1 wren=0 data =0 address = 10000 hit = 0 valid = 1 LRU = 1 dirty = 1 writeBack= 1 tag = 5 dadoParaCPU = 1
+# 1: Time=100 clock=0 wren=0 data=0 address=16 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=100 dadoParaCPU=3
+# 1: Time=200 clock=1 wren=0 data=0 address=16 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=100 dadoParaCPU=3
+# 1: Time=300 clock=0 wren=0 data=0 address=16 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=100 dadoParaCPU=0
+# 2: Time=400 clock=1 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=100 dadoParaCPU=0
+# 2: Time=500 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 2: Time=600 clock=1 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 3: Time=700 clock=0 wren=1 data=5 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 3: Time=800 clock=1 wren=1 data=5 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 3: Time=900 clock=0 wren=1 data=5 address=1 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=0 dadoParaCPU=5
+# 3: Time=1000 clock=1 wren=1 data=5 address=1 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=0 dadoParaCPU=5
+# 4: Time=1100 clock=0 wren=1 data=4 address=9 hit=0 valid=1 LRU=0 dirty=0 writeBack=0 tag=1 dadoParaCPU=7
+# 4: Time=1200 clock=1 wren=1 data=4 address=9 hit=0 valid=1 LRU=0 dirty=0 writeBack=0 tag=1 dadoParaCPU=7
+# 4: Time=1300 clock=0 wren=1 data=4 address=9 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=10 dadoParaCPU=4
+# 4: Time=1400 clock=1 wren=1 data=4 address=9 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=10 dadoParaCPU=4
+# 5: Time=1500 clock=0 wren=0 data=0 address=5 hit=0 valid=1 LRU=0 dirty=1 writeBack=1 tag=0 dadoParaCPU=5
+# 5: Time=1600 clock=1 wren=0 data=0 address=5 hit=0 valid=1 LRU=0 dirty=1 writeBack=1 tag=0 dadoParaCPU=5
+# 5: Time=1700 clock=0 wren=0 data=0 address=5 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=x
+# 5: Time=1800 clock=1 wren=0 data=0 address=5 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=x
+# 5: Time=1900 clock=0 wren=0 data=0 address=5 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=x
+# 5: Time=2000 clock=1 wren=0 data=0 address=5 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=x
+# 5: Time=2100 clock=0 wren=0 data=0 address=5 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=x
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
