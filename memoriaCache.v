@@ -22,7 +22,7 @@ module memoriaCache(
 	input [4:0] address,	//endereco
 	output reg hit, valid, LRU, dirty, writeBack,
 	output reg [2:0] tag,
-	output reg [2:0] dadoParaCPU);
+	output reg [2:0] dadoParaCPU); //variavel para fazer o $display da cache no testbench
 	wire [2:0] saida;
 	reg [8:0] cache[7:0];	//8 blocos de 9 bits cada 
 	reg [2:0] mem[15:0]; 	//16 blocos de 3 bits cada
@@ -40,8 +40,8 @@ module memoriaCache(
 	cache[0] = 9'b000100011;	cache[1] = 9'b110101100;	//index 00
 	cache[2] = 9'b100000011;	cache[3] = 9'b110001111;	//index 01
 	cache[4] = 9'b000000000;	cache[5] = 9'b000000000;	//index 10
-	cache[6] = 9'b000000000; 	cache[7] = 9'b000000000;	//index 11
-	
+	cache[6] = 9'b110110011; 	cache[7] = 9'b000000000;	//index 11
+		
 	/*
 		Legenda para facilitar o desenvolvimento:
 			* Address
@@ -138,15 +138,14 @@ module memoriaCache(
 							
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via1][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
-							varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-							varEndMem[1:0] = address[1:0];
 							
 						end
 						
+						varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+						varEndMem[1:0] = address[1:0];
+						
 						cache[via1][5:3] <= address[4:2];	//atualiza a tag da cache
 						cache[via1][2:0] <= saida;	//atualiza o dado da cache
-						
-						dadoParaCPU <= cache[via1][2:0];	//dado atualizado enviado para a CPU
 						
 						cache[via1][8] <= 1;		//valid = 1
 						cache[via1][7] <= 1'b1; 	//LRU (dado mais recente recebe 1)
@@ -159,21 +158,22 @@ module memoriaCache(
 						dirty <= cache[via1][6];
 						tag <= cache[via1][5:3];
 						
+						dadoParaCPU <= cache[via1][2:0];	//dado atualizado enviado para a CPU
+						
 					end else begin
 					
 						if(cache[via2][6] == 1)begin //se dirty = 1
 						
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via2][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
-							varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-							varEndMem[1:0] = address[1:0];
 						
 						end
 						
+						varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+						varEndMem[1:0] = address[1:0];
+						
 						cache[via2][5:3] <= address[4:2];	//atualiza a tag da cache
 						cache[via2][2:0] <= saida;	//atualiza o dado da cache
-						
-						dadoParaCPU <= cache[via2][2:0];	//dado atualizado enviado para a CPU
 						
 						cache[via2][8] <= 1;		//valid = 1
 						cache[via2][7] <= 1'b1; 	//LRU (dado mais recente recebe 1)
@@ -186,6 +186,7 @@ module memoriaCache(
 						dirty <= cache[via2][6];
 						tag <= cache[via2][5:3];
 						
+						dadoParaCPU <= cache[via2][2:0];	//dado atualizado enviado para a CPU
 					end
 				end
 									
@@ -287,7 +288,7 @@ module memoriaCache(
 			end	//fim da escrita
 			
 			if(writeBack == 1) writeEnable <= 1;	//memoria recebe dado que estava na cache
-							
+			
 		end	// fim do always
 
 endmodule

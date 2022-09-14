@@ -83,7 +83,7 @@ GND+                         : A13       :        :                   :         
 GND*                         : A14       :        :                   :         : 4         :                
 GND                          : A15       : gnd    :                   :         :           :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-data[0]                      : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
+tag[2]                       : A17       : output : 3.3-V LVTTL       :         : 4         : N              
 tag[1]                       : A18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A19       :        :                   :         : 4         :                
 GND*                         : A20       :        :                   :         : 4         :                
@@ -260,10 +260,10 @@ GND*                         : B11       :        :                   :         
 GND*                         : B12       :        :                   :         : 3         :                
 GND+                         : B13       :        :                   :         : 4         :                
 GND*                         : B14       :        :                   :         : 4         :                
-LRU                          : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B15       :        :                   :         : 4         :                
 GND*                         : B16       :        :                   :         : 4         :                
-writeBack                    : B17       : output : 3.3-V LVTTL       :         : 4         : N              
-dadoParaCPU[0]               : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+dirty                        : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+dadoParaCPU[2]               : B18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B19       :        :                   :         : 4         :                
 GND*                         : B20       :        :                   :         : 4         :                
 GND*                         : B21       :        :                   :         : 4         :                
@@ -287,8 +287,8 @@ GND*                         : C12       :        :                   :         
 address[2]                   : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C14       : gnd    :                   :         :           :                
 GND*                         : C15       :        :                   :         : 4         :                
-dadoParaCPU[1]               : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-address[1]                   : C17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C16       :        :                   :         : 4         :                
+writeBack                    : C17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C18       : gnd    :                   :         :           :                
 GND*                         : C19       :        :                   :         : 4         :                
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
@@ -312,9 +312,9 @@ GND*                         : D11       :        :                   :         
 GND*                         : D12       :        :                   :         : 3         :                
 address[0]                   : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : D14       :        :                   :         : 4         :                
-valid                        : D15       : output : 3.3-V LVTTL       :         : 4         : N              
-tag[2]                       : D16       : output : 3.3-V LVTTL       :         : 4         : N              
-address[4]                   : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
+address[4]                   : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
+dadoParaCPU[1]               : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+LRU                          : D17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : D18       :        :                   :         : 4         :                
 GND*                         : D19       :        :                   :         : 4         :                
 GND*                         : D20       :        :                   :         : 4         :                
@@ -338,7 +338,7 @@ GND                          : E11       : gnd    :                   :         
 GND*                         : E12       :        :                   :         : 3         :                
 VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
-dirty                        : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : E15       :        :                   :         : 4         :                
 GND                          : E16       : gnd    :                   :         :           :                
 VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
 GND*                         : E18       :        :                   :         : 4         :                
@@ -364,9 +364,9 @@ GND*                         : F11       :        :                   :         
 GND*                         : F12       :        :                   :         : 3         :                
 GND*                         : F13       :        :                   :         : 4         :                
 GND*                         : F14       :        :                   :         : 4         :                
-wren                         : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
-data[1]                      : F16       : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : F17       :        :                   :         : 4         :                
+valid                        : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+tag[0]                       : F16       : output : 3.3-V LVTTL       :         : 4         : N              
+address[1]                   : F17       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F18       :        :                   :         : 4         :                
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
 GND*                         : F20       :        :                   :         : 5         :                
@@ -390,9 +390,9 @@ GND*                         : G11       :        :                   :         
 GND*                         : G12       :        :                   :         : 3         :                
 GND*                         : G13       :        :                   :         : 4         :                
 GND*                         : G14       :        :                   :         : 4         :                
-address[3]                   : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
-data[2]                      : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
-dadoParaCPU[2]               : G17       : output : 3.3-V LVTTL       :         : 4         : N              
+hit                          : G15       : output : 3.3-V LVTTL       :         : 4         : N              
+dadoParaCPU[0]               : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+data[1]                      : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : G18       :        :                   :         : 4         :                
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
@@ -416,9 +416,9 @@ GND*                         : H11       :        :                   :         
 GND*                         : H12       :        :                   :         : 3         :                
 GND                          : H13       : gnd    :                   :         :           :                
 GND                          : H14       : gnd    :                   :         :           :                
-hit                          : H15       : output : 3.3-V LVTTL       :         : 4         : N              
-tag[0]                       : H16       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : H17       :        :                   :         : 4         :                
+data[2]                      : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
+address[3]                   : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
+data[0]                      : H17       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
 GND*                         : H19       :        :                   :         : 5         :                
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
@@ -444,7 +444,7 @@ GND*                         : J13       :        :                   :         
 GND*                         : J14       :        :                   :         : 3         :                
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 GND*                         : J16       :        :                   :         : 4         :                
-GND*                         : J17       :        :                   :         : 4         :                
+wren                         : J17       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : J18       :        :                   :         : 4         :                
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
 GND*                         : J20       :        :                   :         : 5         :                

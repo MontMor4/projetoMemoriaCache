@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Sep 13 00:47:46 2022
+Analysis & Synthesis Status : Successful - Wed Sep 14 01:46:49 2022
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : memoriaCache
 Top-level Entity Name : memoriaCache
 Family : Cyclone II
-Total logic elements : 173
-    Total combinational functions : 138
-    Dedicated logic registers : 85
-Total registers : 85
+Total logic elements : 183
+    Total combinational functions : 157
+    Dedicated logic registers : 84
+Total registers : 84
 Total pins : 21
 Total virtual pins : 0
 Total memory bits : 48

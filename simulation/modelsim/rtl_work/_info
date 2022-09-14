@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Vitão\Desktop\Codes\LAOC2\projetoMemoriaCache\simulation\modelsim
 vmemoriaCache
-I4^2;o;[LzEFK`1:;I7aW23
+IoGNU:J]LTn?SZ2AFzz6aO2
 ViUGWFGDB6@Yln2]]6Eijj3
 Z1 dC:\Users\Vitão\Desktop\Codes\LAOC2\projetoMemoriaCache\simulation\modelsim
-w1663038946
+w1663130316
 8C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v
 FC:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v
 L0 18
@@ -18,9 +18,9 @@ Z3 o-vlog01compat -work work -O0
 nmemoria@cache
 Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache -O0
 !i10b 1
-!s100 UHOACJ5d_JIh?13Y7FD9A2
+!s100 fYA[4_`T6>6ek6:nW@^F_3
 !s85 0
-!s108 1663039432.244000
+!s108 1663130350.031000
 !s107 C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache|C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v|
 !s101 -O0
@@ -41,17 +41,17 @@ nmemoria@principal
 !i10b 1
 !s100 U?YAQLOm;jJZ5iI7:114n3
 !s85 0
-!s108 1663039432.307000
+!s108 1663130350.094000
 !s107 C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache|C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v|
 !s101 -O0
 vteste_memoriaCache
 !i10b 1
-!s100 GGd>b>VdkMeWP;^UQW8U[2
-IPej2l?lSDEhF;Aim5z8A13
+!s100 obY>l1O8GAYTQMm3DZg5`3
+Iz8gkimQFX;TnBjo;6WMI@2
 VIA4K80Oa_h@ZZD40The142
 R1
-w1663039401
+w1663127530
 8C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v
 FC:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v
 L0 1
@@ -59,7 +59,7 @@ R2
 r1
 !s85 0
 31
-!s108 1663039432.406000
+!s108 1663130350.188000
 !s107 C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache|C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v|
 !s101 -O0
