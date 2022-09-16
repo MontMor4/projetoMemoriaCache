@@ -33,6 +33,7 @@ module memoriaCache(
 	reg writeEnable;
  	integer via1;
 	integer via2;
+	reg dadoMemWriteback;
 	
 	memoriaPrincipal ram(varEndMem, clock, varDadoWriteBack, writeEnable, saida); //inicializando a memoria princial
 	
@@ -116,19 +117,32 @@ module memoriaCache(
 			via1 = 6;
 			via2 = 7;
 		end
-		
+
+		writeEnable = 0;
+
 		if(wren == 0)begin //para leitura (wren == 0)
-			
+			if(writeBack == 1)begin
+					varEndMem[3:0] = address[3:0];
+					writeEnable = 0;
+					dadoMemWriteback =1;
+				end
 			//READ HIT VIA1
 			if(cache[via1][8] == 1 && cache[via1][5:3] == address[4:2])begin //verifica valid e hit na primeira via
 				
-				if(varEnviaDado == 1)begin
-
+				if(varEnviaDado == 1)begin		//quando tem que esperar um dado que veio da memoria
 					cache[via1][2:0] = saida;
-					dadoParaCPU = cache[via1][2:0];
+					dadoParaCPU = saida;
 					varEnviaDado = 0;
+					varEspera = 1;
 					
-				end else dadoParaCPU = cache[via1][2:0]; //CPU recebe o dado que estava na cache
+				end else begin
+					if(dadoMemWriteback) begin
+						dadoParaCPU = saida; //CPU recebe o dado que estava na cache
+						cache[via1][2:0] = saida;
+					end else begin
+						dadoParaCPU = cache[via1][2:0];
+					end
+				end//CPU recebe o dado que estava na cache
 				
 				cache[via1][7] = 1'b1; //LRU (dado mais recente recebe 1)
 				cache[via2][7] = 1'b0; //LRU (dado mais antigo recebe 0)
@@ -148,6 +162,8 @@ module memoriaCache(
 					cache[via2][2:0] = saida;
 					dadoParaCPU = cache[via2][2:0];
 					varEnviaDado = 0;
+					varEspera = 1;
+
 					
 				end else dadoParaCPU = cache[via2][2:0]; //CPU recebe o dado que estava na cache
 				
@@ -162,34 +178,40 @@ module memoriaCache(
 				writeBack = 0;
 									
 				end else begin	//dado nao esta na cache (read miss)
-					
+					 dadoMemWriteback =0;
 					//READ MISS 
-					if(cache[via1][7] == 0)begin //verifica LRU (0 = dado mais anti	go)
-					
+					if(cache[via1][7] == 0)begin //verifica LRU (0 = dado mais antigo)
+						
 						if(cache[via1][6] == 1)begin //se dirty = 1
 							
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via1][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
-							
-						end
-						
-						if(varEnviaDado == 0)begin
-
-							varEnviaDado = 1;
 							varEspera = 1;
-							$display("espera1");
-							
-						end
+							varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+							varEndMem[1:0] = address[1:0];	
+							writeEnable = 1;
 
-						varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = address[1:0];
+						end else begin
 						
-						cache[via1][5:3] = address[4:2];	//atualiza a tag da cache
-						
-						cache[via1][8] = 1;		//valid = 1
-						cache[via1][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
-						cache[via2][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+							//varEndMem[3:0] = address[3:0];	
+							if(writeBack == 0)begin
+								varEndMem[3:0] = address[3:0];	
+							end 
+							cache[via1][5:3] = address[4:2];	//atualiza a tag da cache
+
+							if(varEnviaDado == 0)begin
+
+								varEnviaDado = 1;
+								varEspera = 1;
+								//cache[via1][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+								//cache[via2][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)
+			
+							end 
+						end
+												
+						cache[via1][8] = 1;		//valid = 1	
 						cache[via1][6] = 0; 		//dirty = 0 pois é um novo bloco		VERIFICAR
+
 						
 						hit = 0;
 						valid = cache[via1][8];
@@ -198,32 +220,34 @@ module memoriaCache(
 						tag = cache[via1][5:3];
 						
 						dadoParaCPU = cache[via1][2:0];	//dado atualizado enviado para a CPU
-						
+												
 					end else begin
 						//READ MISS 2
 						if(cache[via2][6] == 1)begin //se dirty = 1
 						
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via2][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
+							varEspera = 1;
+							varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+							varEndMem[1:0] = address[1:0];							
+							writeEnable = 1;
+
+						end else begin
 						
+							varEndMem[3:0] = address[3:0];	
+							cache[via2][5:3] = address[4:2];	//atualiza a tag da cache
+						
+							if(varEnviaDado == 0)begin
+
+								varEnviaDado = 1;
+								varEspera = 1;
+								cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
+								cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)
+			
+							end 
 						end
 						
-						if(varEnviaDado == 0)begin
-
-							varEnviaDado = 1;
-							varEspera = 1;
-							$display("espera2");
-		
-						end 
-						
-						varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = address[1:0];
-						
-						cache[via2][5:3] = address[4:2];	//atualiza a tag da cache
-						
-						cache[via2][8] = 1;		//valid = 1
-						cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
-						cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
+						cache[via2][8] = 1;		//valid = 1	
 						cache[via2][6] = 0; 		//dirty = 0 pois é um novo bloco		VERIFICAR
 						
 						hit = 0;
@@ -233,6 +257,7 @@ module memoriaCache(
 						tag = cache[via2][5:3];
 						
 						dadoParaCPU = cache[via2][2:0];	//dado atualizado enviado para a CPU
+						
 					end
 				end
 									
@@ -279,14 +304,14 @@ module memoriaCache(
 						
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via1][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
+							varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+							varEndMem[1:0] = address[1:0];
+							varEspera = 1;
+							writeEnable = 1;
 							
-						end else writeBack = 0;
-						
-						varEndMem[3:2] = cache[via1][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = address[1:0];
-						
+						end 
+
 						cache[via1][5:3] = address[4:2];	//atualiza a tag da cache
-						cache[via1][2:0] = saida;	//atualiza o dado da cache
 						
 						cache[via1][2:0] = data;	//escreve dado na cache
 						
@@ -295,7 +320,8 @@ module memoriaCache(
 						cache[via1][8] = 1;		//valid = 1
 						cache[via1][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
 						cache[via2][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
-						cache[via1][6] = 1; 		//dirty = 1 pois é um dado novo
+						cache[via1][6] = 1; 	//dirty = 1 pois é um dado novo
+
 						
 						hit = 0;
 						valid = cache[via1][8];
@@ -310,36 +336,36 @@ module memoriaCache(
 						
 							writeBack = 1;	//deve ocorrer um writeBack
 							varDadoWriteBack = cache[via2][2:0];	//registrador que aramazena dado da cache para fazer o writeBack
-						
-						end else writeBack = 0;
-						
-						varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
-						varEndMem[1:0] = address[1:0];
+							varEndMem[3:2] = cache[via2][4:3];	//variavel que recebe o endereco onde o dado sera buscado na memoria
+							varEndMem[1:0] = address[1:0];
+							varEspera = 1;
+							writeEnable = 1;
+							
+						end
 						
 						cache[via2][5:3] = address[4:2];	//atualiza a tag da cache
-						cache[via2][2:0] = saida;	//atualiza o dado da cache
 						
-						cache[via2][2:0] = data;	//escreve dado na cache
-						
+						cache[via2][2:0] = data;	//escreve o dado na cache
+												
 						dadoParaCPU = cache[via2][2:0];		//TESTE NO DISPLAY
 						
 						cache[via2][8] = 1;		//valid = 1
 						cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
 						cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
-						cache[via2][6] = 1; 		//dirty = 1 pois é um dado novo
+						cache[via2][6] = 1; 	//dirty = 1 pois é um dado novo
 						
 						hit = 0;
 						valid = cache[via2][8];
 						LRU = cache[via2][7];
 						dirty = cache[via2][6];
 						tag = cache[via2][5:3];
-						
+
 					end
 				end	//fim do miss
 								
 			end	//fim da escrita
 			
-			if(writeBack == 1) writeEnable = 1;	//memoria recebe dado que estava na cache
+			//if(writeBack == 1) writeEnable = 1;	//memoria recebe dado que estava na cache
 		end
 		
 		end	// fim do always

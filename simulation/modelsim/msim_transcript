@@ -10,20 +10,20 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/altera/projetoMemoriaCache {C:/altera/projetoMemoriaCache/memoriaCache.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memoriaCache
 # 
 # Top level modules:
 # 	memoriaCache
-# vlog -vlog01compat -work work +incdir+C:/altera/projetoMemoriaCache {C:/altera/projetoMemoriaCache/memoriaPrincipal.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memoriaPrincipal
 # 
 # Top level modules:
 # 	memoriaPrincipal
 # 
-# vlog -vlog01compat -work work +incdir+C:/altera/projetoMemoriaCache {C:/altera/projetoMemoriaCache/teste_memoriaCache.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache {C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/teste_memoriaCache.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module teste_memoriaCache
 # 
@@ -46,11 +46,10 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # 1: Time=100 clock=0 wren=0 data=0 address=10000 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=x
-# espera1
-# 1: Time=300 clock=0 wren=0 data=0 address=10000 hit=0 valid=1 LRU=1 dirty=0 writeBack=0 tag=100 dadoParaCPU=3
+# 1: Time=300 clock=0 wren=0 data=0 address=10000 hit=0 valid=1 LRU=0 dirty=0 writeBack=0 tag=100 dadoParaCPU=3
 # 1: Time=500 clock=0 wren=0 data=0 address=10000 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
 # 1: Time=700 clock=0 wren=0 data=0 address=10000 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=100 dadoParaCPU=7
-# 2: Time=900 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=100 dadoParaCPU=7
+# 2: Time=900 clock=0 wren=0 data=0 address=1 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=7
 # 2: Time=1100 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
 # 2: Time=1300 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
 # 2: Time=1500 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
@@ -63,26 +62,27 @@
 # 4: Time=2900 clock=0 wren=1 data=4 address=1001 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=10 dadoParaCPU=4
 # 4: Time=3100 clock=0 wren=1 data=4 address=1001 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=10 dadoParaCPU=4
 # 5: Time=3300 clock=0 wren=0 data=0 address=101 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=10 dadoParaCPU=4
-# espera1
-# 5: Time=3500 clock=0 wren=0 data=0 address=101 hit=0 valid=1 LRU=1 dirty=0 writeBack=1 tag=1 dadoParaCPU=5
+# 5: Time=3500 clock=0 wren=0 data=0 address=101 hit=0 valid=1 LRU=0 dirty=0 writeBack=1 tag=0 dadoParaCPU=5
 # 5: Time=3700 clock=0 wren=0 data=0 address=101 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
-# 5: Time=3900 clock=0 wren=0 data=0 address=101 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=5
-# 5: Time=4100 clock=0 wren=0 data=0 address=101 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=5
-# 5: Time=4300 clock=0 wren=0 data=0 address=101 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=5
-# 6: Time=4500 clock=0 wren=1 data=1 address=1101 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=5
+# 5: Time=3900 clock=0 wren=0 data=0 address=101 hit=0 valid=1 LRU=0 dirty=0 writeBack=0 tag=1 dadoParaCPU=5
+# 5: Time=4100 clock=0 wren=0 data=0 address=101 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
+# 5: Time=4300 clock=0 wren=0 data=0 address=101 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=1 dadoParaCPU=3
+# 6: Time=4500 clock=0 wren=1 data=1 address=1101 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
 # 6: Time=4700 clock=0 wren=1 data=1 address=1101 hit=0 valid=1 LRU=1 dirty=1 writeBack=1 tag=11 dadoParaCPU=1
 # 6: Time=4900 clock=0 wren=1 data=1 address=1101 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=1
 # 6: Time=5100 clock=0 wren=1 data=1 address=1101 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=11 dadoParaCPU=1
-# 7: Time=5300 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=11 dadoParaCPU=1
-# espera1
-# 7: Time=5500 clock=0 wren=0 data=0 address=1 hit=0 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
-# 7: Time=5700 clock=0 wren=0 data=0 address=1 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
-# 7: Time=5900 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=4
-# 8: Time=6100 clock=0 wren=0 data=0 address=1001 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=4
-# espera2
-# 8: Time=6300 clock=0 wren=0 data=0 address=1001 hit=0 valid=1 LRU=1 dirty=0 writeBack=1 tag=10 dadoParaCPU=1
-# 8: Time=6500 clock=0 wren=0 data=0 address=1001 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=1
-# 8: Time=6700 clock=0 wren=0 data=0 address=1001 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=10 dadoParaCPU=1
+# 6: Time=5300 clock=0 wren=1 data=1 address=1101 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=11 dadoParaCPU=1
+# 6: Time=5500 clock=0 wren=1 data=1 address=1101 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=11 dadoParaCPU=1
+# 7: Time=5700 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=1 writeBack=0 tag=11 dadoParaCPU=1
+# 7: Time=5900 clock=0 wren=0 data=0 address=1 hit=0 valid=1 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 7: Time=6100 clock=0 wren=0 data=0 address=1 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=3
+# 7: Time=6300 clock=0 wren=0 data=0 address=1 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
+# 8: Time=6500 clock=0 wren=0 data=0 address=1001 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=5
+# 8: Time=6700 clock=0 wren=0 data=0 address=1001 hit=0 valid=1 LRU=0 dirty=0 writeBack=1 tag=11 dadoParaCPU=1
+# 8: Time=6900 clock=0 wren=0 data=0 address=1001 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=1
+# 8: Time=7100 clock=0 wren=0 data=0 address=1001 hit=0 valid=1 LRU=1 dirty=0 writeBack=0 tag=10 dadoParaCPU=1
+# 8: Time=7300 clock=0 wren=0 data=0 address=1001 hit=0 valid=0 LRU=0 dirty=0 writeBack=0 tag=0 dadoParaCPU=1
+# 8: Time=7500 clock=0 wren=0 data=0 address=1001 hit=1 valid=1 LRU=1 dirty=0 writeBack=0 tag=10 dadoParaCPU=4
 # A time value could not be extracted from the current line
 # A time value could not be extracted from the current line
 # A time value could not be extracted from the current line

@@ -1,5 +1,5 @@
 Fitter report for memoriaCache
-Wed Sep 14 19:01:48 2022
+Thu Sep 15 23:04:06 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,17 +63,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Sep 14 19:01:48 2022           ;
+; Fitter Status                      ; Successful - Thu Sep 15 23:04:06 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; memoriaCache                                    ;
 ; Top-level Entity Name              ; memoriaCache                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 199 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 198 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 84 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 84                                              ;
+; Total logic elements               ; 305 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 304 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 89 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 89                                              ;
 ; Total pins                         ; 21 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 48 / 483,840 ( < 1 % )                          ;
@@ -138,7 +138,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -149,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 310 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 310 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 421 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 421 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 307     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 418     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -181,7 +181,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memoriaCache.pin.
+The pin-out file can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/output_files/memoriaCache.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -189,26 +189,26 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 199 / 33,216 ( < 1 % )    ;
-;     -- Combinational with no register       ; 115                       ;
+; Total logic elements                        ; 305 / 33,216 ( < 1 % )    ;
+;     -- Combinational with no register       ; 216                       ;
 ;     -- Register only                        ; 1                         ;
-;     -- Combinational with a register        ; 83                        ;
+;     -- Combinational with a register        ; 88                        ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 133                       ;
-;     -- 3 input functions                    ; 56                        ;
-;     -- <=2 input functions                  ; 9                         ;
+;     -- 4 input functions                    ; 229                       ;
+;     -- 3 input functions                    ; 59                        ;
+;     -- <=2 input functions                  ; 16                        ;
 ;     -- Register only                        ; 1                         ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 198                       ;
+;     -- normal mode                          ; 304                       ;
 ;     -- arithmetic mode                      ; 0                         ;
 ;                                             ;                           ;
-; Total registers*                            ; 84 / 34,593 ( < 1 % )     ;
-;     -- Dedicated logic registers            ; 84 / 33,216 ( < 1 % )     ;
+; Total registers*                            ; 89 / 34,593 ( < 1 % )     ;
+;     -- Dedicated logic registers            ; 89 / 33,216 ( < 1 % )     ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )         ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 13 / 2,076 ( < 1 % )      ;
+; Total LABs:  partially or completely used   ; 21 / 2,076 ( 1 % )        ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 21 / 475 ( 4 % )          ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )            ;
@@ -224,11 +224,11 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%              ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%              ;
-; Maximum fan-out                             ; 85                        ;
-; Highest non-global fan-out                  ; 62                        ;
-; Total fan-out                               ; 918                       ;
-; Average fan-out                             ; 2.97                      ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 2%              ;
+; Maximum fan-out                             ; 90                        ;
+; Highest non-global fan-out                  ; 81                        ;
+; Total fan-out                               ; 1347                      ;
+; Average fan-out                             ; 3.21                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -241,25 +241,25 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 199 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 115                   ; 0                              ;
+; Total logic elements                        ; 305 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 216                   ; 0                              ;
 ;     -- Register only                        ; 1                     ; 0                              ;
-;     -- Combinational with a register        ; 83                    ; 0                              ;
+;     -- Combinational with a register        ; 88                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 133                   ; 0                              ;
-;     -- 3 input functions                    ; 56                    ; 0                              ;
-;     -- <=2 input functions                  ; 9                     ; 0                              ;
+;     -- 4 input functions                    ; 229                   ; 0                              ;
+;     -- 3 input functions                    ; 59                    ; 0                              ;
+;     -- <=2 input functions                  ; 16                    ; 0                              ;
 ;     -- Register only                        ; 1                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 198                   ; 0                              ;
+;     -- normal mode                          ; 304                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 84                    ; 0                              ;
-;     -- Dedicated logic registers            ; 84 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 89                    ; 0                              ;
+;     -- Dedicated logic registers            ; 89 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 13 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 21 / 2076 ( 1 % )     ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 21                    ; 0                              ;
@@ -276,8 +276,8 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 918                   ; 0                              ;
-;     -- Registered Connections               ; 208                   ; 0                              ;
+;     -- Total Connections                    ; 1347                  ; 0                              ;
+;     -- Registered Connections               ; 275                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -309,16 +309,16 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; address[0] ; C13   ; 3        ; 31           ; 36           ; 2           ; 54                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[1] ; D13   ; 3        ; 31           ; 36           ; 3           ; 62                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[2] ; A10   ; 3        ; 22           ; 36           ; 2           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[3] ; G11   ; 3        ; 22           ; 36           ; 1           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; address[4] ; B10   ; 3        ; 22           ; 36           ; 3           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[0] ; C13   ; 3        ; 31           ; 36           ; 2           ; 74                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[1] ; D13   ; 3        ; 31           ; 36           ; 3           ; 81                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[2] ; A14   ; 4        ; 33           ; 36           ; 1           ; 20                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[3] ; D14   ; 4        ; 33           ; 36           ; 0           ; 18                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; address[4] ; B14   ; 4        ; 33           ; 36           ; 2           ; 19                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; clock      ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[0]    ; F12   ; 3        ; 27           ; 36           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[1]    ; D12   ; 3        ; 24           ; 36           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; data[2]    ; C11   ; 3        ; 29           ; 36           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; wren       ; D11   ; 3        ; 22           ; 36           ; 0           ; 25                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[0]    ; F12   ; 3        ; 27           ; 36           ; 3           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[1]    ; G14   ; 4        ; 35           ; 36           ; 2           ; 6                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; data[2]    ; C11   ; 3        ; 29           ; 36           ; 3           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; wren       ; J10   ; 3        ; 27           ; 36           ; 1           ; 59                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -327,17 +327,17 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; LRU            ; D10   ; 3        ; 20           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[0] ; G12   ; 3        ; 27           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[1] ; J13   ; 3        ; 24           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dadoParaCPU[2] ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; dirty          ; C10   ; 3        ; 20           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; hit            ; J14   ; 3        ; 24           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[0]         ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[1]         ; E12   ; 3        ; 24           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; tag[2]         ; A9    ; 3        ; 20           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; valid          ; B9    ; 3        ; 20           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; writeBack      ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; LRU            ; D12   ; 3        ; 24           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[0] ; E12   ; 3        ; 24           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[1] ; AD12  ; 8        ; 31           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dadoParaCPU[2] ; AD11  ; 8        ; 27           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; dirty          ; G12   ; 3        ; 27           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; hit            ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[0]         ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[1]         ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; tag[2]         ; G13   ; 4        ; 35           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; valid          ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; writeBack      ; J14   ; 3        ; 24           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +----------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -348,12 +348,12 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 +----------+------------------+---------------+--------------+
 ; 1        ; 1 / 64 ( 2 % )   ; 3.3V          ; --           ;
 ; 2        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 3        ; 20 / 56 ( 36 % ) ; 3.3V          ; --           ;
-; 4        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
+; 3        ; 13 / 56 ( 23 % ) ; 3.3V          ; --           ;
+; 4        ; 5 / 58 ( 9 % )   ; 3.3V          ; --           ;
 ; 5        ; 0 / 65 ( 0 % )   ; 3.3V          ; --           ;
 ; 6        ; 1 / 59 ( 2 % )   ; 3.3V          ; --           ;
 ; 7        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 8        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
+; 8        ; 2 / 56 ( 4 % )   ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -369,12 +369,12 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; A6       ; 479        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ; 465        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A8       ; 457        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A9       ; 451        ; 3        ; tag[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; A10      ; 447        ; 3        ; address[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A9       ; 451        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A10      ; 447        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A12      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A13      ; 430        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; A14      ; 427        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A14      ; 427        ; 4        ; address[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A17      ; 412        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -474,8 +474,8 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; AD8      ; 149        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD9      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD10     ; 167        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AD11     ; 173        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AD12     ; 181        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD11     ; 173        ; 8        ; dadoParaCPU[2]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD12     ; 181        ; 8        ; dadoParaCPU[1]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AD13     ; 186        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AD14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD15     ; 190        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -548,12 +548,12 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; B6       ; 480        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B7       ; 466        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B8       ; 458        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B9       ; 452        ; 3        ; valid                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B10      ; 448        ; 3        ; address[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B11      ; 435        ; 3        ; tag[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B12      ; 433        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B9       ; 452        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B10      ; 448        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B11      ; 435        ; 3        ; tag[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 433        ; 3        ; hit                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 429        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; B14      ; 428        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B14      ; 428        ; 4        ; address[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B15      ; 420        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B16      ; 419        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B17      ; 411        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -575,9 +575,9 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; C7       ; 468        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C8       ; 463        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 459        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C10      ; 450        ; 3        ; dirty                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ; 436        ; 3        ; data[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; C12      ; 434        ; 3        ; tag[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C13      ; 431        ; 3        ; address[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -601,11 +601,11 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; D7       ; 469        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D8       ; 464        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D9       ; 460        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D10      ; 449        ; 3        ; LRU                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D11      ; 445        ; 3        ; wren                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D12      ; 443        ; 3        ; data[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; D12      ; 443        ; 3        ; LRU                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D13      ; 432        ; 3        ; address[1]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D14      ; 426        ; 4        ; address[3]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D16      ; 415        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D17      ; 403        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -629,7 +629,7 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; E9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E10      ; 453        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E12      ; 444        ; 3        ; tag[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E12      ; 444        ; 3        ; dadoParaCPU[0]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E13      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E15      ; 416        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -680,10 +680,10 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; G8       ;            ;          ; VCCA_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G9       ; 471        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G10      ; 461        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G11      ; 446        ; 3        ; address[3]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G12      ; 439        ; 3        ; dadoParaCPU[0]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G13      ; 422        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G14      ; 424        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G11      ; 446        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G12      ; 439        ; 3        ; dirty                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G13      ; 422        ; 4        ; tag[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G14      ; 424        ; 4        ; data[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G15      ; 410        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G16      ; 407        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G17      ; 402        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -731,11 +731,11 @@ The pin-out file can be found in C:/altera/projetoMemoriaCache/output_files/memo
 ; J7       ; 17         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J8       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ; 475        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J10      ; 438        ; 3        ; dadoParaCPU[2]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; J11      ; 437        ; 3        ; writeBack                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J10      ; 438        ; 3        ; wren                                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J11      ; 437        ; 3        ; valid                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; J13      ; 442        ; 3        ; dadoParaCPU[1]                           ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; J14      ; 441        ; 3        ; hit                                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J13      ; 442        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J14      ; 441        ; 3        ; writeBack                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J15      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ; 385        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J17      ; 399        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1080,7 +1080,7 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                               ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------+--------------+
-; |memoriaCache                             ; 199 (199)   ; 84 (84)                   ; 0 (0)         ; 48          ; 1    ; 0            ; 0       ; 0         ; 21   ; 0            ; 115 (115)    ; 1 (1)             ; 83 (83)          ; |memoriaCache                                                                                     ; work         ;
+; |memoriaCache                             ; 305 (305)   ; 89 (89)                   ; 0 (0)         ; 48          ; 1    ; 0            ; 0       ; 0         ; 21   ; 0            ; 216 (216)    ; 1 (1)             ; 88 (88)          ; |memoriaCache                                                                                     ; work         ;
 ;    |memoriaPrincipal:ram|                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 48          ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memoriaCache|memoriaPrincipal:ram                                                                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 48          ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memoriaCache|memoriaPrincipal:ram|altsyncram:altsyncram_component                                ; work         ;
 ;          |altsyncram_nbf1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 48          ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memoriaCache|memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated ; work         ;
@@ -1126,98 +1126,165 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; address[0]               ;                   ;         ;
 ; address[1]               ;                   ;         ;
 ; address[2]               ;                   ;         ;
-;      - always0~1         ; 0                 ; 6       ;
-;      - always0~3         ; 0                 ; 6       ;
-;      - tag~12            ; 0                 ; 6       ;
-;      - tag~13            ; 0                 ; 6       ;
-;      - cache[2][3]~28    ; 0                 ; 6       ;
-;      - cache[4][3]~29    ; 0                 ; 6       ;
-;      - cache[0][3]~30    ; 0                 ; 6       ;
-;      - cache[6][3]~31    ; 0                 ; 6       ;
-;      - cache[3][3]~36    ; 0                 ; 6       ;
-;      - cache[5][3]~37    ; 0                 ; 6       ;
-;      - cache[1][3]~38    ; 0                 ; 6       ;
-;      - cache[7][3]~39    ; 0                 ; 6       ;
+;      - always0~1         ; 1                 ; 6       ;
+;      - always0~4         ; 1                 ; 6       ;
+;      - tag~9             ; 1                 ; 6       ;
+;      - tag~11            ; 1                 ; 6       ;
+;      - cache~24          ; 1                 ; 6       ;
+;      - cache~25          ; 1                 ; 6       ;
+;      - cache~26          ; 1                 ; 6       ;
+;      - cache~27          ; 1                 ; 6       ;
+;      - tag~17            ; 1                 ; 6       ;
+;      - tag~19            ; 1                 ; 6       ;
+;      - tag~21            ; 1                 ; 6       ;
+;      - cache[2][3]~56    ; 1                 ; 6       ;
+;      - cache[4][3]~57    ; 1                 ; 6       ;
+;      - cache[0][3]~58    ; 1                 ; 6       ;
+;      - cache[6][3]~59    ; 1                 ; 6       ;
+;      - cache[3][3]~69    ; 1                 ; 6       ;
+;      - cache[5][3]~70    ; 1                 ; 6       ;
+;      - cache[1][3]~71    ; 1                 ; 6       ;
+;      - cache[7][3]~72    ; 1                 ; 6       ;
+;      - varEndMem~2       ; 1                 ; 6       ;
 ; address[3]               ;                   ;         ;
 ;      - always0~1         ; 1                 ; 6       ;
-;      - always0~3         ; 1                 ; 6       ;
-;      - tag~16            ; 1                 ; 6       ;
-;      - tag~18            ; 1                 ; 6       ;
-;      - tag~19            ; 1                 ; 6       ;
-;      - cache[2][4]~24    ; 1                 ; 6       ;
-;      - cache[4][4]~25    ; 1                 ; 6       ;
-;      - cache[0][4]~26    ; 1                 ; 6       ;
-;      - cache[6][4]~27    ; 1                 ; 6       ;
-;      - cache[3][4]~40    ; 1                 ; 6       ;
-;      - cache[5][4]~41    ; 1                 ; 6       ;
-;      - cache[1][4]~42    ; 1                 ; 6       ;
-;      - cache[7][4]~43    ; 1                 ; 6       ;
+;      - always0~4         ; 1                 ; 6       ;
+;      - cache~28          ; 1                 ; 6       ;
+;      - cache~29          ; 1                 ; 6       ;
+;      - cache~30          ; 1                 ; 6       ;
+;      - cache~31          ; 1                 ; 6       ;
+;      - tag~29            ; 1                 ; 6       ;
+;      - tag~30            ; 1                 ; 6       ;
+;      - tag~34            ; 1                 ; 6       ;
+;      - cache[2][4]~52    ; 1                 ; 6       ;
+;      - cache[4][4]~53    ; 1                 ; 6       ;
+;      - cache[0][4]~54    ; 1                 ; 6       ;
+;      - cache[6][4]~55    ; 1                 ; 6       ;
+;      - cache[3][4]~65    ; 1                 ; 6       ;
+;      - cache[5][4]~66    ; 1                 ; 6       ;
+;      - cache[1][4]~67    ; 1                 ; 6       ;
+;      - cache[7][4]~68    ; 1                 ; 6       ;
+;      - varEndMem~5       ; 1                 ; 6       ;
 ; address[4]               ;                   ;         ;
 ;      - always0~2         ; 1                 ; 6       ;
-;      - always0~4         ; 1                 ; 6       ;
-;      - tag~24            ; 1                 ; 6       ;
-;      - tag~25            ; 1                 ; 6       ;
-;      - cache[2][5]~32    ; 1                 ; 6       ;
-;      - cache[4][5]~33    ; 1                 ; 6       ;
-;      - cache[0][5]~34    ; 1                 ; 6       ;
-;      - cache[6][5]~35    ; 1                 ; 6       ;
-;      - cache[3][5]~44    ; 1                 ; 6       ;
-;      - cache[5][5]~45    ; 1                 ; 6       ;
-;      - cache[1][5]~46    ; 1                 ; 6       ;
-;      - cache[7][5]~47    ; 1                 ; 6       ;
+;      - always0~5         ; 1                 ; 6       ;
+;      - tag~38            ; 1                 ; 6       ;
+;      - tag~39            ; 1                 ; 6       ;
+;      - cache~32          ; 1                 ; 6       ;
+;      - cache~33          ; 1                 ; 6       ;
+;      - cache~34          ; 1                 ; 6       ;
+;      - cache~35          ; 1                 ; 6       ;
+;      - tag~43            ; 1                 ; 6       ;
+;      - tag~45            ; 1                 ; 6       ;
+;      - tag~46            ; 1                 ; 6       ;
+;      - cache[2][5]~60    ; 1                 ; 6       ;
+;      - cache[4][5]~61    ; 1                 ; 6       ;
+;      - cache[0][5]~62    ; 1                 ; 6       ;
+;      - cache[6][5]~63    ; 1                 ; 6       ;
+;      - cache[3][5]~73    ; 1                 ; 6       ;
+;      - cache[5][5]~74    ; 1                 ; 6       ;
+;      - cache[1][5]~75    ; 1                 ; 6       ;
+;      - cache[7][5]~76    ; 1                 ; 6       ;
 ; wren                     ;                   ;         ;
+;      - cache[0][7]~23    ; 0                 ; 6       ;
 ;      - dirty~1           ; 0                 ; 6       ;
-;      - dadoParaCPU[0]~2  ; 0                 ; 6       ;
-;      - dadoParaCPU[0]~3  ; 0                 ; 6       ;
-;      - dadoParaCPU[0]~15 ; 0                 ; 6       ;
-;      - cache[4][8]~20    ; 0                 ; 6       ;
-;      - cache[0][8]~21    ; 0                 ; 6       ;
-;      - cache[5][8]~48    ; 0                 ; 6       ;
-;      - varEspera~1       ; 0                 ; 6       ;
-;      - cache[3][6]~51    ; 0                 ; 6       ;
-;      - cache[5][6]~52    ; 0                 ; 6       ;
-;      - cache[1][6]~53    ; 0                 ; 6       ;
-;      - cache[7][6]~54    ; 0                 ; 6       ;
-;      - cache[2][6]~56    ; 0                 ; 6       ;
-;      - cache[2][6]~57    ; 0                 ; 6       ;
-;      - cache[4][6]~58    ; 0                 ; 6       ;
-;      - cache[0][6]~59    ; 0                 ; 6       ;
-;      - cache[6][6]~60    ; 0                 ; 6       ;
-;      - cache~64          ; 0                 ; 6       ;
-;      - cache[4][0]~65    ; 0                 ; 6       ;
-;      - cache[4][0]~66    ; 0                 ; 6       ;
-;      - cache[1][0]~71    ; 0                 ; 6       ;
-;      - cache[1][0]~72    ; 0                 ; 6       ;
-;      - varEnviaDado~0    ; 0                 ; 6       ;
-;      - cache~77          ; 0                 ; 6       ;
-;      - cache~86          ; 0                 ; 6       ;
+;      - tag[0]~10         ; 0                 ; 6       ;
+;      - tag[0]~12         ; 0                 ; 6       ;
+;      - tag[0]~15         ; 0                 ; 6       ;
+;      - tag[0]~20         ; 0                 ; 6       ;
+;      - dadoParaCPU[0]~10 ; 0                 ; 6       ;
+;      - dadoParaCPU[0]~11 ; 0                 ; 6       ;
+;      - dadoParaCPU[0]~24 ; 0                 ; 6       ;
+;      - cache[0][8]~49    ; 0                 ; 6       ;
+;      - cache[4][8]~50    ; 0                 ; 6       ;
+;      - cache[2][3]~51    ; 0                 ; 6       ;
+;      - cache[7][3]~64    ; 0                 ; 6       ;
+;      - cache[6][7]~79    ; 0                 ; 6       ;
+;      - cache[3][6]~82    ; 0                 ; 6       ;
+;      - cache[5][6]~83    ; 0                 ; 6       ;
+;      - cache[1][6]~84    ; 0                 ; 6       ;
+;      - cache[7][6]~85    ; 0                 ; 6       ;
+;      - varEnviaDado~1    ; 0                 ; 6       ;
+;      - varEnviaDado~2    ; 0                 ; 6       ;
+;      - cache[2][6]~102   ; 0                 ; 6       ;
+;      - cache[4][6]~103   ; 0                 ; 6       ;
+;      - cache[0][6]~104   ; 0                 ; 6       ;
+;      - cache[6][6]~105   ; 0                 ; 6       ;
+;      - cache[2][0]~106   ; 0                 ; 6       ;
+;      - cache[2][0]~108   ; 0                 ; 6       ;
+;      - cache[4][0]~110   ; 0                 ; 6       ;
+;      - cache[4][0]~112   ; 0                 ; 6       ;
+;      - cache[0][0]~114   ; 0                 ; 6       ;
+;      - cache[0][0]~116   ; 0                 ; 6       ;
+;      - cache[6][0]~118   ; 0                 ; 6       ;
+;      - cache[6][0]~120   ; 0                 ; 6       ;
+;      - cache~122         ; 0                 ; 6       ;
+;      - cache[1][0]~123   ; 0                 ; 6       ;
+;      - cache[2][1]~128   ; 0                 ; 6       ;
+;      - cache[4][1]~130   ; 0                 ; 6       ;
+;      - cache[0][1]~132   ; 0                 ; 6       ;
+;      - cache[6][1]~134   ; 0                 ; 6       ;
+;      - cache~136         ; 0                 ; 6       ;
+;      - cache[2][2]~141   ; 0                 ; 6       ;
+;      - cache[2][2]~143   ; 0                 ; 6       ;
+;      - cache~144         ; 0                 ; 6       ;
+;      - cache[0][2]~147   ; 0                 ; 6       ;
+;      - cache[0][2]~150   ; 0                 ; 6       ;
+;      - cache[0][2]~152   ; 0                 ; 6       ;
+;      - cache[6][2]~154   ; 0                 ; 6       ;
+;      - cache[6][2]~156   ; 0                 ; 6       ;
+;      - cache~158         ; 0                 ; 6       ;
+;      - varEndMem[0]~0    ; 0                 ; 6       ;
+;      - varEndMem~2       ; 0                 ; 6       ;
+;      - varEndMem[3]~3    ; 0                 ; 6       ;
+;      - varEndMem~5       ; 0                 ; 6       ;
+;      - cache[5][8]~165   ; 0                 ; 6       ;
+;      - varEspera~4       ; 0                 ; 6       ;
+;      - cache[0][7]~168   ; 0                 ; 6       ;
+;      - cache[0][7]~169   ; 0                 ; 6       ;
+;      - cache[4][2]~171   ; 0                 ; 6       ;
+;      - tag~51            ; 0                 ; 6       ;
+;      - dadoParaCPU~48    ; 0                 ; 6       ;
 ; data[0]                  ;                   ;         ;
-;      - dadoParaCPU~1     ; 0                 ; 6       ;
-;      - dadoParaCPU~11    ; 0                 ; 6       ;
-;      - dadoParaCPU~13    ; 0                 ; 6       ;
-;      - cache~64          ; 0                 ; 6       ;
+;      - dadoParaCPU~9     ; 0                 ; 6       ;
+;      - dadoParaCPU~19    ; 0                 ; 6       ;
+;      - cache~36          ; 0                 ; 6       ;
+;      - cache~37          ; 0                 ; 6       ;
+;      - cache~38          ; 0                 ; 6       ;
+;      - cache~39          ; 0                 ; 6       ;
+;      - cache~122         ; 0                 ; 6       ;
 ; data[1]                  ;                   ;         ;
-;      - dadoParaCPU~22    ; 1                 ; 6       ;
-;      - dadoParaCPU~24    ; 1                 ; 6       ;
-;      - cache~77          ; 1                 ; 6       ;
+;      - cache~41          ; 0                 ; 6       ;
+;      - cache~42          ; 0                 ; 6       ;
+;      - cache~43          ; 0                 ; 6       ;
+;      - cache~44          ; 0                 ; 6       ;
+;      - cache~136         ; 0                 ; 6       ;
+;      - dadoParaCPU~48    ; 0                 ; 6       ;
 ; data[2]                  ;                   ;         ;
-;      - dadoParaCPU~27    ; 0                 ; 6       ;
-;      - dadoParaCPU~33    ; 0                 ; 6       ;
 ;      - dadoParaCPU~35    ; 0                 ; 6       ;
-;      - cache~86          ; 0                 ; 6       ;
+;      - dadoParaCPU~41    ; 0                 ; 6       ;
+;      - cache~45          ; 0                 ; 6       ;
+;      - cache~46          ; 0                 ; 6       ;
+;      - cache~47          ; 0                 ; 6       ;
+;      - cache~48          ; 0                 ; 6       ;
+;      - cache[0][2]~145   ; 0                 ; 6       ;
+;      - cache~158         ; 0                 ; 6       ;
 +--------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                       ;
-+-------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name        ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; clock       ; PIN_P2             ; 85      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; varEspera   ; LCFF_X25_Y33_N21   ; 21      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; varEspera~0 ; LCCOMB_X21_Y33_N14 ; 13      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; writeBack~1 ; LCCOMB_X27_Y32_N18 ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-+-------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                           ;
++-----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name            ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; cache[0][2]~148 ; LCCOMB_X29_Y21_N8  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; cache[1][7]~81  ; LCCOMB_X27_Y23_N26 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; clock           ; PIN_P2             ; 90      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; varEndMem[0]~1  ; LCCOMB_X27_Y22_N2  ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; varEspera       ; LCFF_X30_Y24_N7    ; 25      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; writeBack~1     ; LCCOMB_X30_Y24_N4  ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; writeEnable     ; LCFF_X30_Y24_N19   ; 1       ; Write enable              ; no     ; --                   ; --               ; --                        ;
++-----------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1225,7 +1292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
-; clock ; PIN_P2   ; 85      ; Global Clock         ; GCLK3            ; --                        ;
+; clock ; PIN_P2   ; 90      ; Global Clock         ; GCLK3            ; --                        ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1234,288 +1301,399 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                       ; Fan-Out ;
 +--------------------------------------------------------------------------------------------+---------+
-; address[1]                                                                                 ; 62      ;
-; address[0]                                                                                 ; 54      ;
-; Mux30~1                                                                                    ; 26      ;
-; wren                                                                                       ; 25      ;
-; varEspera                                                                                  ; 21      ;
-; always0~2                                                                                  ; 20      ;
-; always0~4                                                                                  ; 17      ;
-; address[3]                                                                                 ; 13      ;
-; varEspera~0                                                                                ; 13      ;
-; address[4]                                                                                 ; 12      ;
-; address[2]                                                                                 ; 12      ;
-; cache[1][0]~72                                                                             ; 12      ;
-; cache[4][0]~66                                                                             ; 12      ;
-; via1~0                                                                                     ; 11      ;
-; via1~1                                                                                     ; 10      ;
-; via1~3                                                                                     ; 9       ;
-; via1~2                                                                                     ; 9       ;
-; cache~86                                                                                   ; 8       ;
-; cache~77                                                                                   ; 8       ;
-; cache~64                                                                                   ; 8       ;
-; varEnviaDado                                                                               ; 6       ;
-; dadoParaCPU[0]~3                                                                           ; 6       ;
-; cache~55                                                                                   ; 5       ;
-; dadoParaCPU[0]~4                                                                           ; 5       ;
-; dadoParaCPU[0]~2                                                                           ; 5       ;
-; data[2]                                                                                    ; 4       ;
-; data[0]                                                                                    ; 4       ;
-; cache[5][8]~103                                                                            ; 4       ;
-; cache[2][6]~56                                                                             ; 4       ;
-; dadoParaCPU[0]~14                                                                          ; 4       ;
-; tag[0]~9                                                                                   ; 4       ;
+; address[1]                                                                                 ; 81      ;
+; address[0]                                                                                 ; 74      ;
+; wren                                                                                       ; 59      ;
+; always0~2                                                                                  ; 41      ;
+; always0~5                                                                                  ; 31      ;
+; Mux28~1                                                                                    ; 26      ;
+; varEspera                                                                                  ; 25      ;
+; via1~2                                                                                     ; 22      ;
+; cache[0][3]~20                                                                             ; 22      ;
+; via1~1                                                                                     ; 22      ;
+; address[2]                                                                                 ; 20      ;
+; address[4]                                                                                 ; 19      ;
+; via1~0                                                                                     ; 19      ;
+; address[3]                                                                                 ; 18      ;
+; Mux11~3                                                                                    ; 17      ;
+; varEnviaDado                                                                               ; 15      ;
+; Mux11~1                                                                                    ; 15      ;
+; cache[1][0]~123                                                                            ; 12      ;
+; cache[7][3]~64                                                                             ; 12      ;
+; cache[2][3]~51                                                                             ; 12      ;
+; cache[6][7]~79                                                                             ; 9       ;
+; data[2]                                                                                    ; 8       ;
+; tag[0]~15                                                                                  ; 8       ;
+; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[0] ; 8       ;
+; data[0]                                                                                    ; 7       ;
+; tag[0]~10                                                                                  ; 7       ;
+; cache[0][7]~23                                                                             ; 7       ;
+; data[1]                                                                                    ; 6       ;
+; cache[5][8]~165                                                                            ; 6       ;
+; cache[1][7]~81                                                                             ; 6       ;
+; cache[4][8]~50                                                                             ; 6       ;
+; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[1] ; 6       ;
+; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[2] ; 6       ;
+; dadoParaCPU[0]~12                                                                          ; 5       ;
+; dadoParaCPU[0]~10                                                                          ; 5       ;
+; tag[0]~20                                                                                  ; 5       ;
+; cache[0][7]~168                                                                            ; 4       ;
+; varEndMem[0]~1                                                                             ; 4       ;
+; cache~158                                                                                  ; 4       ;
+; cache~136                                                                                  ; 4       ;
+; cache~122                                                                                  ; 4       ;
+; cache[6][2]                                                                                ; 4       ;
+; cache[0][2]                                                                                ; 4       ;
+; cache[2][2]                                                                                ; 4       ;
+; dadoParaCPU[0]~11                                                                          ; 4       ;
+; tag[0]~12                                                                                  ; 4       ;
 ; writeBack~1                                                                                ; 4       ;
-; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[2] ; 4       ;
-; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[0] ; 4       ;
-; data[1]                                                                                    ; 3       ;
-; cache[7][3]~102                                                                            ; 3       ;
-; cache[1][3]~101                                                                            ; 3       ;
-; cache[5][3]~100                                                                            ; 3       ;
-; cache[3][3]~99                                                                             ; 3       ;
-; cache[6][3]~98                                                                             ; 3       ;
-; cache[0][3]~97                                                                             ; 3       ;
-; cache[4][3]~96                                                                             ; 3       ;
-; cache[2][3]~95                                                                             ; 3       ;
-; cache[5][8]~48                                                                             ; 3       ;
-; cache[0][8]~21                                                                             ; 3       ;
+; writeBack~0                                                                                ; 4       ;
+; cache[7][4]                                                                                ; 4       ;
+; cache[1][4]                                                                                ; 4       ;
+; cache[5][4]                                                                                ; 4       ;
+; cache[3][4]                                                                                ; 4       ;
+; cache[0][7]~169                                                                            ; 3       ;
+; cache[0][2]~148                                                                            ; 3       ;
+; cache[0][2]~145                                                                            ; 3       ;
+; cache[4][0]~112                                                                            ; 3       ;
+; cache[4][7]~96                                                                             ; 3       ;
+; varEnviaDado~0                                                                             ; 3       ;
 ; cache[1][2]                                                                                ; 3       ;
 ; cache[3][2]                                                                                ; 3       ;
 ; cache[5][2]                                                                                ; 3       ;
 ; cache[7][2]                                                                                ; 3       ;
+; cache[4][2]                                                                                ; 3       ;
 ; cache[7][1]                                                                                ; 3       ;
+; cache[1][1]                                                                                ; 3       ;
 ; cache[5][1]                                                                                ; 3       ;
 ; cache[3][1]                                                                                ; 3       ;
-; cache[1][1]                                                                                ; 3       ;
-; dadoParaCPU[0]~15                                                                          ; 3       ;
+; cache[6][1]                                                                                ; 3       ;
+; cache[0][1]                                                                                ; 3       ;
+; cache[4][1]                                                                                ; 3       ;
+; cache[2][1]                                                                                ; 3       ;
+; dadoParaCPU[0]~24                                                                          ; 3       ;
 ; cache[1][0]                                                                                ; 3       ;
 ; cache[3][0]                                                                                ; 3       ;
-; dadoParaCPU[0]~5                                                                           ; 3       ;
 ; cache[5][0]                                                                                ; 3       ;
 ; cache[7][0]                                                                                ; 3       ;
-; tag[0]~8                                                                                   ; 3       ;
+; cache[6][0]                                                                                ; 3       ;
+; cache[0][0]                                                                                ; 3       ;
+; cache[4][0]                                                                                ; 3       ;
+; cache[2][0]                                                                                ; 3       ;
+; cache[6][7]                                                                                ; 3       ;
+; cache[7][7]                                                                                ; 3       ;
+; cache[1][7]                                                                                ; 3       ;
+; cache[3][7]                                                                                ; 3       ;
+; cache[5][7]                                                                                ; 3       ;
 ; hit~0                                                                                      ; 3       ;
 ; cache[7][5]                                                                                ; 3       ;
 ; cache[1][5]                                                                                ; 3       ;
 ; cache[5][5]                                                                                ; 3       ;
 ; cache[3][5]                                                                                ; 3       ;
-; Mux25~1                                                                                    ; 3       ;
-; cache[7][4]                                                                                ; 3       ;
-; cache[1][4]                                                                                ; 3       ;
-; cache[5][4]                                                                                ; 3       ;
-; cache[3][4]                                                                                ; 3       ;
-; Mux26~1                                                                                    ; 3       ;
+; Mux27~1                                                                                    ; 3       ;
 ; cache[7][3]                                                                                ; 3       ;
 ; cache[1][3]                                                                                ; 3       ;
 ; cache[5][3]                                                                                ; 3       ;
 ; cache[3][3]                                                                                ; 3       ;
-; Mux19~1                                                                                    ; 3       ;
-; Mux18~1                                                                                    ; 3       ;
-; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|q_a[1] ; 3       ;
-; cache[4][8]~20                                                                             ; 2       ;
-; dadoParaCPU~28                                                                             ; 2       ;
-; Mux13~3                                                                                    ; 2       ;
-; dadoParaCPU~26                                                                             ; 2       ;
-; Mux13~1                                                                                    ; 2       ;
-; cache[6][2]                                                                                ; 2       ;
-; cache[0][2]                                                                                ; 2       ;
-; cache[4][2]                                                                                ; 2       ;
-; cache[2][2]                                                                                ; 2       ;
-; dadoParaCPU~19                                                                             ; 2       ;
-; dadoParaCPU~18                                                                             ; 2       ;
-; Mux14~3                                                                                    ; 2       ;
-; dadoParaCPU~17                                                                             ; 2       ;
-; Mux14~1                                                                                    ; 2       ;
-; cache[6][1]                                                                                ; 2       ;
-; cache[0][1]                                                                                ; 2       ;
-; cache[4][1]                                                                                ; 2       ;
-; cache[2][1]                                                                                ; 2       ;
-; dadoParaCPU~6                                                                              ; 2       ;
-; Mux15~3                                                                                    ; 2       ;
-; dadoParaCPU~0                                                                              ; 2       ;
-; Mux15~1                                                                                    ; 2       ;
-; cache[6][0]                                                                                ; 2       ;
-; cache[0][0]                                                                                ; 2       ;
-; cache[4][0]                                                                                ; 2       ;
-; cache[2][0]                                                                                ; 2       ;
-; cache[6][7]                                                                                ; 2       ;
-; cache[0][7]                                                                                ; 2       ;
-; cache[4][7]                                                                                ; 2       ;
-; cache[2][7]                                                                                ; 2       ;
-; Mux7~3                                                                                     ; 2       ;
+; Mux26~1                                                                                    ; 3       ;
+; cache[6][5]                                                                                ; 3       ;
+; cache[0][5]                                                                                ; 3       ;
+; cache[4][5]                                                                                ; 3       ;
+; cache[2][5]                                                                                ; 3       ;
+; Mux23~1                                                                                    ; 3       ;
+; cache[6][3]                                                                                ; 3       ;
+; cache[0][3]                                                                                ; 3       ;
+; cache[4][3]                                                                                ; 3       ;
+; cache[2][3]                                                                                ; 3       ;
+; Mux22~1                                                                                    ; 3       ;
+; cache[6][4]                                                                                ; 3       ;
+; cache[0][4]                                                                                ; 3       ;
+; cache[4][4]                                                                                ; 3       ;
+; cache[2][4]                                                                                ; 3       ;
+; varEndMem[3]~3                                                                             ; 2       ;
+; cache[6][0]~120                                                                            ; 2       ;
+; cache[0][0]~116                                                                            ; 2       ;
+; cache[2][0]~108                                                                            ; 2       ;
+; cache~95                                                                                   ; 2       ;
+; tag~50                                                                                     ; 2       ;
+; cache~48                                                                                   ; 2       ;
+; cache~47                                                                                   ; 2       ;
+; cache~46                                                                                   ; 2       ;
+; cache~45                                                                                   ; 2       ;
+; dadoParaCPU~36                                                                             ; 2       ;
+; Mux17~3                                                                                    ; 2       ;
+; dadoParaCPU~34                                                                             ; 2       ;
+; Mux17~1                                                                                    ; 2       ;
+; cache~44                                                                                   ; 2       ;
+; cache~43                                                                                   ; 2       ;
+; cache~42                                                                                   ; 2       ;
+; cache~41                                                                                   ; 2       ;
+; Mux18~3                                                                                    ; 2       ;
+; Mux18~1                                                                                    ; 2       ;
+; cache[0][0]~40                                                                             ; 2       ;
+; cache~39                                                                                   ; 2       ;
+; cache~38                                                                                   ; 2       ;
+; cache~37                                                                                   ; 2       ;
+; cache~36                                                                                   ; 2       ;
+; dadoParaCPU~14                                                                             ; 2       ;
+; Mux19~3                                                                                    ; 2       ;
+; dadoParaCPU[0]~13                                                                          ; 2       ;
+; dadoParaCPU~8                                                                              ; 2       ;
+; Mux19~1                                                                                    ; 2       ;
+; tag~42                                                                                     ; 2       ;
+; tag~37                                                                                     ; 2       ;
+; tag~16                                                                                     ; 2       ;
+; tag~8                                                                                      ; 2       ;
 ; cache[6][6]                                                                                ; 2       ;
 ; cache[0][6]                                                                                ; 2       ;
 ; cache[4][6]                                                                                ; 2       ;
 ; cache[2][6]                                                                                ; 2       ;
-; Mux7~1                                                                                     ; 2       ;
+; cache[0][7]                                                                                ; 2       ;
+; cache[4][7]                                                                                ; 2       ;
+; cache[2][7]                                                                                ; 2       ;
+; cache~22                                                                                   ; 2       ;
+; cache~21                                                                                   ; 2       ;
+; cache~19                                                                                   ; 2       ;
+; cache~18                                                                                   ; 2       ;
 ; cache[7][6]                                                                                ; 2       ;
 ; cache[1][6]                                                                                ; 2       ;
 ; cache[5][6]                                                                                ; 2       ;
 ; cache[3][6]                                                                                ; 2       ;
+; Mux25~1                                                                                    ; 2       ;
 ; cache[5][8]                                                                                ; 2       ;
 ; cache[7][8]                                                                                ; 2       ;
-; Mux24~1                                                                                    ; 2       ;
-; Mux17~1                                                                                    ; 2       ;
-; cache[6][5]                                                                                ; 2       ;
-; cache[0][5]                                                                                ; 2       ;
-; cache[4][5]                                                                                ; 2       ;
-; cache[2][5]                                                                                ; 2       ;
-; cache[6][3]                                                                                ; 2       ;
-; cache[0][3]                                                                                ; 2       ;
-; cache[4][3]                                                                                ; 2       ;
-; cache[2][3]                                                                                ; 2       ;
-; cache[6][4]                                                                                ; 2       ;
-; cache[0][4]                                                                                ; 2       ;
-; cache[4][4]                                                                                ; 2       ;
-; cache[2][4]                                                                                ; 2       ;
+; Mux21~1                                                                                    ; 2       ;
 ; cache[0][8]                                                                                ; 2       ;
 ; cache[4][8]                                                                                ; 2       ;
 ; valid~reg0feeder                                                                           ; 1       ;
-; LRU~0                                                                                      ; 1       ;
-; tag~28                                                                                     ; 1       ;
-; tag~27                                                                                     ; 1       ;
-; cache~104                                                                                  ; 1       ;
+; dadoParaCPU~48                                                                             ; 1       ;
+; tag~51                                                                                     ; 1       ;
+; cache[4][2]~171                                                                            ; 1       ;
+; cache[6][7]~170                                                                            ; 1       ;
+; varEspera~4                                                                                ; 1       ;
+; cache[5][8]~167                                                                            ; 1       ;
+; cache[7][8]~166                                                                            ; 1       ;
+; cache[0][8]~164                                                                            ; 1       ;
+; cache[4][8]~163                                                                            ; 1       ;
+; dadoParaCPU~47                                                                             ; 1       ;
 ; varDadoWriteBack~2                                                                         ; 1       ;
 ; varDadoWriteBack~1                                                                         ; 1       ;
-; varEndMem~1                                                                                ; 1       ;
-; varEndMem~0                                                                                ; 1       ;
+; varEndMem~6                                                                                ; 1       ;
+; varEndMem~5                                                                                ; 1       ;
+; varEndMem~4                                                                                ; 1       ;
+; varEndMem~2                                                                                ; 1       ;
+; varEndMem[0]~0                                                                             ; 1       ;
 ; varDadoWriteBack~0                                                                         ; 1       ;
-; cache[1][2]~94                                                                             ; 1       ;
-; cache[3][2]~93                                                                             ; 1       ;
+; writeBack~2                                                                                ; 1       ;
+; cache[1][2]~162                                                                            ; 1       ;
+; cache[3][2]~161                                                                            ; 1       ;
 ; varDadoWriteBack[2]                                                                        ; 1       ;
-; cache[5][2]~92                                                                             ; 1       ;
-; cache[7][2]~91                                                                             ; 1       ;
-; cache[6][2]~90                                                                             ; 1       ;
-; cache[0][2]~89                                                                             ; 1       ;
-; cache[4][2]~88                                                                             ; 1       ;
-; cache[2][2]~87                                                                             ; 1       ;
+; cache[5][2]~160                                                                            ; 1       ;
+; cache[7][2]~159                                                                            ; 1       ;
+; cache[6][2]~157                                                                            ; 1       ;
+; cache[6][2]~156                                                                            ; 1       ;
+; cache[6][2]~155                                                                            ; 1       ;
+; cache[6][2]~154                                                                            ; 1       ;
+; cache[0][2]~153                                                                            ; 1       ;
+; cache[0][2]~152                                                                            ; 1       ;
+; cache[0][2]~151                                                                            ; 1       ;
+; cache[0][2]~150                                                                            ; 1       ;
+; cache[4][2]~149                                                                            ; 1       ;
+; cache[0][2]~147                                                                            ; 1       ;
+; cache[2][2]~146                                                                            ; 1       ;
+; cache~144                                                                                  ; 1       ;
+; cache[2][2]~143                                                                            ; 1       ;
+; cache[2][2]~142                                                                            ; 1       ;
+; cache[2][2]~141                                                                            ; 1       ;
+; cache[7][1]~140                                                                            ; 1       ;
+; cache[1][1]~139                                                                            ; 1       ;
+; cache[5][1]~138                                                                            ; 1       ;
+; cache[3][1]~137                                                                            ; 1       ;
 ; varDadoWriteBack[1]                                                                        ; 1       ;
-; cache[7][1]~85                                                                             ; 1       ;
-; cache[5][1]~84                                                                             ; 1       ;
-; cache[3][1]~83                                                                             ; 1       ;
-; cache[1][1]~82                                                                             ; 1       ;
-; cache[6][1]~81                                                                             ; 1       ;
-; cache[0][1]~80                                                                             ; 1       ;
-; cache[4][1]~79                                                                             ; 1       ;
-; cache[2][1]~78                                                                             ; 1       ;
-; cache[1][0]~76                                                                             ; 1       ;
-; cache[3][0]~75                                                                             ; 1       ;
-; varEnviaDado~0                                                                             ; 1       ;
+; cache[6][1]~135                                                                            ; 1       ;
+; cache[6][1]~134                                                                            ; 1       ;
+; cache[0][1]~133                                                                            ; 1       ;
+; cache[0][1]~132                                                                            ; 1       ;
+; cache[4][1]~131                                                                            ; 1       ;
+; cache[4][1]~130                                                                            ; 1       ;
+; cache[2][1]~129                                                                            ; 1       ;
+; cache[2][1]~128                                                                            ; 1       ;
+; cache[1][0]~127                                                                            ; 1       ;
+; cache[3][0]~126                                                                            ; 1       ;
 ; varEndMem[3]                                                                               ; 1       ;
 ; varEndMem[2]                                                                               ; 1       ;
 ; varEndMem[1]                                                                               ; 1       ;
 ; varEndMem[0]                                                                               ; 1       ;
 ; varDadoWriteBack[0]                                                                        ; 1       ;
-; cache[5][0]~74                                                                             ; 1       ;
-; cache[7][0]~73                                                                             ; 1       ;
-; cache[1][0]~71                                                                             ; 1       ;
-; cache[6][0]~70                                                                             ; 1       ;
-; cache[0][0]~69                                                                             ; 1       ;
-; cache[4][0]~68                                                                             ; 1       ;
-; cache[2][0]~67                                                                             ; 1       ;
-; cache[4][0]~65                                                                             ; 1       ;
-; cache[0][7]~63                                                                             ; 1       ;
-; cache[4][7]~62                                                                             ; 1       ;
-; cache[2][7]~61                                                                             ; 1       ;
-; cache[6][6]~60                                                                             ; 1       ;
-; cache[0][6]~59                                                                             ; 1       ;
-; cache[4][6]~58                                                                             ; 1       ;
-; cache[2][6]~57                                                                             ; 1       ;
-; cache[7][6]~54                                                                             ; 1       ;
-; cache[1][6]~53                                                                             ; 1       ;
-; cache[5][6]~52                                                                             ; 1       ;
-; cache[3][6]~51                                                                             ; 1       ;
-; varEspera~1                                                                                ; 1       ;
-; cache[5][8]~50                                                                             ; 1       ;
-; cache[7][8]~49                                                                             ; 1       ;
-; cache[7][5]~47                                                                             ; 1       ;
-; cache[1][5]~46                                                                             ; 1       ;
-; cache[5][5]~45                                                                             ; 1       ;
-; cache[3][5]~44                                                                             ; 1       ;
-; cache[7][4]~43                                                                             ; 1       ;
-; cache[1][4]~42                                                                             ; 1       ;
-; cache[5][4]~41                                                                             ; 1       ;
-; cache[3][4]~40                                                                             ; 1       ;
-; cache[7][3]~39                                                                             ; 1       ;
-; cache[1][3]~38                                                                             ; 1       ;
-; cache[5][3]~37                                                                             ; 1       ;
-; cache[3][3]~36                                                                             ; 1       ;
-; cache[6][5]~35                                                                             ; 1       ;
-; cache[0][5]~34                                                                             ; 1       ;
-; cache[4][5]~33                                                                             ; 1       ;
-; cache[2][5]~32                                                                             ; 1       ;
-; cache[6][3]~31                                                                             ; 1       ;
-; cache[0][3]~30                                                                             ; 1       ;
-; cache[4][3]~29                                                                             ; 1       ;
-; cache[2][3]~28                                                                             ; 1       ;
-; cache[6][4]~27                                                                             ; 1       ;
-; cache[0][4]~26                                                                             ; 1       ;
-; cache[4][4]~25                                                                             ; 1       ;
-; cache[2][4]~24                                                                             ; 1       ;
-; cache[0][8]~23                                                                             ; 1       ;
-; cache[4][8]~22                                                                             ; 1       ;
-; dadoParaCPU~36                                                                             ; 1       ;
+; writeEnable                                                                                ; 1       ;
+; cache[5][0]~125                                                                            ; 1       ;
+; cache[7][0]~124                                                                            ; 1       ;
+; cache[6][0]~121                                                                            ; 1       ;
+; cache[6][0]~119                                                                            ; 1       ;
+; cache[6][0]~118                                                                            ; 1       ;
+; cache[0][0]~117                                                                            ; 1       ;
+; cache[0][0]~115                                                                            ; 1       ;
+; cache[0][0]~114                                                                            ; 1       ;
+; cache[4][0]~113                                                                            ; 1       ;
+; cache[4][0]~111                                                                            ; 1       ;
+; cache[4][0]~110                                                                            ; 1       ;
+; cache[2][0]~109                                                                            ; 1       ;
+; cache[2][0]~107                                                                            ; 1       ;
+; cache[2][0]~106                                                                            ; 1       ;
+; cache[6][6]~105                                                                            ; 1       ;
+; cache[0][6]~104                                                                            ; 1       ;
+; cache[4][6]~103                                                                            ; 1       ;
+; cache[2][6]~102                                                                            ; 1       ;
+; cache[6][7]~101                                                                            ; 1       ;
+; cache[6][7]~100                                                                            ; 1       ;
+; cache[0][7]~99                                                                             ; 1       ;
+; cache[4][7]~98                                                                             ; 1       ;
+; cache[2][7]~97                                                                             ; 1       ;
+; cache[7][7]~94                                                                             ; 1       ;
+; cache[7][7]~93                                                                             ; 1       ;
+; cache[7][7]~92                                                                             ; 1       ;
+; cache[1][7]~91                                                                             ; 1       ;
+; cache[1][7]~90                                                                             ; 1       ;
+; cache[1][7]~89                                                                             ; 1       ;
+; cache[3][7]~88                                                                             ; 1       ;
+; cache[3][7]~87                                                                             ; 1       ;
+; cache[3][7]~86                                                                             ; 1       ;
+; varEnviaDado~2                                                                             ; 1       ;
+; varEnviaDado~1                                                                             ; 1       ;
+; cache[7][6]~85                                                                             ; 1       ;
+; cache[1][6]~84                                                                             ; 1       ;
+; cache[5][6]~83                                                                             ; 1       ;
+; cache[3][6]~82                                                                             ; 1       ;
+; cache[5][7]~80                                                                             ; 1       ;
+; cache[5][7]~78                                                                             ; 1       ;
+; cache[5][7]~77                                                                             ; 1       ;
+; varEspera~3                                                                                ; 1       ;
+; varEspera~2                                                                                ; 1       ;
+; cache[7][5]~76                                                                             ; 1       ;
+; cache[1][5]~75                                                                             ; 1       ;
+; cache[5][5]~74                                                                             ; 1       ;
+; cache[3][5]~73                                                                             ; 1       ;
+; cache[7][3]~72                                                                             ; 1       ;
+; cache[1][3]~71                                                                             ; 1       ;
+; cache[5][3]~70                                                                             ; 1       ;
+; cache[3][3]~69                                                                             ; 1       ;
+; cache[7][4]~68                                                                             ; 1       ;
+; cache[1][4]~67                                                                             ; 1       ;
+; cache[5][4]~66                                                                             ; 1       ;
+; cache[3][4]~65                                                                             ; 1       ;
+; cache[6][5]~63                                                                             ; 1       ;
+; cache[0][5]~62                                                                             ; 1       ;
+; cache[4][5]~61                                                                             ; 1       ;
+; cache[2][5]~60                                                                             ; 1       ;
+; cache[6][3]~59                                                                             ; 1       ;
+; cache[0][3]~58                                                                             ; 1       ;
+; cache[4][3]~57                                                                             ; 1       ;
+; cache[2][3]~56                                                                             ; 1       ;
+; cache[6][4]~55                                                                             ; 1       ;
+; cache[0][4]~54                                                                             ; 1       ;
+; cache[4][4]~53                                                                             ; 1       ;
+; cache[2][4]~52                                                                             ; 1       ;
+; cache[0][8]~49                                                                             ; 1       ;
+; dadoParaCPU~46                                                                             ; 1       ;
+; dadoParaCPU~45                                                                             ; 1       ;
+; dadoParaCPU~44                                                                             ; 1       ;
+; dadoParaCPU~43                                                                             ; 1       ;
+; dadoParaCPU~42                                                                             ; 1       ;
+; dadoParaCPU~41                                                                             ; 1       ;
+; dadoParaCPU~40                                                                             ; 1       ;
+; dadoParaCPU~39                                                                             ; 1       ;
+; dadoParaCPU~38                                                                             ; 1       ;
+; dadoParaCPU~37                                                                             ; 1       ;
+; Mux17~2                                                                                    ; 1       ;
 ; dadoParaCPU~35                                                                             ; 1       ;
-; dadoParaCPU~34                                                                             ; 1       ;
+; Mux17~0                                                                                    ; 1       ;
 ; dadoParaCPU~33                                                                             ; 1       ;
 ; dadoParaCPU~32                                                                             ; 1       ;
 ; dadoParaCPU~31                                                                             ; 1       ;
 ; dadoParaCPU~30                                                                             ; 1       ;
 ; dadoParaCPU~29                                                                             ; 1       ;
-; Mux13~2                                                                                    ; 1       ;
+; dadoParaCPU~28                                                                             ; 1       ;
 ; dadoParaCPU~27                                                                             ; 1       ;
-; Mux13~0                                                                                    ; 1       ;
+; dadoParaCPU~26                                                                             ; 1       ;
+; Mux18~2                                                                                    ; 1       ;
+; Mux18~0                                                                                    ; 1       ;
 ; dadoParaCPU~25                                                                             ; 1       ;
-; dadoParaCPU~24                                                                             ; 1       ;
 ; dadoParaCPU~23                                                                             ; 1       ;
 ; dadoParaCPU~22                                                                             ; 1       ;
 ; dadoParaCPU~21                                                                             ; 1       ;
 ; dadoParaCPU~20                                                                             ; 1       ;
-; Mux14~2                                                                                    ; 1       ;
-; Mux14~0                                                                                    ; 1       ;
+; dadoParaCPU~19                                                                             ; 1       ;
+; dadoParaCPU~18                                                                             ; 1       ;
+; dadoParaCPU~17                                                                             ; 1       ;
 ; dadoParaCPU~16                                                                             ; 1       ;
-; dadoParaCPU~13                                                                             ; 1       ;
-; dadoParaCPU~12                                                                             ; 1       ;
-; dadoParaCPU~11                                                                             ; 1       ;
-; dadoParaCPU~10                                                                             ; 1       ;
+; dadoParaCPU~15                                                                             ; 1       ;
+; Mux19~2                                                                                    ; 1       ;
 ; dadoParaCPU~9                                                                              ; 1       ;
-; dadoParaCPU~8                                                                              ; 1       ;
-; dadoParaCPU~7                                                                              ; 1       ;
-; Mux15~2                                                                                    ; 1       ;
-; dadoParaCPU~1                                                                              ; 1       ;
-; Mux15~0                                                                                    ; 1       ;
+; Mux19~0                                                                                    ; 1       ;
+; tag~49                                                                                     ; 1       ;
+; tag~48                                                                                     ; 1       ;
+; tag~47                                                                                     ; 1       ;
+; tag~46                                                                                     ; 1       ;
+; tag~45                                                                                     ; 1       ;
+; tag~44                                                                                     ; 1       ;
+; tag~43                                                                                     ; 1       ;
+; tag~41                                                                                     ; 1       ;
+; cache~35                                                                                   ; 1       ;
+; tag~40                                                                                     ; 1       ;
+; cache~34                                                                                   ; 1       ;
+; cache~33                                                                                   ; 1       ;
+; cache~32                                                                                   ; 1       ;
+; tag~39                                                                                     ; 1       ;
+; tag~38                                                                                     ; 1       ;
+; tag~36                                                                                     ; 1       ;
+; tag~35                                                                                     ; 1       ;
+; tag~34                                                                                     ; 1       ;
+; tag~33                                                                                     ; 1       ;
+; tag~32                                                                                     ; 1       ;
+; tag~31                                                                                     ; 1       ;
+; tag~30                                                                                     ; 1       ;
+; tag~29                                                                                     ; 1       ;
+; tag~28                                                                                     ; 1       ;
+; tag~27                                                                                     ; 1       ;
 ; tag~26                                                                                     ; 1       ;
+; cache~31                                                                                   ; 1       ;
 ; tag~25                                                                                     ; 1       ;
+; cache~30                                                                                   ; 1       ;
+; cache~29                                                                                   ; 1       ;
+; cache~28                                                                                   ; 1       ;
 ; tag~24                                                                                     ; 1       ;
 ; tag~23                                                                                     ; 1       ;
 ; tag~22                                                                                     ; 1       ;
 ; tag~21                                                                                     ; 1       ;
-; tag~20                                                                                     ; 1       ;
 ; tag~19                                                                                     ; 1       ;
 ; tag~18                                                                                     ; 1       ;
 ; tag~17                                                                                     ; 1       ;
-; tag~16                                                                                     ; 1       ;
-; tag~15                                                                                     ; 1       ;
 ; tag~14                                                                                     ; 1       ;
+; cache~27                                                                                   ; 1       ;
 ; tag~13                                                                                     ; 1       ;
-; tag~12                                                                                     ; 1       ;
+; cache~26                                                                                   ; 1       ;
+; cache~25                                                                                   ; 1       ;
+; cache~24                                                                                   ; 1       ;
 ; tag~11                                                                                     ; 1       ;
-; tag~10                                                                                     ; 1       ;
-; writeBack~0                                                                                ; 1       ;
-; Mux30~0                                                                                    ; 1       ;
+; tag~9                                                                                      ; 1       ;
 ; dirty~1                                                                                    ; 1       ;
-; Mux7~2                                                                                     ; 1       ;
 ; dirty~0                                                                                    ; 1       ;
-; Mux7~0                                                                                     ; 1       ;
-; Mux23~0                                                                                    ; 1       ;
-; Mux24~0                                                                                    ; 1       ;
-; always0~3                                                                                  ; 1       ;
+; Mux11~2                                                                                    ; 1       ;
+; LRU~0                                                                                      ; 1       ;
+; Mux28~0                                                                                    ; 1       ;
+; Mux12~1                                                                                    ; 1       ;
+; Mux12~0                                                                                    ; 1       ;
+; Mux11~0                                                                                    ; 1       ;
 ; Mux25~0                                                                                    ; 1       ;
+; always0~4                                                                                  ; 1       ;
+; Mux27~0                                                                                    ; 1       ;
 ; Mux26~0                                                                                    ; 1       ;
-; Mux17~0                                                                                    ; 1       ;
+; always0~3                                                                                  ; 1       ;
+; Mux21~0                                                                                    ; 1       ;
 ; always0~1                                                                                  ; 1       ;
-; Mux19~0                                                                                    ; 1       ;
-; Mux18~0                                                                                    ; 1       ;
+; Mux23~0                                                                                    ; 1       ;
+; Mux22~0                                                                                    ; 1       ;
 ; always0~0                                                                                  ; 1       ;
 ; dadoParaCPU[2]~reg0                                                                        ; 1       ;
 ; dadoParaCPU[1]~reg0                                                                        ; 1       ;
@@ -1524,8 +1702,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; tag[1]~reg0                                                                                ; 1       ;
 ; tag[0]~reg0                                                                                ; 1       ;
 ; writeBack~reg0                                                                             ; 1       ;
-; LRU~reg0                                                                                   ; 1       ;
 ; dirty~reg0                                                                                 ; 1       ;
+; LRU~reg0                                                                                   ; 1       ;
 ; valid~reg0                                                                                 ; 1       ;
 ; hit~reg0                                                                                   ; 1       ;
 +--------------------------------------------------------------------------------------------+---------+
@@ -1536,7 +1714,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------------------+-------------+----------------------+-----------------+-----------------+
 ; Name                                                                                           ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF                     ; Location    ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------------------+-------------+----------------------+-----------------+-----------------+
-; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|ALTSYNCRAM ; M4K  ; Single Port ; Single Clock ; 16           ; 3            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 48   ; 16                          ; 3                           ; --                          ; --                          ; 48                  ; 1    ; arquivoMemoriaCache.mif ; M4K_X26_Y32 ; Don't care           ; Don't care      ; Don't care      ;
+; memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated|ALTSYNCRAM ; M4K  ; Single Port ; Single Clock ; 16           ; 3            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 48   ; 16                          ; 3                           ; --                          ; --                          ; 48                  ; 1    ; arquivoMemoriaCache.mif ; M4K_X26_Y21 ; Don't care           ; Don't care      ; Don't care      ;
 +------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------------------+-------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1546,23 +1724,23 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 215 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 2 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 58 / 60,840 ( < 1 % )  ;
-; Direct links                ; 50 / 94,460 ( < 1 % )  ;
+; Block interconnects         ; 356 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 10 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 148 / 60,840 ( < 1 % ) ;
+; Direct links                ; 78 / 94,460 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 145 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 2 / 3,091 ( < 1 % )    ;
-; R4 interconnects            ; 87 / 81,294 ( < 1 % )  ;
+; Local interconnects         ; 217 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 0 / 3,091 ( 0 % )      ;
+; R4 interconnects            ; 115 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 15.31) ; Number of LABs  (Total = 13) ;
+; Number of Logic Elements  (Average = 14.52) ; Number of LABs  (Total = 21) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 0                            ;
+; 1                                           ; 1                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
@@ -1572,35 +1750,34 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
+; 13                                          ; 1                            ;
 ; 14                                          ; 1                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 8                            ;
+; 15                                          ; 2                            ;
+; 16                                          ; 14                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.38) ; Number of LABs  (Total = 13) ;
+; LAB-wide Signals  (Average = 1.38) ; Number of LABs  (Total = 21) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 13                           ;
-; 1 Clock enable                     ; 3                            ;
-; 1 Sync. clear                      ; 1                            ;
-; 2 Clock enables                    ; 1                            ;
+; 1 Clock                            ; 20                           ;
+; 1 Clock enable                     ; 7                            ;
+; 1 Sync. clear                      ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 21.77) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced  (Average = 18.76) ; Number of LABs  (Total = 21) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
@@ -1610,19 +1787,19 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
+; 17                                           ; 3                            ;
+; 18                                           ; 3                            ;
 ; 19                                           ; 1                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 0                            ;
+; 20                                           ; 3                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 1                            ;
 ; 25                                           ; 1                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 1                            ;
@@ -1632,59 +1809,53 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.23) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced Out  (Average = 6.19) ; Number of LABs  (Total = 21) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 0                            ;
-; 2                                               ; 0                            ;
-; 3                                               ; 2                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 2                            ;
+; 3                                               ; 1                            ;
 ; 4                                               ; 1                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 4                            ;
-; 8                                               ; 1                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 1                            ;
-; 11                                              ; 0                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 1                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 4                            ;
+; 9                                               ; 3                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 14.69) ; Number of LABs  (Total = 13) ;
+; Number of Distinct Inputs  (Average = 14.90) ; Number of LABs  (Total = 21) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
+; 10                                           ; 1                            ;
 ; 11                                           ; 3                            ;
-; 12                                           ; 2                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 2                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 0                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 3                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 1                            ;
+; 21                                           ; 2                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 1                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1785,11 +1956,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X22_Y12 to location X32_Y23
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.30 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 11 output pins without output pin load capacitance assignment
     Info (306007): Pin "hit" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1809,17 +1980,17 @@ Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/altera/projetoMemoriaCache/output_files/memoriaCache.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/output_files/memoriaCache.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Wed Sep 14 19:01:49 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Thu Sep 15 23:04:06 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/altera/projetoMemoriaCache/output_files/memoriaCache.fit.smsg.
+The suppressed messages can be found in C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/output_files/memoriaCache.fit.smsg.
 
 
