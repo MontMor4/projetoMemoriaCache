@@ -57,7 +57,7 @@ module teste_memoriaCache();
 			assign wren = 1;
 			assign data = 3'b100;
 			assign address = 5'b01001;
-			for(count = 0; count < 8; count = count + 1)begin	
+			for(count = 0; count < 12; count = count + 1)begin	
 				#100;
 					assign clock = ~clock;
 					if(clock == 0)

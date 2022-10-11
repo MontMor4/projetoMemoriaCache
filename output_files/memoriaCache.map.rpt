@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memoriaCache
-Thu Sep 15 23:04:00 2022
+Fri Sep 16 23:57:49 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -50,13 +50,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 15 23:04:00 2022           ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 16 23:57:49 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; memoriaCache                                    ;
 ; Top-level Entity Name              ; memoriaCache                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 306                                             ;
-;     Total combinational functions  ; 303                                             ;
+; Total logic elements               ; 299                                             ;
+;     Total combinational functions  ; 296                                             ;
 ;     Dedicated logic registers      ; 89                                              ;
 ; Total registers                    ; 89                                              ;
 ; Total pins                         ; 21                                              ;
@@ -158,30 +158,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
-; memoriaCache.v                   ; yes             ; User Verilog HDL File            ; C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaCache.v          ;         ;
-; arquivoMemoriaCache.mif          ; yes             ; User Memory Initialization File  ; C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/arquivoMemoriaCache.mif ;         ;
-; memoriaPrincipal.v               ; yes             ; User Wizard-Generated File       ; C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v      ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                   ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; db/altsyncram_nbf1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/db/altsyncram_nbf1.tdf  ;         ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; memoriaCache.v                   ; yes             ; User Verilog HDL File            ; C:/projetoFinalCache/LuizEduardo_VictorSamuel_pratica1_parte3/projetoMemoriaCache/memoriaCache.v          ;         ;
+; arquivoMemoriaCache.mif          ; yes             ; User Memory Initialization File  ; C:/projetoFinalCache/LuizEduardo_VictorSamuel_pratica1_parte3/projetoMemoriaCache/arquivoMemoriaCache.mif ;         ;
+; memoriaPrincipal.v               ; yes             ; User Wizard-Generated File       ; C:/projetoFinalCache/LuizEduardo_VictorSamuel_pratica1_parte3/projetoMemoriaCache/memoriaPrincipal.v      ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                          ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                   ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                             ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                          ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                          ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                           ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                              ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                              ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                            ;         ;
+; db/altsyncram_nbf1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/projetoFinalCache/LuizEduardo_VictorSamuel_pratica1_parte3/projetoMemoriaCache/db/altsyncram_nbf1.tdf  ;         ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -189,16 +189,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 306   ;
+; Estimated Total logic elements              ; 299   ;
 ;                                             ;       ;
-; Total combinational functions               ; 303   ;
+; Total combinational functions               ; 296   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 229   ;
-;     -- 3 input functions                    ; 59    ;
-;     -- <=2 input functions                  ; 15    ;
+;     -- 4 input functions                    ; 226   ;
+;     -- 3 input functions                    ; 58    ;
+;     -- <=2 input functions                  ; 12    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 303   ;
+;     -- normal mode                          ; 296   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 89    ;
@@ -210,8 +210,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 92    ;
-; Total fan-out                               ; 1356  ;
-; Average fan-out                             ; 3.26  ;
+; Total fan-out                               ; 1336  ;
+; Average fan-out                             ; 3.27  ;
 +---------------------------------------------+-------+
 
 
@@ -220,7 +220,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
-; |memoriaCache                             ; 303 (303)         ; 89 (89)      ; 48          ; 0            ; 0       ; 0         ; 21   ; 0            ; |memoriaCache                                                                                     ; work         ;
+; |memoriaCache                             ; 296 (296)         ; 89 (89)      ; 48          ; 0            ; 0       ; 0         ; 21   ; 0            ; |memoriaCache                                                                                     ; work         ;
 ;    |memoriaPrincipal:ram|                 ; 0 (0)             ; 0 (0)        ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoriaCache|memoriaPrincipal:ram                                                                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoriaCache|memoriaPrincipal:ram|altsyncram:altsyncram_component                                ; work         ;
 ;          |altsyncram_nbf1:auto_generated| ; 0 (0)             ; 0 (0)        ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoriaCache|memoriaPrincipal:ram|altsyncram:altsyncram_component|altsyncram_nbf1:auto_generated ; work         ;
@@ -237,13 +237,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                          ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+---------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                    ; IP Include File                                                           ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+---------------------------------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |memoriaCache|memoriaPrincipal:ram ; C:/Users/Vitão/Desktop/Codes/LAOC2/projetoMemoriaCache/memoriaPrincipal.v ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+---------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                     ;
++--------+--------------+---------+--------------+--------------+------------------------------------+------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                    ; IP Include File                                                                                      ;
++--------+--------------+---------+--------------+--------------+------------------------------------+------------------------------------------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |memoriaCache|memoriaPrincipal:ram ; C:/projetoFinalCache/LuizEduardo_VictorSamuel_pratica1_parte3/projetoMemoriaCache/memoriaPrincipal.v ;
++--------+--------------+---------+--------------+--------------+------------------------------------+------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -254,32 +254,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dadoMemWriteback                       ; Stuck at GND due to stuck port data_in ;
 ; via1[1]                                ; Merged with via2[1]                    ;
 ; via1[2]                                ; Merged with via2[2]                    ;
-; via2[25]                               ; Merged with via2[3]                    ;
-; via1[28,29]                            ; Merged with via2[3]                    ;
-; via2[6]                                ; Merged with via2[3]                    ;
-; via1[21]                               ; Merged with via2[3]                    ;
-; via2[13,14]                            ; Merged with via2[3]                    ;
-; via1[22]                               ; Merged with via2[3]                    ;
-; via2[9]                                ; Merged with via2[3]                    ;
-; via1[15]                               ; Merged with via2[3]                    ;
-; via2[10,23]                            ; Merged with via2[3]                    ;
-; via1[7]                                ; Merged with via2[3]                    ;
-; via2[18,21,22,26]                      ; Merged with via2[3]                    ;
-; via1[9,11]                             ; Merged with via2[3]                    ;
+; via1[19,26,28]                         ; Merged with via2[3]                    ;
+; via2[26]                               ; Merged with via2[3]                    ;
+; via1[20]                               ; Merged with via2[3]                    ;
+; via2[7,10,11,15,19,22,23]              ; Merged with via2[3]                    ;
+; via1[0,16,21,31]                       ; Merged with via2[3]                    ;
+; via2[28]                               ; Merged with via2[3]                    ;
+; via1[8,23]                             ; Merged with via2[3]                    ;
+; via2[5,9,13,17]                        ; Merged with via2[3]                    ;
+; via1[14]                               ; Merged with via2[3]                    ;
+; via2[21]                               ; Merged with via2[3]                    ;
+; via1[15,18]                            ; Merged with via2[3]                    ;
+; via2[25,27,29,31]                      ; Merged with via2[3]                    ;
+; via1[13,17]                            ; Merged with via2[3]                    ;
+; via2[20,24]                            ; Merged with via2[3]                    ;
+; via1[3,12]                             ; Merged with via2[3]                    ;
 ; via2[30]                               ; Merged with via2[3]                    ;
-; via1[25]                               ; Merged with via2[3]                    ;
-; via2[11]                               ; Merged with via2[3]                    ;
-; via1[26,27]                            ; Merged with via2[3]                    ;
-; via2[7,15]                             ; Merged with via2[3]                    ;
-; via1[18]                               ; Merged with via2[3]                    ;
-; via2[4,5,8,12,16,17,20,27,31]          ; Merged with via2[3]                    ;
-; via1[3]                                ; Merged with via2[3]                    ;
-; via2[24]                               ; Merged with via2[3]                    ;
+; via1[27,29]                            ; Merged with via2[3]                    ;
+; via2[18]                               ; Merged with via2[3]                    ;
+; via1[4..7,24]                          ; Merged with via2[3]                    ;
+; via2[4]                                ; Merged with via2[3]                    ;
 ; via1[30]                               ; Merged with via2[3]                    ;
-; via2[28,29]                            ; Merged with via2[3]                    ;
-; via1[0,4,6,8,10,12,16,17,19,20,23]     ; Merged with via2[3]                    ;
-; via2[19]                               ; Merged with via2[3]                    ;
-; via1[5,13,14,24,31]                    ; Merged with via2[3]                    ;
+; via2[6]                                ; Merged with via2[3]                    ;
+; via1[25]                               ; Merged with via2[3]                    ;
+; via2[8]                                ; Merged with via2[3]                    ;
+; via1[9]                                ; Merged with via2[3]                    ;
+; via2[12,14,16]                         ; Merged with via2[3]                    ;
+; via1[10,11,22]                         ; Merged with via2[3]                    ;
 ; via2[3]                                ; Stuck at GND due to stuck port data_in ;
 ; via2[0..2]                             ; Lost fanout                            ;
 ; cache[2][8]                            ; Stuck at VCC due to stuck port data_in ;
@@ -310,7 +311,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 19    ;
+; Number of registers using Clock Enable       ; 20    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -333,10 +334,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cache[0][0]                             ; 3       ;
 ; cache[6][0]                             ; 3       ;
 ; cache[3][0]                             ; 3       ;
+; cache[3][1]                             ; 4       ;
 ; cache[2][1]                             ; 3       ;
 ; cache[0][1]                             ; 3       ;
 ; cache[6][1]                             ; 3       ;
-; cache[3][1]                             ; 3       ;
 ; cache[3][2]                             ; 3       ;
 ; cache[1][2]                             ; 3       ;
 ; Total number of inverted registers = 19 ;         ;
@@ -348,32 +349,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |memoriaCache|varEndMem[1]        ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |memoriaCache|varDadoWriteBack[1] ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[5][8]         ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |memoriaCache|cache[0][8]         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[7][8]         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |memoriaCache|cache[4][8]         ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |memoriaCache|cache[7][1]         ;
-; 8:1                ; 9 bits    ; 45 LEs        ; 9 LEs                ; 36 LEs                 ; Yes        ; |memoriaCache|cache[7][3]         ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 9 LEs                ; 36 LEs                 ; Yes        ; |memoriaCache|cache[7][5]         ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |memoriaCache|cache[3][6]         ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |memoriaCache|cache[0][7]         ;
-; 8:1                ; 9 bits    ; 45 LEs        ; 18 LEs               ; 27 LEs                 ; Yes        ; |memoriaCache|cache[0][3]         ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|cache[4][6]         ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|varEndMem[0]        ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|cache[4][0]         ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|varEndMem[3]        ;
-; 25:1               ; 3 bits    ; 48 LEs        ; 45 LEs               ; 3 LEs                  ; Yes        ; |memoriaCache|dadoParaCPU[0]~reg0 ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 18 LEs               ; 27 LEs                 ; Yes        ; |memoriaCache|cache[2][3]         ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|cache[2][6]         ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |memoriaCache|cache[4][0]         ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|varEndMem[3]        ;
 ; 29:1               ; 3 bits    ; 57 LEs        ; 54 LEs               ; 3 LEs                  ; Yes        ; |memoriaCache|tag[0]~reg0         ;
+; 27:1               ; 3 bits    ; 54 LEs        ; 45 LEs               ; 9 LEs                  ; Yes        ; |memoriaCache|dadoParaCPU[0]~reg0 ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[3][8]         ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |memoriaCache|cache[2][8]         ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |memoriaCache|cache[3][0]         ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|cache[1][5]         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |memoriaCache|cache[6][8]         ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |memoriaCache|cache[3][1]         ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |memoriaCache|cache[3][3]         ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |memoriaCache|cache[6][4]         ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[0][0]         ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[2][1]         ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |memoriaCache|cache[6][1]         ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |memoriaCache|cache[0][0]         ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |memoriaCache|cache[2][1]         ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |memoriaCache|cache[6][1]         ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |memoriaCache|cache               ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |memoriaCache|via1                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |memoriaCache|Mux18               ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |memoriaCache|Mux11               ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |memoriaCache|via2                ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |memoriaCache|Mux24               ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |memoriaCache|Mux26               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
 
@@ -482,7 +483,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Sep 15 23:03:57 2022
+    Info: Processing started: Fri Sep 16 23:57:47 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memoriaCache -c memoriaCache
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file memoriacache.v
@@ -518,15 +519,15 @@ Info (12128): Elaborating entity "altsyncram_nbf1" for hierarchy "memoriaPrincip
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 332 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 324 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 308 logic cells
+    Info (21061): Implemented 300 logic cells
     Info (21064): Implemented 3 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4618 megabytes
-    Info: Processing ended: Thu Sep 15 23:04:00 2022
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4619 megabytes
+    Info: Processing ended: Fri Sep 16 23:57:49 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

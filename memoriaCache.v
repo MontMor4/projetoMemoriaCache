@@ -265,7 +265,8 @@ module memoriaCache(
 				
 				//WRITE HIT VIA1
 				if(cache[via1][8] == 1 && cache[via1][5:3] == address[4:2])begin //verifica valid e hit na primeira via
-
+					
+					
 					cache[via1][2:0] = data;	//cache na via recebe o dado
 					dadoParaCPU = cache[via1][2:0];		//TESTE
 					cache[via1][8] = 1;		//valid = 1
@@ -281,9 +282,19 @@ module memoriaCache(
 				
 				//WRITE HIT VIA2
 				end else if(cache[via2][8] == 1 && cache[via2][5:3] == address[4:2])begin //verifica valid e hit na segunda via
-
-					cache[via2][2:0] = data;	//cache na via recebe o dado
-					dadoParaCPU = cache[via2][2:0];		//TESTE
+					if(varEnviaDado == 1)begin
+						cache[via2][2:0] = saida;
+						dadoParaCPU = saida;
+						varEnviaDado = 0;
+						varEspera = 1;
+					
+					end else begin
+							cache[via2][2:0] = data;	//cache na via recebe o dado
+							dadoParaCPU = cache[via2][2:0];
+					
+					end
+					//cache[via2][2:0] = data;	//cache na via recebe o dado
+					//dadoParaCPU = cache[via2][2:0];		//TESTE
 					cache[via2][8] = 1;		//valid = 1
 					cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
 					cache[via1][7] = 1'b0; 	//LRU (dado mais antigo recebe 0)	
@@ -299,7 +310,7 @@ module memoriaCache(
 					
 					//WRITE MISS 1
 					if(cache[via1][7] == 0)begin //verifica LRU (0 = dado mais antigo)
-					
+						
 						if(cache[via1][6] == 1)begin //se dirty = 1
 						
 							writeBack = 1;	//deve ocorrer um writeBack
@@ -310,10 +321,13 @@ module memoriaCache(
 							writeEnable = 1;
 							
 						end 
-
+						if(writeBack == 0)begin
+								varEndMem[3:0] = address[3:0];	
+						end 
 						cache[via1][5:3] = address[4:2];	//atualiza a tag da cache
 						
 						cache[via1][2:0] = data;	//escreve dado na cache
+						
 						
 						dadoParaCPU = cache[via1][2:0];		//TESTE NO DISPLAY
 						
@@ -331,7 +345,7 @@ module memoriaCache(
 						
 					//WRITE MISS 2
 					end else begin
-					
+						
 						if(cache[via2][6] == 1)begin //se dirty = 1
 						
 							writeBack = 1;	//deve ocorrer um writeBack
@@ -342,12 +356,18 @@ module memoriaCache(
 							writeEnable = 1;
 							
 						end
-						
+						if(writeBack == 0)begin
+								varEndMem[3:0] = address[3:0];	
+						end 
 						cache[via2][5:3] = address[4:2];	//atualiza a tag da cache
-						
-						cache[via2][2:0] = data;	//escreve o dado na cache
+						if(varEnviaDado == 0)begin
+								varEnviaDado = 1;
+								varEspera = 1;
+			
+							end 
+						//cache[via2][2:0] = data;	//escreve o dado na cache
 												
-						dadoParaCPU = cache[via2][2:0];		//TESTE NO DISPLAY
+						//dadoParaCPU = cache[via2][2:0];		//TESTE NO DISPLAY
 						
 						cache[via2][8] = 1;		//valid = 1
 						cache[via2][7] = 1'b1; 	//LRU (dado mais recente recebe 1)
